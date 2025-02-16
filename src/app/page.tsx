@@ -5,7 +5,7 @@ import MainText from "./components/MainText";
 export default function Home() {
   return (
     <>
-      <main className="relative">
+      <main className="relative h-[100vh] ">
         <motion.div
           initial={{ clipPath: "inset(0 0 0 0)" }}
           whileInView={{ clipPath: "inset(0 0 100% 0)" }}
