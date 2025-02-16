@@ -1,10 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --PrimaryBlack: #1d1616;
+  --PrimaryRed: #8e1616;
+  --SecondaryRed: #d84040;
+  --PrimaryRed: #eeeeee;
 }
 
 @media (prefers-color-scheme: dark) {
