@@ -10,7 +10,7 @@ export default function Home() {
           initial={{ clipPath: "inset(0 0 0 0)" }}
           whileInView={{ clipPath: "inset(0 0 100% 0)" }}
           transition={{ duration: 8 }}
-          className="bg-black w-full h-[50vh] First"
+          className="bg-black w-full h-[50%] First"
         ></motion.div>
         <div className="fixed  bg-[#EEEEEE] top-0 w-full h-[100vh] -z-10 flex items-center justify-center">
           <MainText />
@@ -27,7 +27,7 @@ export default function Home() {
           initial={{ clipPath: "inset(0 0 0 0)" }}
           whileInView={{ clipPath: "inset(100% 0 0 0)" }}
           transition={{ duration: 8 }}
-          className="bg-black w-full h-[50vh]"
+          className="bg-black w-full h-[50%]"
         ></motion.div>
       </main>
     </>
