@@ -1,6 +1,6 @@
 import "../globals.css";
 import React, { useRef } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
 
 interface ParagraphProps {
   paragraph: string;
@@ -8,13 +8,13 @@ interface ParagraphProps {
 
 interface WordProps {
   children: string;
-  progress: any;
+  progress: MotionValue<number>;
   range: [number, number];
 }
 
 interface CharProps {
   children: string;
-  progress: any;
+  progress: MotionValue<number>;
   range: [number, number];
 }
 
@@ -45,6 +45,7 @@ export default function Paragraph({ paragraph }: ParagraphProps) {
     </p>
   );
 }
+
 const Word: React.FC<WordProps> = ({ children, progress, range }) => {
   const amount = range[1] - range[0];
   const step = amount / children.length;
@@ -64,8 +65,9 @@ const Word: React.FC<WordProps> = ({ children, progress, range }) => {
     </span>
   );
 };
+
 const Char: React.FC<CharProps> = ({ children, progress, range }) => {
-  const opacity = useTransform(progress, range as number[], [0, 1]);
+  const opacity = useTransform(progress, range, [0, 1]);
 
   return (
     <span>
