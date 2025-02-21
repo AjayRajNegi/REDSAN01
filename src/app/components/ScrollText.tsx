@@ -11,8 +11,13 @@ import "../globals.css";
  * Read the blog post here:
  * https://letsbuildui.dev/series/scroll-animations-with-framer-motion/highlighting-text-on-scroll
  */
-const ContentLine = ({ content }) => {
-  const contentRef = useRef();
+
+interface ContentLineProps {
+  content: string;
+}
+
+const ContentLine: React.FC<ContentLineProps> = ({ content }) => {
+  const contentRef = useRef<HTMLSpanElement | null>(null);
 
   const { scrollYProgress } = useScroll({
     target: contentRef,
@@ -34,7 +39,11 @@ const ContentLine = ({ content }) => {
   );
 };
 
-export const ScrollText = ({ content }) => {
+interface ScrollTextProps {
+  content: string[];
+}
+
+export const ScrollText: React.FC<ScrollTextProps> = ({ content }) => {
   return (
     <div className="outer w-full grayscale-[80%]">
       <div className="inline leading-[1.3]">
