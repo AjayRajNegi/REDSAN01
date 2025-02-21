@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 
 interface TitleType {
@@ -16,10 +16,8 @@ const Titles: TitleType[] = [
 
 export default function MainText() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   return (
-    <div className="relative flex h-[280px] md:h-[200px] lg-h-[180px]  w-full items-center justify-center overflow-hidden text-black ">
+    <div className="relative flex h-[280px] md:h-[230px] lg-h-[250px] bg-red-200  w-full items-center justify-center overflow-hidden text-black ">
       {Titles.map((data, wordIndex) => (
         <div
           key={data.key}
@@ -29,14 +27,14 @@ export default function MainText() {
             <motion.p
               ref={ref}
               key={charIndex}
-              initial={{ y: 200 }}
-              animate={isInView ? { y: [200, 0, 0, -200] } : {}}
+              initial={{ y: 225 }}
+              animate={{ y: [225, 0, 0, -225] }}
               transition={{
                 duration: 2,
                 times: [0, 0.2, 0.8, 1],
                 delay: 1 + wordIndex * 2 + charIndex * 0.05,
               }}
-              className="text-black text-center font-bold tracking-[-0.05em] text-[5rem] md:text-[10rem] lg:text-[11rem]"
+              className="text-black text-center font-bold tracking-[-0.05em] text-[5rem] md:text-[10rem] lg:text-[165px]"
             >
               {char === " " ? <span>&nbsp;</span> : char}
             </motion.p>
