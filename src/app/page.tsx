@@ -9,14 +9,14 @@ const paragraph =
 export default function Home() {
   return (
     <>
-      <main className="relative h-[100vh] ">
+      <main className="relative h-[100dvh] ">
         <motion.div
           initial={{ clipPath: "inset(0 0 0 0)" }}
           animate={{ clipPath: "inset(0 0 100% 0)" }}
           transition={{ duration: 8 }}
           className="bg-black w-full h-[50%] First"
         ></motion.div>
-        <div className="fixed  bg-red-200 top-0 w-full h-[100vh] -z-10 flex items-center justify-center">
+        <div className="fixed  bg-red-100 top-0 w-full h-[100dvh] -z-10 flex items-center justify-center">
           <MainText />
           <motion.div
             initial={{ opacity: 0 }}
