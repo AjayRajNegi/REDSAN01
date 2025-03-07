@@ -3,14 +3,14 @@ import Navbar from "../components/Navbar";
 export default function LinkedIn() {
   return (
     <>
-      <div className="bg-red-200 pt-1">
+      <div className="bg-gray-100 pt-1">
         <section className="h-dvh">
           <section className="flex flex-col md:flex-row w-full gap-1 md:gap-0 justify-center ">
             <div className="w-[98%] md:w-[40%] mx-auto">
               <div className=" max-h-[90px]  bg-black rounded-2xl overflow-hidden ">
                 <Navbar />
               </div>
-              <h2 className="text-black text-6xl font-semibold mt-10 -ml-1">
+              <h2 className="text-black  text-5xl md:text-6xl font-semibold mt-10 -ml-1">
                 LinkedIn <br /> Management
               </h2>
             </div>
@@ -24,7 +24,7 @@ export default function LinkedIn() {
             </div>
           </section>
           <div className="ml-1">
-            <h4 className="text-2xl text-black font-semibold mt-16">
+            <h4 className="text-lg md:text-2xl text-black font-semibold mt-16">
               HI, WE ARE A SOCIAL MEDIA & BRANDING AGENCY <br /> WE BARK AND
               BITE TOO, GENERATE RESULTS THAT MAKES HISTORY!
             </h4>
@@ -51,7 +51,16 @@ export default function LinkedIn() {
                 backgroundSize: "cover",
                 backgroundPositionX: "-100px",
               }}
-            ></div>
+            >
+              <h3 className="p-4 pt-10 text-2xl text-white">
+                Website Building
+              </h3>
+              <p className="m-4 mt-0 text-base text-white glassBackground rounded-md">
+                Structuring websites for better optimized user interface with
+                SEO to boost visibility and conversions for sales driven and
+                brand awareness looking clients.
+              </p>
+            </div>
             <div
               className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
               style={{
@@ -59,7 +68,16 @@ export default function LinkedIn() {
                 backgroundSize: "cover",
                 backgroundPositionX: "center",
               }}
-            ></div>
+            >
+              <h3 className="m-4 pt-10 text-2xl text-white  ">
+                Social Media Handling
+              </h3>
+              <p className="m-4 mt-0 text-base text-white glassBackground rounded-md">
+                Creating and managing social media accounts for content
+                visibility to a wider and right audience boost brand repo among
+                its target audience and socializing professionally.
+              </p>
+            </div>
             <div
               className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
               style={{
@@ -67,7 +85,16 @@ export default function LinkedIn() {
                 backgroundSize: "cover",
                 backgroundPositionX: "center",
               }}
-            ></div>
+            >
+              <h3 className="p-4 pt-10 text-2xl text-white">
+                Content Creation
+              </h3>
+              <p className="m-4 mt-0 text-base text-white glassBackground rounded-md">
+                Taking photoshoots and video shoots with cool edits to get the
+                viewers the content they are looking for and the clients who
+                want themselves to be looked at the online platforms.
+              </p>
+            </div>
             <div
               className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
               style={{
@@ -75,7 +102,19 @@ export default function LinkedIn() {
                 backgroundSize: "cover",
                 backgroundPositionX: "center",
               }}
-            ></div>
+            >
+              <h3 className="p-4 pt-10 text-2xl text-white">
+                SEO and Google Rankings
+              </h3>
+              <p className="m-4 mt-0 text-base text-white glassBackground rounded-md">
+                We have lots of options if you want to get your websites built,
+                we believe in making the best customized websites according to
+                the need of the client. it ranges from 20k- 75k based on the
+                level of work and features one would like to incur in their
+                websites. You get along the SEO and content making services only
+                @10k.
+              </p>
+            </div>
             <div
               className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
               style={{
@@ -83,13 +122,18 @@ export default function LinkedIn() {
                 backgroundSize: "cover",
                 backgroundPositionX: "center",
               }}
-            ></div>
+            >
+              <h3 className="p-4 pt-10 text-2xl text-black">PR and Awards</h3>
+              <p className="m-4 mt-0 text-xs md:text-base text-black glassBackground rounded-md">
+                Greeting your company in relevant awards and CEO in relevant
+                coverages across the country, eg- Business World, Entrepreneurs
+                Today, Afaqs, Wikipedia etc platforms.
+              </p>
+            </div>
           </div>
           <div className="text-black w-full glassBackground"></div>
         </article>
-        {/* <article className="h-screen"></article> */}
       </div>
-      {/* <article className="h-screen"></article> */}
     </>
   );
 }

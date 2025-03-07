@@ -25,6 +25,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-audiowide);
+  width: 100%;
 }
 
 .highlighted-text:before {
@@ -60,8 +61,8 @@ body {
 }
 
 .glassBackground {
-  background: rgba(255, 255, 255, 0.14);
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  /* border-radius: 0; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(20px);
