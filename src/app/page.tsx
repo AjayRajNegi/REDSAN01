@@ -16,7 +16,7 @@ export default function Home() {
           transition={{ duration: 8 }}
           className="bg-black w-full h-[50%] First"
         ></motion.div>
-        <div className="fixed  bg-red-100 top-0 w-full h-[100dvh] -z-10 flex items-center justify-center">
+        <div className="fixed  bg-red-200 top-0 w-full h-[100dvh] -z-10 flex items-center justify-center">
           <MainText />
           <motion.div
             initial={{ opacity: 0 }}
@@ -24,18 +24,29 @@ export default function Home() {
             transition={{ delay: 8 }}
             className="absolute top-0 left-0 w-full"
           >
-            <section className="flex flex-col md:flex-row w-full justify-center gap-2 mt-1">
-              <div className="w-full max-h-[100px] md:w-[39%] bg-black rounded-2xl overflow-hidden">
+            <section className="flex flex-col md:flex-row w-full gap-1 md:gap-0 justify-center mt-1">
+              <div className=" w-[98%] max-h-[90px] md:w-[40%] bg-black rounded-2xl overflow-hidden mx-auto">
                 <Navbar />
               </div>
-              <div className="w-full md:w-[59%]">
-                <div className="h-[50px] bg-black rounded-2xl flex items-center justify-around">
+              <div className="w-[98%] mx-auto md:w-[59%]">
+                <div className="h-[40px] bg-black rounded-2xl flex items-center justify-around">
                   <span>Work</span> <span>About</span>
                   <span>Services</span>
                 </div>
-                <div className="mt-1 h-[400px] bg-black rounded-2xl">video</div>
+                <div className="mt-1 h-[200px] md:h-[500px] bg-red-500 rounded-2xl"></div>
               </div>
             </section>
+            <div className="grid w-[98%] mx-auto justify-between mt-5 sm:grid-cols-3 ">
+              <p className="text-black col-span-full md:col-span-1 text-4xl md:text-base">
+                Land of digital aesthetics
+              </p>
+              <p className="text-black">
+                Place where well-crafted web projects are born.
+              </p>
+              <p className="text-black">
+                We provide end-to-end development of services.
+              </p>
+            </div>
           </motion.div>
         </div>
         <motion.div
