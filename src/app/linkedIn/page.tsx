@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 export default function LinkedIn() {
   return (
     <>
-      <div className="bg-gray-100 pt-1">
+      <div className="bg-gray-200 pt-1">
         <section className="h-[100vh]">
           <section className="flex flex-col md:flex-row w-full gap-1 md:gap-0 justify-center ">
             <div className="w-[98%] md:w-[40%] mx-auto">
@@ -44,49 +44,78 @@ export default function LinkedIn() {
           </div>
         </section>
         <article className="sticky top-[150px] bg-transparent h-[100vh] ">
-          <div className=" text-black w-[50%] mx-auto">
-            <h4 className="text-center text-xs">OUR MISSION</h4>
+          <div className=" text-black  w-[65%] md:w-[50%] mx-auto">
+            <h4 className="text-center text-xs">WHY LINKEDIN?</h4>
             <p className="text-center text-xl md:text-3xl font-semibold mt-5">
-              WE TAKE CARE OF EVERYTHING THAT MAKES YOUR BRAND THE FIRST CHOICE
-              IN YOUR INDUSTRY
+              LinkdIn is the world's largest professional network, providing
+              vast opportunities for career growth, industry networking, and
+              business expansion.
             </p>
           </div>
         </article>
-
-        <article className="h-[400vh] md:h-[500vh] bg-transparent relative justify-items-center">
+        {/* LinkedIn Benefit Cards */}
+        <article className="h-[370vh] md:h-[500vh] bg-transparent relative justify-items-center">
           <div className="text-black justify-items-center">
             <div
               className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] rounded-md"
               style={{
                 backgroundImage: `url('/web.jpg')`,
                 backgroundSize: "cover",
-                backgroundPositionX: "-100px",
+                backgroundPositionX: "right",
               }}
             >
-              <h3 className="p-4 pt-10 text-2xl text-white">
-                Website Building
-              </h3>
+              <h3 className="p-4 pt-10 text-3xl text-white">Online Presence</h3>
               <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
-                Structuring websites for better optimized user interface with
-                SEO to boost visibility and conversions for sales driven and
-                brand awareness looking clients.
+                Strengthen professional credibility by maintaining an updated
+                LinkedIn profile, showcasing skills, experiences, and
+                achievements to attract potential employers and collaborators.
               </p>
             </div>
             <div
               className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
               style={{
-                backgroundImage: `url('/social.jpg')`,
+                backgroundImage: `url('/job.jpg')`,
+                backgroundSize: "cover",
+                backgroundPositionX: "center",
+                backgroundPositionY: "100px",
+              }}
+            >
+              <h3 className="m-4 pt-10 text-3xl text-white  ">Job Search</h3>
+              <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
+                Enhance job search efficiency by leveraging LinkedIn’s job
+                listings, networking opportunities, and recruiter connections to
+                explore new career prospects and growth opportunities.
+              </p>
+            </div>
+            <div
+              className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
+              style={{
+                backgroundImage: `url('/brand.jpg')`,
                 backgroundSize: "cover",
                 backgroundPositionX: "center",
               }}
             >
-              <h3 className="m-4 pt-10 text-2xl text-white  ">
-                Social Media Handling
-              </h3>
+              <h3 className="p-4 pt-10 text-2xl text-white">Brand Marketing</h3>
               <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
-                Creating and managing social media accounts for content
-                visibility to a wider and right audience boost brand repo among
-                its target audience and socializing professionally.
+                Gain expertise in personal and corporate brand marketing by
+                learning strategies to enhance visibility, credibility, and
+                engagement within your industry.
+              </p>
+            </div>
+            <div
+              className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
+              style={{
+                backgroundImage: `url('/networking.jpg')`,
+                backgroundSize: "cover",
+                backgroundPositionX: "center",
+                backgroundPositionY: "center",
+              }}
+            >
+              <h3 className="p-4 pt-10 text-2xl text-white">Networking</h3>
+              <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
+                Engage with industry leaders, recruiters, and professionals by
+                joining relevant groups, participating in discussions, and
+                building meaningful connections for career advancement.
               </p>
             </div>
             <div
@@ -101,52 +130,34 @@ export default function LinkedIn() {
                 Content Creation
               </h3>
               <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
-                Taking photoshoots and video shoots with cool edits to get the
-                viewers the content they are looking for and the clients who
-                want themselves to be looked at the online platforms.
-              </p>
-            </div>
-            <div
-              className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
-              style={{
-                backgroundImage: `url('/seo.jpg')`,
-                backgroundSize: "cover",
-                backgroundPositionX: "center",
-                backgroundPositionY: "center",
-              }}
-            >
-              <h3 className="p-4 pt-10 text-2xl text-white">
-                SEO and Google Rankings
-              </h3>
-              {/* <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
-                We have lots of options if you want to get your websites built,
-                we believe in making the best customized websites according to
-                the need of the client. it ranges from 20k- 75k based on the
-                level of work and features one would like to incur in their
-                websites. You get along the SEO and content making services only
-                @10k.
-              </p> */}
-            </div>
-            <div
-              className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
-              style={{
-                backgroundImage: `url('/pr.jpg')`,
-                backgroundSize: "cover",
-                backgroundPositionX: "center",
-              }}
-            >
-              <h3 className="p-4 pt-10 text-2xl text-black">PR and Awards</h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-black glassBackground rounded-md">
-                Greeting your company in relevant awards and CEO in relevant
-                coverages across the country, eg- Business World, Entrepreneurs
-                Today, Afaqs, Wikipedia etc platforms.
+                Learn content creation techniques, including article writing and
+                post engagement, to boost visibility, establish thought
+                leadership, and expand your professional reach.
               </p>
             </div>
           </div>
           <div className="text-black w-full glassBackground"></div>
         </article>
+
+        <div className=" h-[20vh] w-full">
+          <h1 className="text-black text-3xl md:text-5xl font-semibold">
+            <span className="text-5xl md:text-7xl">M</span>ODULE <br />
+            <span className="text-5xl md:text-7xl">S</span>
+            TRUCTURE
+          </h1>
+        </div>
       </div>
-      <article className="h-[100vh]"></article>
+      <article className="h-[100vh]">
+        <section
+          className=" flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[8vw] module-section mt-[16px]"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
+          <div className="bg-white min-w-[80vw] md:min-w-[700px] h-[500px] md:h-[300px] scroll-snap-align start"></div>
+          <div className="bg-white w-[100px] md:min-w-[700px] scroll-snap-align start"></div>
+          <div className="bg-white min-w-[700px] h-[300px] scroll-snap-align start"></div>
+          <div className="bg-white min-w-[700px] h-[300px] scroll-snap-align start"></div>
+        </section>
+      </article>
     </>
   );
 }
