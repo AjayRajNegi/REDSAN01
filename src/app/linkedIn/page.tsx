@@ -47,9 +47,9 @@ export default function LinkedIn() {
           <div className=" text-black  w-[65%] md:w-[50%] mx-auto">
             <h4 className="text-center text-xs">WHY LINKEDIN?</h4>
             <p className="text-center text-xl md:text-3xl font-semibold mt-5">
-              LinkdIn is the world's largest professional network, providing
-              vast opportunities for career growth, industry networking, and
-              business expansion.
+              LinkdIn is the world&apos;s largest professional network,
+              providing vast opportunities for career growth, industry
+              networking, and business expansion.
             </p>
           </div>
         </article>
@@ -82,7 +82,7 @@ export default function LinkedIn() {
             >
               <h3 className="m-4 pt-10 text-3xl text-white  ">Job Search</h3>
               <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
-                Enhance job search efficiency by leveraging LinkedIn's job
+                Enhance job search efficiency by leveraging LinkedIn&apos;s job
                 listings, networking opportunities, and recruiter connections to
                 explore new career prospects and growth opportunities.
               </p>
