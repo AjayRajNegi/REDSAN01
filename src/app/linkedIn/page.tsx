@@ -82,7 +82,7 @@ export default function LinkedIn() {
             >
               <h3 className="m-4 pt-10 text-3xl text-white  ">Job Search</h3>
               <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
-                Enhance job search efficiency by leveraging LinkedIn’s job
+                Enhance job search efficiency by leveraging LinkedIn's job
                 listings, networking opportunities, and recruiter connections to
                 explore new career prospects and growth opportunities.
               </p>
