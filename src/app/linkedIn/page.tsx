@@ -140,22 +140,43 @@ export default function LinkedIn() {
         </article>
 
         <div className=" h-[20vh] w-full">
-          <h1 className="text-black text-3xl md:text-5xl font-semibold">
-            <span className="text-5xl md:text-7xl">M</span>ODULE <br />
-            <span className="text-5xl md:text-7xl">S</span>
+          <h1 className="text-black text-4xl md:text-5xl font-semibold">
+            <span className="text-6xl md:text-7xl">M</span>ODULE <br />
+            <span className="text-6xl md:text-7xl">S</span>
             TRUCTURE
           </h1>
         </div>
       </div>
       <article className="h-[100vh]">
         <section
-          className=" flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[8vw] module-section mt-[16px]"
+          className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[8vw] module-section mt-[50px]"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          <div className="bg-white min-w-[80vw] md:min-w-[700px] h-[500px] md:h-[300px] scroll-snap-align start"></div>
-          <div className="bg-white w-[100px] md:min-w-[700px] scroll-snap-align start"></div>
-          <div className="bg-white min-w-[700px] h-[300px] scroll-snap-align start"></div>
-          <div className="bg-white min-w-[700px] h-[300px] scroll-snap-align start"></div>
+          <div className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[500px] md:h-[300px] scroll-snap-align rounded-2xl flex flex-col md:flex-row items-center justify-evenly ">
+            <div className="w-[90%] md:w-[55%] h-[40%] md:h-[80%] rounded-2xl relative overflow-hidden">
+              <Image
+                src="/brand.jpg"
+                fill={true}
+                layout="fill"
+                objectFit="cover"
+                alt="brand"
+              />
+            </div>
+            <div className="w-[90%] md:w-[35%] h-[50%] md:h-[95%] bg-red-600">
+              <h3>Job Search</h3>
+              <p>
+                Optimizing your LinkedIn profile is essential to attract users.
+                Utilize LinkedIn job alerts to stay updated on relevant job
+                opportunities.
+              </p>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[500px] md:h-[300px] scroll-snap-align start rounded-2xl flex flex-col md:flex-row items-center justify-around">
+            <div className="w-[50%] h-[80%] rounded-2xl"></div>
+            <div className="w-[40%] bg-red-600 ">Hello</div>
+          </div>
         </section>
       </article>
     </>
