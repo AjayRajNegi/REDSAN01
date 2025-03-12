@@ -1,6 +1,18 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 
+const module = [
+  {
+    id: 1,
+    module_title: "Job Search",
+    module_desc:
+      "Utilize LinkedIn job alerts to stay updated on relevant job opportunities.",
+    module_time: "3 Weeks",
+    module_credits: "3 Credits",
+    module_image: "/brand.jpg",
+  },
+];
+
 export default function LinkedIn() {
   return (
     <>
@@ -65,7 +77,7 @@ export default function LinkedIn() {
               }}
             >
               <h3 className="p-4 pt-10 text-3xl text-white">Online Presence</h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
+              <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md ">
                 Strengthen professional credibility by maintaining an updated
                 LinkedIn profile, showcasing skills, experiences, and
                 achievements to attract potential employers and collaborators.
@@ -138,7 +150,7 @@ export default function LinkedIn() {
           </div>
           <div className="text-black w-full glassBackground"></div>
         </article>
-
+        {/* Module Structure */}
         <div className=" h-[20vh] w-full">
           <h1 className="text-black text-4xl md:text-5xl font-semibold">
             <span className="text-6xl md:text-7xl">M</span>ODULE <br />
@@ -147,35 +159,139 @@ export default function LinkedIn() {
           </h1>
         </div>
       </div>
+
       <article className="h-[100vh]">
         <section
           className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[8vw] module-section mt-[50px]"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          <div className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[500px] md:h-[300px] scroll-snap-align rounded-2xl flex flex-col md:flex-row items-center justify-evenly ">
+          {/* Individual Module Cards */}
+          {module.map((item, index) => (
+            <div
+              className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[450px] md:h-[300px] scroll-snap-align rounded-2xl flex flex-col md:flex-row items-center justify-evenly"
+              key={index}
+            >
+              {/* Left */}
+              <div className="w-[90%] md:w-[55%] h-[40%] md:h-[80%] rounded-2xl relative overflow-hidden">
+                <Image
+                  src={item.module_image}
+                  fill={true}
+                  layout="fill"
+                  objectFit="cover"
+                  alt="brand"
+                />
+              </div>
+              {/* Right */}
+              <div className="w-[90%] md:w-[35%] min-h-[50%] md:min-h-[80%] flex flex-col ">
+                <h3 className="text-black text-lg font-[500]">
+                  {item.module_title}
+                </h3>
+                <p className="overflow-hidden whitespace-normal text-gray-700 text-xs mt-2 leading-5">
+                  {item.module_desc}
+                </p>
+                <div className="grid text-black grid-cols-2 mt-5">
+                  <span className="flex text-gray-700 text-xs mt-2 leading-5 gap-1">
+                    <Image src="/week.png" width={20} height={20} alt="week" />
+                    {item.module_time}
+                  </span>
+                  <span className="flex text-gray-700 text-xs mt-2 leading-5 -m-8 justify-center gap-1">
+                    <div className="h-[20px] w-[20px] relative">
+                      <Image
+                        src="/live.png"
+                        fill={true}
+                        layout="fill"
+                        objectFit="contain"
+                        alt="week"
+                      />
+                    </div>
+                    Live and Recorded
+                  </span>
+                  <span className="flex text-gray-700 text-xs mt-2 leading-5 gap-1">
+                    <Image
+                      src="/credits.png"
+                      width={20}
+                      height={20}
+                      alt="week"
+                    />
+                    {item.module_credits}
+                  </span>
+                </div>
+                {/* Instructor */}
+                <div className="flex gap-1 items-center mt-5">
+                  <Image
+                    src="/instructor.jpg"
+                    width={50}
+                    height={50}
+                    alt="instructor"
+                    className="rounded-[50%] border-2 border-gray-100"
+                  />
+
+                  <div className="text-gray-800">
+                    <p className="text-xs">Sankalp</p>
+                    <p className="text-xs font-medium">Founder, RedSan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+
+          <div className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[500px] md:h-[300px] scroll-snap-align rounded-2xl flex flex-col md:flex-row items-center justify-evenly">
+            {/* Left */}
             <div className="w-[90%] md:w-[55%] h-[40%] md:h-[80%] rounded-2xl relative overflow-hidden">
               <Image
-                src="/brand.jpg"
+                src="/content.jpg"
                 fill={true}
                 layout="fill"
                 objectFit="cover"
                 alt="brand"
               />
             </div>
-            <div className="w-[90%] md:w-[35%] h-[50%] md:h-[95%] bg-red-600">
-              <h3>Job Search</h3>
-              <p>
-                Optimizing your LinkedIn profile is essential to attract users.
+            {/* Right */}
+            <div className="w-[90%] md:w-[35%] min-h-[50%] md:min-h-[80%] flex flex-col ">
+              <h3 className="text-black text-lg font-[500]">Job Search</h3>
+              <p className="overflow-hidden whitespace-normal text-gray-700 text-xs mt-2 leading-5">
+                {/* Optimizing your LinkedIn profile is essential to attract users. */}
                 Utilize LinkedIn job alerts to stay updated on relevant job
                 opportunities.
               </p>
-              <div></div>
-              <div></div>
+              <div className="grid text-black grid-cols-2 mt-5">
+                <span className="flex text-gray-700 text-xs mt-2 leading-5 gap-1">
+                  <Image src="/week.png" width={20} height={20} alt="week" />3
+                  Weeks
+                </span>
+                <span className="flex text-gray-700 text-xs mt-2 leading-5 -m-8 justify-center gap-1">
+                  <div className="h-[20px] w-[20px] relative">
+                    <Image
+                      src="/live.png"
+                      fill={true}
+                      layout="fill"
+                      objectFit="contain"
+                      alt="week"
+                    />
+                  </div>
+                  Live and Recorded
+                </span>
+                <span className="flex text-gray-700 text-xs mt-2 leading-5 gap-1">
+                  <Image src="/credits.png" width={20} height={20} alt="week" />
+                  3 Credits
+                </span>
+              </div>
+              {/* Instructor */}
+              <div className="flex gap-1 items-center mt-10 md:mt-5">
+                <Image
+                  src="/instructor.jpg"
+                  width={50}
+                  height={50}
+                  alt="instructor"
+                  className="rounded-[50%] border-2 border-gray-100"
+                />
+
+                <div className="text-gray-800">
+                  <p className="text-xs">Sankalp</p>
+                  <p className="text-xs font-medium">Founder, RedSan</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[500px] md:h-[300px] scroll-snap-align start rounded-2xl flex flex-col md:flex-row items-center justify-around">
-            <div className="w-[50%] h-[80%] rounded-2xl"></div>
-            <div className="w-[40%] bg-red-600 ">Hello</div>
           </div>
         </section>
       </article>
