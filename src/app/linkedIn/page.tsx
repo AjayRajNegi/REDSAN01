@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 
-const module = [
+const moduleData = [
   {
     id: 1,
     module_title: "Job Search",
@@ -166,18 +166,17 @@ export default function LinkedIn() {
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {/* Individual Module Cards */}
-          {module.map((item, index) => (
+          {moduleData.map((item, index) => (
             <div
               className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[450px] md:h-[300px] scroll-snap-align rounded-2xl flex flex-col md:flex-row items-center justify-evenly"
               key={index}
             >
               {/* Left */}
-              <div className="w-[90%] md:w-[55%] h-[40%] md:h-[80%] rounded-2xl relative overflow-hidden">
+              <div className="w-[90%] md:w-[55%] h-[40%] md:h-[80%] rounded-2xl relative overflow-hidden object-cover">
                 <Image
                   src={item.module_image}
                   fill={true}
                   layout="fill"
-                  objectFit="cover"
                   alt="brand"
                 />
               </div>
