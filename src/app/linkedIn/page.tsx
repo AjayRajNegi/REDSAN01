@@ -268,8 +268,8 @@ export default function LinkedIn() {
           <div className="text-black w-full glassBackground"></div>
         </article>
         {/* Module Structure */}
-        <div className=" h-[20vh] w-full">
-          <h1 className="text-black text-4xl md:text-5xl font-semibold">
+        <div className=" h-[20vh] w-full flex items-center bg-black">
+          <h1 className="text-gray-100 text-4xl md:text-5xl font-semibold">
             <span className="text-6xl md:text-7xl">M</span>ODULE <br />
             <span className="text-6xl md:text-7xl">S</span>
             TRUCTURE
@@ -289,11 +289,12 @@ export default function LinkedIn() {
               key={index}
             >
               {/* Left */}
-              <div className="w-[90%] md:w-[55%] h-[40%] md:h-[80%] rounded-2xl relative overflow-hidden object-cover">
+              <div className="w-[90%] md:w-[55%] h-[40%] md:h-[80%] rounded-2xl relative overflow-hidden">
                 <Image
                   src={item.module_image}
                   fill={true}
                   layout="fill"
+                  className="object-cover"
                   alt="brand"
                 />
               </div>
@@ -316,7 +317,7 @@ export default function LinkedIn() {
                         src="/live.png"
                         fill={true}
                         layout="fill"
-                        objectFit="contain"
+                        className="object-cover"
                         alt="week"
                       />
                     </div>
