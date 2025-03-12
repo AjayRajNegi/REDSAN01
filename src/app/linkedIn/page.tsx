@@ -6,10 +6,127 @@ const moduleData = [
     id: 1,
     module_title: "Job Search",
     module_desc:
-      "Utilize LinkedIn job alerts to stay updated on relevant job opportunities.",
+      "Optimize your profile, use job alerts, and network with recruiters to find job opportunities.",
     module_time: "3 Weeks",
     module_credits: "3 Credits",
     module_image: "/brand.jpg",
+  },
+  {
+    id: 2,
+    module_title: "Hiring Talent",
+    module_desc:
+      "Use LinkedIn Recruiter, assess candidate profiles, and leverage referrals to hire top talent.",
+    module_time: "3 Weeks",
+    module_credits: "3 Credits",
+    module_image: "/content.jpg",
+  },
+  {
+    id: 3,
+    module_title: "Retaining Existing Employees",
+    module_desc:
+      "Build an employer brand, engage employees, and use LinkedIn Learning to improve retention.",
+    module_time: "4 Weeks",
+    module_credits: "4 Credits",
+    module_image: "/job.jpg",
+  },
+  {
+    id: 4,
+    module_title: "Brand Marketing",
+    module_desc:
+      "Create a business page, develop content strategy, and use LinkedIn Ads for brand visibility.",
+    module_time: "3 Weeks",
+    module_credits: "3 Credits",
+    module_image: "/networking.jpg",
+  },
+  {
+    id: 5,
+    module_title: "Personal Branding Strategies",
+    module_desc:
+      "Optimize your profile, share industry insights, and engage with thought leaders to build authority.",
+    module_time: "3 Weeks",
+    module_credits: "3 Credits",
+    module_image: "/social.jpg",
+  },
+  {
+    id: 6,
+    module_title: "Lead Generation",
+    module_desc:
+      "Use search filters, send personalized outreach messages, and engage in LinkedIn groups for leads.",
+    module_time: "4 Weeks",
+    module_credits: "4 Credits",
+    module_image: "/web.jpg",
+  },
+  {
+    id: 7,
+    module_title: "Profile Optimization for Visibility",
+    module_desc:
+      "Use a professional photo, craft a compelling ‘About’ section, and add featured content.",
+    module_time: "2 Weeks",
+    module_credits: "2 Credits",
+    module_image: "/brand.jpg",
+  },
+  {
+    id: 8,
+    module_title: "Creating Textual & Visual Content",
+    module_desc:
+      "Write engaging posts, use images and videos, and follow trending topics for visibility.",
+    module_time: "3 Weeks",
+    module_credits: "3 Credits",
+    module_image: "/content.jpg",
+  },
+  {
+    id: 9,
+    module_title: "Scheduling Content Effectively",
+    module_desc:
+      "Use scheduling tools, plan a content calendar, and identify the best posting times.",
+    module_time: "2 Weeks",
+    module_credits: "2 Credits",
+    module_image: "/job.jpg",
+  },
+  {
+    id: 10,
+    module_title: "Engaging with Others",
+    module_desc:
+      "Comment meaningfully, connect with professionals, and use groups to expand your network.",
+    module_time: "3 Weeks",
+    module_credits: "3 Credits",
+    module_image: "/networking.jpg",
+  },
+  {
+    id: 11,
+    module_title: "Drafting Cold Messages",
+    module_desc:
+      "Craft personalized cold messages, follow LinkedIn outreach best practices, and implement follow-ups.",
+    module_time: "2 Weeks",
+    module_credits: "2 Credits",
+    module_image: "/web.jpg",
+  },
+  {
+    id: 12,
+    module_title: "Automating Chats & Outreach",
+    module_desc:
+      "Use LinkedIn automation tools, set up message sequences, and track analytics for optimization.",
+    module_time: "3 Weeks",
+    module_credits: "3 Credits",
+    module_image: "/brand.jpg",
+  },
+  {
+    id: 13,
+    module_title: "Creating a Company Page",
+    module_desc:
+      "Optimize a LinkedIn business page, gain followers, and post updates to increase engagement.",
+    module_time: "3 Weeks",
+    module_credits: "3 Credits",
+    module_image: "/content.jpg",
+  },
+  {
+    id: 14,
+    module_title: "Using LinkedIn Sales Navigator",
+    module_desc:
+      "Leverage Sales Navigator, apply advanced filters, and use InMail for direct client communication.",
+    module_time: "4 Weeks",
+    module_credits: "4 Credits",
+    module_image: "/web.jpg",
   },
 ];
 
@@ -168,7 +285,7 @@ export default function LinkedIn() {
           {/* Individual Module Cards */}
           {moduleData.map((item, index) => (
             <div
-              className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[450px] md:h-[300px] scroll-snap-align rounded-2xl flex flex-col md:flex-row items-center justify-evenly"
+              className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[500px] md:h-[300px] scroll-snap-align rounded-2xl flex flex-col md:flex-row items-center justify-evenly"
               key={index}
             >
               {/* Left */}
@@ -182,7 +299,7 @@ export default function LinkedIn() {
               </div>
               {/* Right */}
               <div className="w-[90%] md:w-[35%] min-h-[50%] md:min-h-[80%] flex flex-col ">
-                <h3 className="text-black text-lg font-[500]">
+                <h3 className="text-black text-lg font-[500] whitespace-normal">
                   {item.module_title}
                 </h3>
                 <p className="overflow-hidden whitespace-normal text-gray-700 text-xs mt-2 leading-5">
