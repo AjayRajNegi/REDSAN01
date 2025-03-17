@@ -27,6 +27,9 @@ body {
   font-family: var(--font-audiowide);
   width: 100%;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 .highlighted-text:before {
   content: attr(data-text);

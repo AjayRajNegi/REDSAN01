@@ -183,14 +183,14 @@ export default function LinkedIn() {
           </div>
         </article>
         {/* LinkedIn Benefit Cards */}
-        <article className="h-[370vh] md:h-[500vh] bg-transparent relative justify-items-center">
-          <div className="text-black justify-items-center">
+        <article className="h-[370dvh] md:h-[500dvh] bg-transparent relative justify-items-center">
+          <div className="text-black justify-center">
             <div
               className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] rounded-md"
               style={{
                 backgroundImage: `url('/web.jpg')`,
                 backgroundSize: "cover",
-                backgroundPositionX: "right",
+                backgroundPosition: "right center",
               }}
             >
               <h3 className="p-4 pt-10 text-3xl text-white">Online Presence</h3>
@@ -205,7 +205,7 @@ export default function LinkedIn() {
               style={{
                 backgroundImage: `url('/job.jpg')`,
                 backgroundSize: "cover",
-                backgroundPositionX: "center",
+                backgroundPosition: "right center",
                 backgroundPositionY: "100px",
               }}
             >
@@ -221,7 +221,7 @@ export default function LinkedIn() {
               style={{
                 backgroundImage: `url('/brand.jpg')`,
                 backgroundSize: "cover",
-                backgroundPositionX: "center",
+                backgroundPosition: "right center",
               }}
             >
               <h3 className="p-4 pt-10 text-2xl text-white">Brand Marketing</h3>
@@ -236,8 +236,7 @@ export default function LinkedIn() {
               style={{
                 backgroundImage: `url('/networking.jpg')`,
                 backgroundSize: "cover",
-                backgroundPositionX: "center",
-                backgroundPositionY: "center",
+                backgroundPosition: "right center",
               }}
             >
               <h3 className="p-4 pt-10 text-2xl text-white">Networking</h3>
@@ -252,7 +251,7 @@ export default function LinkedIn() {
               style={{
                 backgroundImage: `url('/content.jpg')`,
                 backgroundSize: "cover",
-                backgroundPositionX: "center",
+                backgroundPosition: "right center",
               }}
             >
               <h3 className="p-4 pt-10 text-2xl text-white">
@@ -268,8 +267,8 @@ export default function LinkedIn() {
           <div className="text-black w-full glassBackground"></div>
         </article>
         {/* Module Structure */}
-        <div className=" h-[20vh] w-full flex items-center bg-black">
-          <h1 className="text-gray-100 text-4xl md:text-5xl font-semibold">
+        <div className=" h-[20vh] w-full flex items-center bg-black ">
+          <h1 className="text-gray-100 text-4xl md:text-5xl font-semibold ">
             <span className="text-6xl md:text-7xl">M</span>ODULE <br />
             <span className="text-6xl md:text-7xl">S</span>
             TRUCTURE
@@ -277,7 +276,7 @@ export default function LinkedIn() {
         </div>
       </div>
 
-      <article className="h-[100vh]">
+      <article className="h-[80vh] md:h-[50vh]">
         <section
           className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[8vw] module-section mt-[50px]"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
@@ -311,7 +310,7 @@ export default function LinkedIn() {
                     <Image src="/week.png" width={20} height={20} alt="week" />
                     {item.module_time}
                   </span>
-                  <span className="flex text-gray-700 text-xs mt-2 leading-5 -m-8 justify-center gap-1">
+                  <span className="flex text-gray-700 text-xs mt-2 leading-5 -ml-10 md:-ml-8 justify-center gap-1 whitespace-normal">
                     <div className="h-[20px] w-[20px] relative">
                       <Image
                         src="/live.png"
