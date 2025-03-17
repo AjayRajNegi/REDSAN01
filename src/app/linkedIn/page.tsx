@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import { BouncyCardsFeatures } from "../components/BouncyCardsFeatures";
 
 const moduleData = [
   {
@@ -184,7 +185,7 @@ export default function LinkedIn() {
         </article>
         {/* LinkedIn Benefit Cards */}
         <article className="h-[370dvh] md:h-[500dvh] bg-transparent relative justify-items-center">
-          <div className="text-black justify-center">
+          <div className="text-black flex flex-col justify-center">
             <div
               className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] rounded-md"
               style={{
@@ -268,7 +269,7 @@ export default function LinkedIn() {
         </article>
         {/* Module Structure */}
         <div className=" h-[20vh] w-full flex items-center bg-black ">
-          <h1 className="text-gray-100 text-4xl md:text-5xl font-semibold ">
+          <h1 className="text-slate-200 text-4xl md:text-5xl px-4  font-semibold ">
             <span className="text-6xl md:text-7xl">M</span>ODULE <br />
             <span className="text-6xl md:text-7xl">S</span>
             TRUCTURE
@@ -278,7 +279,7 @@ export default function LinkedIn() {
 
       <article className="h-[80vh] md:h-[50vh]">
         <section
-          className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[8vw] module-section mt-[50px]"
+          className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[9vw] module-section mt-[50px]"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {/* Individual Module Cards */}
@@ -411,6 +412,8 @@ export default function LinkedIn() {
           </div>
         </section>
       </article>
+
+      <BouncyCardsFeatures />
     </>
   );
 }
