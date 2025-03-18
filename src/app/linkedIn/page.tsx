@@ -147,7 +147,7 @@ export default function LinkedIn() {
             </div>
 
             <div className="w-[98%] mx-auto md:w-[59%]">
-              <div className="h-[40px] bg-black rounded-2xl flex items-center justify-around">
+              <div className="h-[40px] bg-gray-950 text-slate-50 rounded-2xl flex items-center justify-around">
                 <span>Work</span> <span>About</span>
                 <span>Services</span>
               </div>
@@ -184,7 +184,7 @@ export default function LinkedIn() {
           </div>
         </article>
         {/* LinkedIn Benefit Cards */}
-        <article className="h-[370vh] md:h-[500vh] bg-transparent relative flex flex-col items-center">
+        <article className="h-[370vh] md:h-[500vh] relative flex flex-col items-center">
           <div className="text-black flex flex-col justify-center">
             <div
               className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] rounded-md"
@@ -272,7 +272,7 @@ export default function LinkedIn() {
           <div className="text-black w-full glassBackground"></div>
         </article>
         {/* Module Structure */}
-        <div className=" h-[20vh] w-full flex items-center bg-black ">
+        <div className="h-[20vh] w-full flex items-center bg-gray-950">
           <h1 className="text-slate-200 text-4xl md:text-5xl px-4  font-semibold ">
             <span className="text-6xl md:text-7xl">M</span>ODULE <br />
             <span className="text-6xl md:text-7xl">S</span>
@@ -283,7 +283,7 @@ export default function LinkedIn() {
 
       <article className="h-[80vh] md:h-[50vh] bg-gray-950">
         <section
-          className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[9vw] module-section mt-[50px]"
+          className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[9vw] module-section mt-[50px] bg-gray-950"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {/* Individual Module Cards */}
