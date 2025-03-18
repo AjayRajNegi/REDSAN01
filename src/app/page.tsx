@@ -37,13 +37,13 @@ export default function Home() {
               </div>
             </section>
             <div className="grid w-[98%] mx-auto justify-between mt-5 sm:grid-cols-3 ">
-              <p className="text-black col-span-full md:col-span-1 text-4xl md:text-base">
+              <p className="text-gray-950 col-span-full md:col-span-1 text-4xl md:text-base">
                 Land of digital aesthetics
               </p>
-              <p className="text-black">
+              <p className="text-gray-950">
                 Place where well-crafted web projects are born.
               </p>
-              <p className="text-black">
+              <p className="text-gray-950">
                 We provide end-to-end development of services.
               </p>
             </div>

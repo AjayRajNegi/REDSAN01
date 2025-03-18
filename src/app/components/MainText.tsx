@@ -17,7 +17,7 @@ const Titles: TitleType[] = [
 export default function MainText() {
   const ref = useRef(null);
   return (
-    <div className="relative flex h-[280px] md:h-[230px] lg-h-[250px] bg-red-200  w-full items-center justify-center overflow-hidden text-black ">
+    <div className="relative flex h-[280px] md:h-[230px] lg-h-[250px] bg-red-200  w-full items-center justify-center overflow-hidden text-gray-950 ">
       {Titles.map((data, wordIndex) => (
         <div
           key={data.key}
@@ -34,7 +34,7 @@ export default function MainText() {
                 times: [0, 0.2, 0.8, 1],
                 delay: 1 + wordIndex * 2 + charIndex * 0.05,
               }}
-              className="text-black text-center font-bold tracking-[-0.05em] text-[5rem] md:text-[10rem] lg:text-[165px]"
+              className="text-gray-950 text-center font-bold tracking-[-0.05em] text-[5rem] md:text-[10rem] lg:text-[165px]"
             >
               {char === " " ? <span>&nbsp;</span> : char}
             </motion.p>

@@ -194,8 +194,10 @@ export default function LinkedIn() {
                 backgroundPosition: "right center",
               }}
             >
-              <h3 className="p-4 pt-10 text-3xl text-white">Online Presence</h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md ">
+              <h3 className="p-4 pt-10 text-3xl text-slate-50">
+                Online Presence
+              </h3>
+              <p className="m-4 mt-0 text-xs md:text-base text-slate-50 glassBackground rounded-md ">
                 Strengthen professional credibility by maintaining an updated
                 LinkedIn profile, showcasing skills, experiences, and
                 achievements to attract potential employers and collaborators.
@@ -210,8 +212,8 @@ export default function LinkedIn() {
                 backgroundPositionY: "100px",
               }}
             >
-              <h3 className="m-4 pt-10 text-3xl text-white  ">Job Search</h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
+              <h3 className="m-4 pt-10 text-3xl text-slate-50  ">Job Search</h3>
+              <p className="m-4 mt-0 text-xs md:text-base text-slate-50 glassBackground rounded-md">
                 Enhance job search efficiency by leveraging LinkedIn&apos;s job
                 listings, networking opportunities, and recruiter connections to
                 explore new career prospects and growth opportunities.
@@ -225,8 +227,10 @@ export default function LinkedIn() {
                 backgroundPosition: "right center",
               }}
             >
-              <h3 className="p-4 pt-10 text-2xl text-white">Brand Marketing</h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
+              <h3 className="p-4 pt-10 text-2xl text-slate-50">
+                Brand Marketing
+              </h3>
+              <p className="m-4 mt-0 text-xs md:text-base text-slate-50 glassBackground rounded-md">
                 Gain expertise in personal and corporate brand marketing by
                 learning strategies to enhance visibility, credibility, and
                 engagement within your industry.
@@ -240,8 +244,8 @@ export default function LinkedIn() {
                 backgroundPosition: "right center",
               }}
             >
-              <h3 className="p-4 pt-10 text-2xl text-white">Networking</h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
+              <h3 className="p-4 pt-10 text-2xl text-slate-50">Networking</h3>
+              <p className="m-4 mt-0 text-xs md:text-base text-slate-50 glassBackground rounded-md">
                 Engage with industry leaders, recruiters, and professionals by
                 joining relevant groups, participating in discussions, and
                 building meaningful connections for career advancement.
@@ -255,10 +259,10 @@ export default function LinkedIn() {
                 backgroundPosition: "right center",
               }}
             >
-              <h3 className="p-4 pt-10 text-2xl text-white">
+              <h3 className="p-4 pt-10 text-2xl text-slate-50">
                 Content Creation
               </h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-white glassBackground rounded-md">
+              <p className="m-4 mt-0 text-xs md:text-base text-slate-50 glassBackground rounded-md">
                 Learn content creation techniques, including article writing and
                 post engagement, to boost visibility, establish thought
                 leadership, and expand your professional reach.

@@ -13,9 +13,9 @@ export const BouncyCardsFeatures = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="whitespace-nowrap rounded-lg bg-slate-900 px-4 py-2 font-medium text-white shadow-xl transition-colors hover:bg-slate-700"
+          className="whitespace-nowrap rounded-lg bg-slate-900 px-4 py-2 font-medium text-slate-400 shadow-xl transition-colors hover:bg-slate-700"
         >
-          Learn more
+          {/* Learn more */}
         </motion.button>
       </div>
       <div className="mb-4 grid grid-cols-12 gap-4">
@@ -70,7 +70,7 @@ const BounceCard = ({
   return (
     <motion.div
       whileHover={{ scale: 0.95, rotate: "-1deg" }}
-      className={`group relative min-h-[300px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 p-8 ${className}`}
+      className={`group relative min-h-[250px] cursor-pointer overflow-hidden rounded-2xl bg-slate-100 p-8 ${className}`}
     >
       {children}
     </motion.div>

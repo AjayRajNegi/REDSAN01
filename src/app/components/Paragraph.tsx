@@ -30,7 +30,7 @@ export default function Paragraph({ paragraph }: ParagraphProps) {
   return (
     <p
       ref={container}
-      className="paragraph bg-black w-full text-2xl md:text-4xl lg:text-5xl leading-3"
+      className="paragraph bg-gray-950 w-full text-2xl md:text-4xl lg:text-5xl leading-3"
     >
       {words.map((word, i) => {
         const start = i / words.length;

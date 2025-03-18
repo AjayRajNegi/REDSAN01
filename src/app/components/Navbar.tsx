@@ -1,8 +1,8 @@
 export default function Navbar() {
   return (
-    <div className="h-[100px] flex justify-between items-center  pl-2">
+    <div className="h-[100px] flex justify-between items-center text-slate-50  pl-2">
       <div>
-        <span className="text-2xl">RedSan.Studios</span>
+        <span className="text-2xl ">RedSan.Studios</span>
         <p className="text-xl font-medium">赤さん</p>
       </div>
 
