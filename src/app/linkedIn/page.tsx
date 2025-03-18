@@ -184,7 +184,7 @@ export default function LinkedIn() {
           </div>
         </article>
         {/* LinkedIn Benefit Cards */}
-        <article className="h-[370dvh] md:h-[500dvh] bg-transparent relative justify-items-center">
+        <article className="h-[370vh] md:h-[500vh] bg-transparent relative flex flex-col items-center">
           <div className="text-black flex flex-col justify-center">
             <div
               className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] rounded-md"
@@ -281,7 +281,7 @@ export default function LinkedIn() {
         </div>
       </div>
 
-      <article className="h-[80vh] md:h-[50vh]">
+      <article className="h-[80vh] md:h-[50vh] bg-gray-950">
         <section
           className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[9vw] module-section mt-[50px]"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
