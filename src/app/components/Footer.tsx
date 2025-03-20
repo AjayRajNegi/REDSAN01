@@ -15,24 +15,33 @@ export function Footer() {
         <h4 className="text-xl">Ready To Work Together?</h4>
         <h1 className="text-5xl md:text-7xl">Start a project❕</h1>
       </div>
-      <div className="h-[65%] md:h-[45%] px-[4vw] border-white border-t-2">
+      <div className="h-[65%] md:h-[45%] px-[4vw] border-white border-t-2 pt-[2vw]">
         <div className="flex justify-between">
           <div>Logo</div>
           <div>
             <p>Contact</p>
-            <p>+1 204-477-4474</p>
-            <p>hello@random.com</p>
+            <p>⚪ +1 204-477-4474</p>
+            <p>⚪ hello@random.com</p>
           </div>
           <div>
             <p>Socials</p>
             <p>
-              <a href="www.google.com">Instagram</a>
+              ⚪
+              <a href="www.google.com" className="ml-2">
+                Instagram
+              </a>
             </p>
             <p>
-              <a href="www.google.com">LinkedIn</a>
+              ⚪
+              <a href="www.google.com" className="ml-2">
+                LinkedIn
+              </a>
             </p>
             <p>
-              <a href="www.google.com">Twitter</a>
+              ⚪
+              <a href="www.google.com" className="ml-2">
+                Twitter
+              </a>
             </p>
 
             <p></p>
