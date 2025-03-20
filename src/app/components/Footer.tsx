@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <div className="h-[98vh] mt-[10vh] bg-gray-950">
+    <div className="h-[98vh] pt-[10vh] bg-gray-950">
       <div className="h-[10%] flex mx-2 gap-2">
         <div className="w-[45%] h-[90%] bg-slate-50 text-gray-950 rounded-2xl items-center sm:flex justify-between hidden">
           <span className="text-2xl ml-2">RedSan.Studios</span>
@@ -13,11 +13,11 @@ export function Footer() {
           <span>Services</span>
         </div>
       </div>
-      <div className="h-[25%] md:h-[45%] px-[4vw] py-[2vw] flex flex-col justify-between border-white border-t-2">
+      <div className="h-[25%] md:h-[45%] px-[4vw] py-[2vw] flex flex-col justify-between border-gray-400 border-t-2">
         <h4 className="text-xl">Ready To Work Together?</h4>
         <h1 className="text-5xl md:text-7xl">Start a project❕</h1>
       </div>
-      <div className="h-[65%] md:h-[45%]  border-white border-t-2 pt-[2vw] flex flex-col ">
+      <div className="h-[65%] md:h-[45%]  border-gray-400 border-t-2 pt-[2vw] flex flex-col ">
         <div className="flex justify-between flex-col md:flex-row px-[4vw]">
           <div className="bg-slate-50 h-[100px] w-[100px] relative rounded-2xl">
             <Image
@@ -55,12 +55,22 @@ export function Footer() {
 
             <p></p>
           </div>
-          <div className="text-lg">Top </div>
+          <div className="text-lg flex gap-2 items-center justify-center">
+            Top
+            <div>
+              <Image
+                src="/topArrowIcon.png"
+                height={40}
+                width={40}
+                alt="TopArrowIcon"
+              />
+            </div>
+          </div>
         </div>
         <div
-          className="w-[99%] h-[10vh] mb-4 mx-auto rounded-2xl mt-[5%] flex justify-center items-center"
+          className="mx-2 h-[10vh] mb-4 rounded-2xl mt-[5%] flex justify-center items-center"
           style={{
-            backgroundImage: `url('/web.jpg')`,
+            backgroundImage: `url('/content.jpg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
