@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <div className="h-[90vh]">
+    <div className="h-[98vh] mt-[10vh]">
       <div className="h-[10%] flex mx-2 gap-2">
         <div className="w-[45%] h-[90%] bg-slate-50 text-gray-950 rounded-2xl items-center sm:flex justify-between hidden">
           <span className="text-2xl ml-2">RedSan.Studios</span>
@@ -16,7 +16,7 @@ export function Footer() {
         <h1 className="text-5xl md:text-7xl">Start a project❕</h1>
       </div>
       <div className="h-[65%] md:h-[45%] px-[4vw] border-white border-t-2 pt-[2vw]">
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row">
           <div>Logo</div>
           <div>
             <p>Contact</p>
