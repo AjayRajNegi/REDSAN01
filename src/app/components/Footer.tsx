@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 export function Footer() {
   return (
-    <div className="h-[98vh] mt-[10vh]">
+    <div className="h-[98vh] mt-[10vh] bg-gray-950">
       <div className="h-[10%] flex mx-2 gap-2">
         <div className="w-[45%] h-[90%] bg-slate-50 text-gray-950 rounded-2xl items-center sm:flex justify-between hidden">
           <span className="text-2xl ml-2">RedSan.Studios</span>
@@ -15,16 +17,23 @@ export function Footer() {
         <h4 className="text-xl">Ready To Work Together?</h4>
         <h1 className="text-5xl md:text-7xl">Start a project❕</h1>
       </div>
-      <div className="h-[65%] md:h-[45%] px-[4vw] border-white border-t-2 pt-[2vw]">
-        <div className="flex justify-between flex-col md:flex-row">
-          <div>Logo</div>
+      <div className="h-[65%] md:h-[45%]  border-white border-t-2 pt-[2vw] flex flex-col ">
+        <div className="flex justify-between flex-col md:flex-row px-[4vw]">
+          <div className="bg-slate-50 h-[100px] w-[100px] relative rounded-2xl">
+            <Image
+              src="/RLogo.png"
+              fill={true}
+              layout="fill"
+              alt="RedSan Logo"
+            />
+          </div>
           <div>
-            <p>Contact</p>
+            <p className="text-lg pb-2">Contact</p>
             <p>⚪ +1 204-477-4474</p>
             <p>⚪ hello@random.com</p>
           </div>
           <div>
-            <p>Socials</p>
+            <p className="text-lg pb-2">Socials</p>
             <p>
               ⚪
               <a href="www.google.com" className="ml-2">
@@ -46,9 +55,18 @@ export function Footer() {
 
             <p></p>
           </div>
-          <div>Top</div>
+          <div className="text-lg">Top </div>
         </div>
-        <div></div>
+        <div
+          className="w-[99%] h-[10vh] mb-4 mx-auto rounded-2xl mt-[5%] flex justify-center items-center"
+          style={{
+            backgroundImage: `url('/web.jpg')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <p>Copyright © 2025 RedSan - All Rights Reserved</p>
+        </div>
       </div>
     </div>
   );
