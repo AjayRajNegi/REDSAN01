@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import { BouncyCardsFeatures } from "../components/BouncyCardsFeatures";
+import { Footer } from "../components/Footer";
 
 const moduleData = [
   {
@@ -283,7 +284,7 @@ export default function LinkedIn() {
 
       <article className="h-[80vh] md:h-[50vh] bg-gray-950">
         <section
-          className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[9vw] module-section mt-[50px] bg-gray-950"
+          className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[9vw] module-section pt-[50px] bg-gray-950"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {/* Individual Module Cards */}
@@ -355,69 +356,11 @@ export default function LinkedIn() {
               </div>
             </div>
           ))}
-
-          <div className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[500px] md:h-[300px] scroll-snap-align rounded-2xl flex flex-col md:flex-row items-center justify-evenly">
-            {/* Left */}
-            <div className="w-[90%] md:w-[55%] h-[40%] md:h-[80%] rounded-2xl relative overflow-hidden">
-              <Image
-                src="/content.jpg"
-                fill={true}
-                layout="fill"
-                objectFit="cover"
-                alt="brand"
-              />
-            </div>
-            {/* Right */}
-            <div className="w-[90%] md:w-[35%] min-h-[50%] md:min-h-[80%] flex flex-col ">
-              <h3 className="text-black text-lg font-[500]">Job Search</h3>
-              <p className="overflow-hidden whitespace-normal text-gray-700 text-xs mt-2 leading-5">
-                {/* Optimizing your LinkedIn profile is essential to attract users. */}
-                Utilize LinkedIn job alerts to stay updated on relevant job
-                opportunities.
-              </p>
-              <div className="grid text-black grid-cols-2 mt-5">
-                <span className="flex text-gray-700 text-xs mt-2 leading-5 gap-1">
-                  <Image src="/week.png" width={20} height={20} alt="week" />3
-                  Weeks
-                </span>
-                <span className="flex text-gray-700 text-xs mt-2 leading-5 -m-8 justify-center gap-1">
-                  <div className="h-[20px] w-[20px] relative">
-                    <Image
-                      src="/live.png"
-                      fill={true}
-                      layout="fill"
-                      objectFit="contain"
-                      alt="week"
-                    />
-                  </div>
-                  Live and Recorded
-                </span>
-                <span className="flex text-gray-700 text-xs mt-2 leading-5 gap-1">
-                  <Image src="/credits.png" width={20} height={20} alt="week" />
-                  3 Credits
-                </span>
-              </div>
-              {/* Instructor */}
-              <div className="flex gap-1 items-center mt-10 md:mt-5">
-                <Image
-                  src="/instructor.jpg"
-                  width={50}
-                  height={50}
-                  alt="instructor"
-                  className="rounded-[50%] border-2 border-gray-100"
-                />
-
-                <div className="text-gray-800">
-                  <p className="text-xs">Sankalp</p>
-                  <p className="text-xs font-medium">Founder, RedSan</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </article>
 
       <BouncyCardsFeatures />
+      <Footer />
     </>
   );
 }
