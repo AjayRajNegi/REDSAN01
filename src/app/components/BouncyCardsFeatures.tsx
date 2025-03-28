@@ -6,9 +6,9 @@ import { div } from "motion/react-client";
 export const BouncyCardsFeatures = () => {
   return (
     <div className="w-full bg-gray-950">
-      <section className="mx-auto max-w-7xl px-4 md:px-0 md:pt-[80px] py-12 text-slate-800 bg-gray-950">
+      <section className="mx-auto max-w-7xl bg-gray-950 px-4 py-12 text-slate-800 md:px-0 md:pt-[80px]">
         <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end md:px-0">
-          <h2 className="max-w-lg text-4xl font-bold md:text-5xl text-slate-300">
+          <h2 className="max-w-lg text-4xl font-bold text-slate-300 md:text-5xl">
             Grow faster with our
             <span className="text-slate-400"> all in one solution</span>
           </h2>

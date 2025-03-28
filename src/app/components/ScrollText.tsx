@@ -28,7 +28,7 @@ const ContentLine: React.FC<ContentLineProps> = ({ content }) => {
   const clipPathVal = useMotionTemplate`inset(0% ${scrollValue} 0% 0%)`;
 
   return (
-    <span className="relative overflow-hidden block" ref={contentRef}>
+    <span className="relative block overflow-hidden" ref={contentRef}>
       <motion.span
         style={{ clipPath: clipPathVal }}
         className="highlighted-text"

@@ -1,13 +1,13 @@
 export default function Navbar() {
   return (
-    <div className="h-[100px] flex justify-between items-center text-slate-50  pl-2">
+    <div className="flex h-[100px] items-center justify-between pl-2 text-slate-50">
       <div>
-        <span className="text-2xl ">RedSan.Studios</span>
+        <span className="text-2xl">RedSan.Studios</span>
         <p className="text-xl font-medium">赤さん</p>
       </div>
 
-      <span className="text-xs hidden md:block">digitaL agencY</span>
-      <div className="w-[140px] h-[90px] overflow-hidden object-fill relative ">
+      <span className="hidden text-xs md:block">digitaL agencY</span>
+      <div className="relative h-[90px] w-[140px] overflow-hidden object-fill">
         <img
           src="/nav.gif"
           alt=""

@@ -137,22 +137,27 @@ export default function LinkedIn() {
     <>
       <div className="bg-gray-200 pt-1">
         <section className="h-[100vh]">
-          <section className="flex flex-col md:flex-row w-full gap-1 md:gap-0 justify-center ">
-            <div className="w-[98%] md:w-[40%] mx-auto">
-              <div className=" max-h-[90px]  bg-black rounded-2xl overflow-hidden ">
+          <section className="flex w-full flex-col justify-center gap-1 md:flex-row md:gap-0">
+            <div className="mx-auto w-[98%] md:w-[40%]">
+              <div className="max-h-[90px] overflow-hidden rounded-2xl bg-black">
                 <Navbar />
               </div>
-              <h2 className="text-black hidden md:block text-5xl md:text-6xl font-semibold mt-10 -ml-1 ">
+              <h2 className="-ml-1 mt-20 hidden text-5xl font-semibold text-black md:block md:text-6xl">
                 LinkedIn <br /> Learning
               </h2>
+              <h4 className="mt-10 hidden text-lg font-semibold text-black md:block md:text-lg">
+                There was a great saying, that sitting idle would not get you
+                chocolate from your MOM but working hard and making a great
+                impression can win you a bike from your DAD.
+              </h4>
             </div>
 
-            <div className="w-[98%] mx-auto md:w-[59%]">
-              <div className="h-[40px] bg-gray-950 text-slate-50 rounded-2xl flex items-center justify-around">
+            <div className="mx-auto w-[98%] md:w-[59%]">
+              <div className="flex h-[40px] items-center justify-around rounded-2xl bg-gray-950 text-slate-50">
                 <span>Work</span> <span>About</span>
                 <span>Services</span>
               </div>
-              <div className="mt-1 relative h-[200px] md:h-[500px] rounded-2xl overflow-hidden">
+              <div className="relative mt-1 h-[200px] overflow-hidden rounded-2xl md:h-[500px]">
                 <Image
                   src="/linkdInMain.png"
                   objectFit="cover"
@@ -160,24 +165,26 @@ export default function LinkedIn() {
                   alt="main"
                 />
               </div>
-              <h2 className="text-black md:hidden text-5xl md:text-6xl font-semibold mt-16 -ml-1">
+              <h2 className="-ml-1 mt-16 text-5xl font-semibold text-black md:hidden md:text-6xl">
                 LinkedIn <br /> Learning
               </h2>
             </div>
           </section>
           <div className="ml-1">
-            <h4 className="text-lg md:text-2xl text-black font-semibold mt-16">
-              HI, WE ARE A SOCIAL MEDIA & BRANDING AGENCY <br /> WE BARK AND
-              BITE TOO, GENERATE RESULTS THAT MAKES HISTORY!
+            <h4 className="mt-16 text-lg font-semibold text-black md:text-2xl">
+              Witness how small changes can make your profile shine and bright !
+              <br />
+              Learning linkedin with AI integration can be your next smart
+              choice after BITCOIN
             </h4>
 
             <hr style={{ border: "1px solid gray" }} className="mr-1 mt-5" />
           </div>
         </section>
-        <article className="sticky top-[150px] bg-transparent h-[100vh] ">
-          <div className=" text-black  w-[65%] md:w-[50%] mx-auto">
+        <article className="sticky top-[150px] h-[100vh] bg-transparent">
+          <div className="mx-auto w-[65%] text-black md:w-[50%]">
             <h4 className="text-center text-xs">WHY LINKEDIN?</h4>
-            <p className="text-center text-xl md:text-3xl font-semibold mt-5">
+            <p className="mt-5 text-center text-xl font-semibold md:text-3xl">
               LinkdIn is the world&apos;s largest professional network,
               providing vast opportunities for career growth, industry
               networking, and business expansion.
@@ -185,10 +192,10 @@ export default function LinkedIn() {
           </div>
         </article>
         {/* LinkedIn Benefit Cards */}
-        <article className="h-[370vh] md:h-[500vh] relative flex flex-col items-center">
-          <div className="text-black flex flex-col justify-center">
+        <article className="relative flex h-[370vh] flex-col items-center md:h-[500vh]">
+          <div className="flex flex-col justify-center text-black">
             <div
-              className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] rounded-md"
+              className="h-[450px] w-[300px] rounded-md md:h-[600px] md:w-[450px]"
               style={{
                 backgroundImage: `url('/web.jpg')`,
                 backgroundSize: "cover",
@@ -198,14 +205,14 @@ export default function LinkedIn() {
               <h3 className="p-4 pt-10 text-3xl text-slate-50">
                 Online Presence
               </h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-slate-50 glassBackground rounded-md ">
+              <p className="glassBackground m-4 mt-0 rounded-md text-xs text-slate-50 md:text-base">
                 Strengthen professional credibility by maintaining an updated
                 LinkedIn profile, showcasing skills, experiences, and
                 achievements to attract potential employers and collaborators.
               </p>
             </div>
             <div
-              className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
+              className="mt-8 h-[450px] w-[300px] rounded-md bg-black md:h-[600px] md:w-[450px]"
               style={{
                 backgroundImage: `url('/job.jpg')`,
                 backgroundSize: "cover",
@@ -213,15 +220,15 @@ export default function LinkedIn() {
                 backgroundPositionY: "100px",
               }}
             >
-              <h3 className="m-4 pt-10 text-3xl text-slate-50  ">Job Search</h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-slate-50 glassBackground rounded-md">
+              <h3 className="m-4 pt-10 text-3xl text-slate-50">Job Search</h3>
+              <p className="glassBackground m-4 mt-0 rounded-md text-xs text-slate-50 md:text-base">
                 Enhance job search efficiency by leveraging LinkedIn&apos;s job
                 listings, networking opportunities, and recruiter connections to
                 explore new career prospects and growth opportunities.
               </p>
             </div>
             <div
-              className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
+              className="mt-8 h-[450px] w-[300px] rounded-md bg-black md:h-[600px] md:w-[450px]"
               style={{
                 backgroundImage: `url('/brand.jpg')`,
                 backgroundSize: "cover",
@@ -231,14 +238,14 @@ export default function LinkedIn() {
               <h3 className="p-4 pt-10 text-2xl text-slate-50">
                 Brand Marketing
               </h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-slate-50 glassBackground rounded-md">
+              <p className="glassBackground m-4 mt-0 rounded-md text-xs text-slate-50 md:text-base">
                 Gain expertise in personal and corporate brand marketing by
                 learning strategies to enhance visibility, credibility, and
                 engagement within your industry.
               </p>
             </div>
             <div
-              className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
+              className="mt-8 h-[450px] w-[300px] rounded-md bg-black md:h-[600px] md:w-[450px]"
               style={{
                 backgroundImage: `url('/networking.jpg')`,
                 backgroundSize: "cover",
@@ -246,14 +253,14 @@ export default function LinkedIn() {
               }}
             >
               <h3 className="p-4 pt-10 text-2xl text-slate-50">Networking</h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-slate-50 glassBackground rounded-md">
+              <p className="glassBackground m-4 mt-0 rounded-md text-xs text-slate-50 md:text-base">
                 Engage with industry leaders, recruiters, and professionals by
                 joining relevant groups, participating in discussions, and
                 building meaningful connections for career advancement.
               </p>
             </div>
             <div
-              className="w-[300px] md:w-[450px] h-[450px] md:h-[600px] bg-black rounded-md mt-8 "
+              className="mt-8 h-[450px] w-[300px] rounded-md bg-black md:h-[600px] md:w-[450px]"
               style={{
                 backgroundImage: `url('/content.jpg')`,
                 backgroundSize: "cover",
@@ -263,18 +270,18 @@ export default function LinkedIn() {
               <h3 className="p-4 pt-10 text-2xl text-slate-50">
                 Content Creation
               </h3>
-              <p className="m-4 mt-0 text-xs md:text-base text-slate-50 glassBackground rounded-md">
+              <p className="glassBackground m-4 mt-0 rounded-md text-xs text-slate-50 md:text-base">
                 Learn content creation techniques, including article writing and
                 post engagement, to boost visibility, establish thought
                 leadership, and expand your professional reach.
               </p>
             </div>
           </div>
-          <div className="text-black w-full glassBackground"></div>
+          <div className="glassBackground w-full text-black"></div>
         </article>
         {/* Module Structure */}
-        <div className="h-[20vh] w-full flex items-center bg-gray-950">
-          <h1 className="text-slate-200 text-4xl md:text-5xl px-4  font-semibold ">
+        <div className="flex h-[20vh] w-full items-center bg-gray-950">
+          <h1 className="px-4 text-4xl font-semibold text-slate-200 md:text-5xl">
             <span className="text-6xl md:text-7xl">M</span>ODULE <br />
             <span className="text-6xl md:text-7xl">S</span>
             TRUCTURE
@@ -282,19 +289,19 @@ export default function LinkedIn() {
         </div>
       </div>
 
-      <article className="h-[80vh] md:h-[50vh] bg-gray-950">
+      <article className="h-[80vh] bg-gray-950 md:h-[50vh]">
         <section
-          className="flex gap-4 overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory pl-[9vw] module-section pt-[50px] bg-gray-950"
+          className="scroll-snap-x mandatory module-section flex gap-4 overflow-x-scroll whitespace-nowrap bg-gray-950 pl-[9vw] pt-[50px]"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {/* Individual Module Cards */}
           {moduleData.map((item, index) => (
             <div
-              className="bg-gray-100 min-w-[80vw] md:min-w-[700px] h-[500px] md:h-[300px] scroll-snap-align rounded-2xl flex flex-col md:flex-row items-center justify-evenly"
+              className="scroll-snap-align flex h-[500px] min-w-[80vw] flex-col items-center justify-evenly rounded-2xl bg-gray-100 md:h-[300px] md:min-w-[700px] md:flex-row"
               key={index}
             >
               {/* Left */}
-              <div className="w-[90%] md:w-[55%] h-[40%] md:h-[80%] rounded-2xl relative overflow-hidden">
+              <div className="relative h-[40%] w-[90%] overflow-hidden rounded-2xl md:h-[80%] md:w-[55%]">
                 <Image
                   src={item.module_image}
                   fill={true}
@@ -304,20 +311,20 @@ export default function LinkedIn() {
                 />
               </div>
               {/* Right */}
-              <div className="w-[90%] md:w-[35%] min-h-[50%] md:min-h-[80%] flex flex-col ">
-                <h3 className="text-black text-lg font-[500] whitespace-normal">
+              <div className="flex min-h-[50%] w-[90%] flex-col md:min-h-[80%] md:w-[35%]">
+                <h3 className="whitespace-normal text-lg font-[500] text-black">
                   {item.module_title}
                 </h3>
-                <p className="overflow-hidden whitespace-normal text-gray-700 text-xs mt-2 leading-5">
+                <p className="mt-2 overflow-hidden whitespace-normal text-xs leading-5 text-gray-700">
                   {item.module_desc}
                 </p>
-                <div className="grid text-black grid-cols-2 mt-5">
-                  <span className="flex text-gray-700 text-xs mt-2 leading-5 gap-1">
+                <div className="mt-5 grid grid-cols-2 text-black">
+                  <span className="mt-2 flex gap-1 text-xs leading-5 text-gray-700">
                     <Image src="/week.png" width={20} height={20} alt="week" />
                     {item.module_time}
                   </span>
-                  <span className="flex text-gray-700 text-xs mt-2 leading-5 -ml-10 md:-ml-8 justify-center gap-1 whitespace-normal">
-                    <div className="h-[20px] w-[20px] relative">
+                  <span className="-ml-10 mt-2 flex justify-center gap-1 whitespace-normal text-xs leading-5 text-gray-700 md:-ml-8">
+                    <div className="relative h-[20px] w-[20px]">
                       <Image
                         src="/live.png"
                         fill={true}
@@ -328,7 +335,7 @@ export default function LinkedIn() {
                     </div>
                     Live and Recorded
                   </span>
-                  <span className="flex text-gray-700 text-xs mt-2 leading-5 gap-1">
+                  <span className="mt-2 flex gap-1 text-xs leading-5 text-gray-700">
                     <Image
                       src="/credits.png"
                       width={20}
@@ -339,7 +346,7 @@ export default function LinkedIn() {
                   </span>
                 </div>
                 {/* Instructor */}
-                <div className="flex gap-1 items-center mt-5">
+                <div className="mt-5 flex items-center gap-1">
                   <Image
                     src="/instructor.jpg"
                     width={50}
