@@ -1,7 +1,6 @@
 "use client";
 import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
-import { div } from "motion/react-client";
 
 export const BouncyCardsFeatures = () => {
   return (
