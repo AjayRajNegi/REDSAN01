@@ -21,7 +21,7 @@ export default function Scroller() {
 
   const [duration, setDuration] = useState(FAST_DURATION);
 
-  let [ref, { width }] = useMeasure();
+  const [ref, { width }] = useMeasure();
   const xTransition = useMotionValue(0);
 
   const [mustFinish, setMustFinish] = useState(false);
@@ -29,7 +29,7 @@ export default function Scroller() {
 
   useEffect(() => {
     let controls;
-    let finalPosition = -width / 2;
+    const finalPosition = -width / 2;
 
     if (mustFinish) {
       controls = animate(xTransition, [xTransition.get(), finalPosition], {

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Scroller from "../components/Scroller";
 
 export default function pages() {
