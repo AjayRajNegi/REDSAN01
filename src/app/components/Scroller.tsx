@@ -53,9 +53,9 @@ export default function Scroller() {
     return controls?.stop;
   }, [xTransition, width, duration, rerender]);
   return (
-    <main>
+    <main className="relative min-w-[100%] overflow-hidden">
       <motion.div
-        className="absolute left-0 flex"
+        className="relative left-0 flex"
         ref={ref}
         style={{ x: xTransition }}
         onHoverStart={() => {
@@ -83,21 +83,21 @@ const Card: React.FC<CardProps> = ({ image }) => {
   const [showOverlay, setShowOverlay] = useState(false);
   return (
     <motion.div
-      className="relative flex h-[200px] min-w-[200px] items-center justify-center overflow-hidden bg-slate-400"
+      className="relative flex h-[200px] min-w-[200px] items-center justify-center overflow-clip bg-slate-400"
       onHoverStart={() => setShowOverlay(true)}
       onHoverEnd={() => setShowOverlay(false)}
     >
       <AnimatePresence>
         {showOverlay && (
           <motion.div
-            className="absolute inset-0 z-10 flex items-center justify-center"
+            className="absolute inset-0 z-10 flex items-center justify-center overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
             <div className="pointer-events-none absolute h-full w-full bg-black opacity-50" />
             <motion.h1
-              className="z-10 flex items-center gap-[0.5ch] rounded-full bg-slate-50 px-3 py-2 text-sm font-semibold text-gray-950 hover:opacity-75"
+              className="z-10 flex items-center gap-[0.5ch] rounded-full bg-slate-50 px-3 py-2 text-sm font-semibold text-gray-950"
               initial={{ y: 10 }}
               animate={{ y: 0 }}
               exit={{ y: 10 }}
