@@ -1,6 +1,5 @@
-import { motion } from "motion/react";
 import Image from "next/image";
-import { useState } from "react";
+import { motion } from "motion/react";
 
 const companyData = [
   {
@@ -26,7 +25,6 @@ const companyData = [
   },
 ];
 export default function WorkCards() {
-  const [hover, setHover] = useState(false);
   return (
     <div className="mx-auto w-[95%]">
       {/* For Larger Displays */}
@@ -34,8 +32,6 @@ export default function WorkCards() {
         <motion.div
           className={`group mt-0 hidden h-[300px] items-center justify-between px-[40px] py-[40px] text-black hover:rounded-full hover:bg-gray-950 md:grid md:grid-cols-2 xl:grid-cols-3`}
           key={index}
-          onHoverStart={() => setHover(true)}
-          onHoverEnd={() => setHover(false)}
         >
           <div className="relative h-[220px] w-full overflow-hidden rounded-md group-hover:rounded-full">
             <Image
