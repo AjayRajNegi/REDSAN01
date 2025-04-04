@@ -46,7 +46,7 @@ export default function WorkCards() {
             />
           </div>
 
-          <div className="ml-4 flex h-full w-full items-end justify-start text-5xl text-gray-950 group-hover:text-slate-50">
+          <div className="ml-4 flex h-full w-full items-end justify-start text-5xl text-gray-950 group-hover:text-slate-50 md:hidden xl:flex">
             {item.company_name}
           </div>
 
@@ -60,8 +60,41 @@ export default function WorkCards() {
       ))}
 
       {/* For Smaller Displays */}
-      <div className="block h-[250px] bg-green-300 text-black sm:h-[400px] md:hidden">
-        Small
+      <div className="mt-5 flex h-[350px] flex-col items-center text-black sm:h-[400px] md:hidden">
+        <div className="relative h-[250px] w-full overflow-hidden rounded-full px-4">
+          <Image
+            src="/brand.jpg"
+            fill
+            style={{ objectFit: "cover" }}
+            alt="cas"
+          />
+        </div>
+        <h1 className="mt-4 text-4xl">MAXPOWER</h1>
+        <h3 className="text-base uppercase text-[#E75B38]">[Description]</h3>
+      </div>
+      <div className="mt-5 flex h-[350px] flex-col items-center text-black sm:h-[400px] md:hidden">
+        <div className="relative h-[250px] w-full overflow-hidden rounded-full px-4">
+          <Image
+            src="/brand.jpg"
+            fill
+            style={{ objectFit: "cover" }}
+            alt="cas"
+          />
+        </div>
+        <h1 className="mt-4 text-4xl">MAXPOWER</h1>
+        <h3 className="text-xl uppercase text-[#E75B38]">[Description]</h3>
+      </div>
+      <div className="mt-5 flex h-[350px] flex-col items-center text-black sm:h-[400px] md:hidden">
+        <div className="relative h-[250px] w-full overflow-hidden rounded-full px-4">
+          <Image
+            src="/brand.jpg"
+            fill
+            style={{ objectFit: "cover" }}
+            alt="cas"
+          />
+        </div>
+        <h1 className="mt-4 text-4xl">MAXPOWER</h1>
+        <h3 className="text-xl uppercase text-[#E75B38]">[Description]</h3>
       </div>
     </div>
   );
