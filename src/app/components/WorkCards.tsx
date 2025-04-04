@@ -56,42 +56,23 @@ export default function WorkCards() {
       ))}
 
       {/* For Smaller Displays */}
-      <div className="mt-5 flex h-[350px] flex-col items-center text-black sm:h-[400px] md:hidden">
-        <div className="relative h-[250px] w-full overflow-hidden rounded-full px-4">
-          <Image
-            src="/brand.jpg"
-            fill
-            style={{ objectFit: "cover" }}
-            alt="cas"
-          />
+      {companyData.map((item, index) => (
+        <div
+          className="mt-5 flex h-[350px] flex-col items-center text-black sm:h-[400px] md:hidden"
+          key={index}
+        >
+          <div className="relative h-[250px] w-full overflow-hidden rounded-full px-4">
+            <Image
+              src={item.company_img}
+              fill
+              style={{ objectFit: "cover" }}
+              alt={item.company_name}
+            />
+          </div>
+          <h1 className="mt-4 text-4xl">{item.company_name}</h1>
+          <h3 className="text-base uppercase text-[#E75B38]">[{item.work}]</h3>
         </div>
-        <h1 className="mt-4 text-4xl">MAXPOWER</h1>
-        <h3 className="text-base uppercase text-[#E75B38]">[Description]</h3>
-      </div>
-      <div className="mt-5 flex h-[350px] flex-col items-center text-black sm:h-[400px] md:hidden">
-        <div className="relative h-[250px] w-full overflow-hidden rounded-full px-4">
-          <Image
-            src="/brand.jpg"
-            fill
-            style={{ objectFit: "cover" }}
-            alt="cas"
-          />
-        </div>
-        <h1 className="mt-4 text-4xl">MAXPOWER</h1>
-        <h3 className="text-xl uppercase text-[#E75B38]">[Description]</h3>
-      </div>
-      <div className="mt-5 flex h-[350px] flex-col items-center text-black sm:h-[400px] md:hidden">
-        <div className="relative h-[250px] w-full overflow-hidden rounded-full px-4">
-          <Image
-            src="/brand.jpg"
-            fill
-            style={{ objectFit: "cover" }}
-            alt="cas"
-          />
-        </div>
-        <h1 className="mt-4 text-4xl">MAXPOWER</h1>
-        <h3 className="text-xl uppercase text-[#E75B38]">[Description]</h3>
-      </div>
+      ))}
     </div>
   );
 }
