@@ -16,7 +16,7 @@ export default function Scroller() {
     "/networking.jpg",
   ];
 
-  const FAST_DURATION = 25;
+  const FAST_DURATION = 5;
   const SLOW_DURATION = 75;
 
   const [duration, setDuration] = useState(FAST_DURATION);
