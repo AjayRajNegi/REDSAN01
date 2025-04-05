@@ -96,14 +96,14 @@ const Card: React.FC<CardProps> = ({ image }) => {
             exit={{ opacity: 0 }}
           >
             <div className="pointer-events-none absolute h-full w-full bg-black opacity-50" />
-            <motion.h1
+            {/* <motion.h1
               className="z-10 flex items-center gap-[0.5ch] rounded-full bg-slate-50 px-3 py-2 text-sm font-semibold text-gray-950"
               initial={{ y: 10 }}
               animate={{ y: 0 }}
               exit={{ y: 10 }}
             >
               <span>Explore Now</span>
-            </motion.h1>
+            </motion.h1> */}
           </motion.div>
         )}
       </AnimatePresence>
