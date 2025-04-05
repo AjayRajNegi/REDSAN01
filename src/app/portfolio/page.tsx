@@ -1,17 +1,9 @@
 "use client";
-import FeaturedSection from "../components/FeaturedSection";
 import Scroller from "../components/Scroller";
 import WorkCards from "../components/WorkCards";
-import { useScroll, useSpring } from "motion/react";
-import { useRef } from "react";
+import FeaturedSection from "../components/FeaturedSection";
 
-export default function pages() {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end end"],
-  });
-  const scale = useSpring(scrollYProgress);
+export default function page() {
   return (
     <div className="min-h-[100vh] bg-[#ecf1f0]">
       {/* Navbar Section Larger Screens*/}
