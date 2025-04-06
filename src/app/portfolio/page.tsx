@@ -1,16 +1,18 @@
 "use client";
 import Scroller from "../components/Scroller";
 import WorkCards from "../components/WorkCards";
+
 import FeaturedSection from "../components/FeaturedSection";
 
+import ServicesSection from "../components/ServicesSection";
 export default function page() {
   return (
     <div className="min-h-[100vh] bg-[#ecf1f0]">
       {/* Navbar Section Larger Screens*/}
       <div className="h-[1vw] bg-[#ecf1f0] md:h-[80px]"></div>
-      <nav className="fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">
-        <div className="left text-2xl">REDSAN</div>
-        <div className="right flex gap-4">
+      <nav className="asd fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">
+        <div className="left text-2xl text-[#fdc0bc]">REDSAN.STUDIOS</div>
+        <div className="right flex gap-4 text-[#fdc0bc]">
           <span>WORK</span>
           <span>ABOUT</span>
           <span>SERVICES</span>
@@ -47,7 +49,7 @@ export default function page() {
       {/* Our Work Section */}
       <main className="bg-[#ecf1f0] pt-10 md:pt-0">
         <section className="mb:mb-0 mb-10 flex h-[100px] w-full items-center justify-center bg-[#ecf1f0] py-10 md:h-[300px]">
-          <h1 className="text-5xl text-[#ffffff] md:text-8xl xl:text-[11vw]">
+          <h1 className="text-5xl text-red-300 md:text-8xl xl:text-[11vw]">
             [OUR WORK]
           </h1>
         </section>
@@ -62,6 +64,11 @@ export default function page() {
         </h1>
         <FeaturedSection />
       </main>
+      {/* what Were Good At Section */}
+      <main className="min-h-[500px] bg-gray-950 md:min-h-screen">
+        <ServicesSection />
+      </main>
+      <main className="h-screen"></main>
     </div>
   );
 }
