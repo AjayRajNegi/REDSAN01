@@ -29,7 +29,7 @@ export default function ServicesSection() {
           whileInView={{ x: 0 }}
           transition={{ duration: 0.3 }}
         >
-          what we're
+          what we&apos;re
         </motion.div>
         <motion.div
           className="flex w-full items-center justify-end text-[2.5rem] uppercase leading-[1] text-[#ecf1f0] md:text-[10vw]"
