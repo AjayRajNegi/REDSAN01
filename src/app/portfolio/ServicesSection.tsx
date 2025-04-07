@@ -1,7 +1,7 @@
 "use client";
+import { useState } from "react";
 import { motion } from "motion/react";
 import SvgComponent from "./SvgComponent";
-import { useState } from "react";
 
 const ServicesData = [
   { id: 1, service: "concepting", image: "/brand.jpg" },
@@ -66,8 +66,8 @@ export default function ServicesSection() {
           </motion.div>
         ))}
 
-        <div className="mt-[40px] flex w-full justify-center text-sm text-slate-50 md:mt-0 md:pb-[100px] md:pt-[70px]">
-          <p className="rounded-full bg-red-200 px-2 py-1 text-gray-950 hover:rounded-md">
+        <div className="mt-[40px] flex w-full justify-center text-sm text-slate-50 md:mt-0 md:pb-[100px] md:pt-[70px] md:text-base">
+          <p className="rounded-full bg-red-200 px-3 py-1 text-gray-950 hover:rounded-md">
             ABOUT US
           </p>
         </div>

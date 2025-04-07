@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
+import useMeasure from "react-use-measure";
 import { useEffect, useState } from "react";
 import { animate, AnimatePresence, motion, useMotionValue } from "motion/react";
-import useMeasure from "react-use-measure";
 
 export default function Scroller() {
   const images = [

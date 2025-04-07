@@ -1,10 +1,9 @@
 "use client";
-import Scroller from "../components/Scroller";
-import WorkCards from "../components/WorkCards";
-
-import FeaturedSection from "../components/FeaturedSection";
-
-import ServicesSection from "../components/ServicesSection";
+import Scroller from "./Scroller";
+import WorkCards from "./WorkCards";
+import DriveSection from "./DriveSection";
+import FeaturedSection from "./FeaturedSection";
+import ServicesSection from "./ServicesSection";
 export default function page() {
   return (
     <div className="min-h-[100vh] bg-[#ecf1f0]">
@@ -64,11 +63,14 @@ export default function page() {
         </h1>
         <FeaturedSection />
       </main>
-      {/* what Were Good At Section */}
+      {/* What Were Good At Section */}
       <main className="min-h-[500px] bg-gray-950 md:min-h-screen">
         <ServicesSection />
       </main>
-      <main className="h-screen"></main>
+      {/* Drive Section  */}
+      <main className="mx-[8vw] h-auto bg-[#ecf1f0] py-[50px] md:mx-[12vw] md:py-[100px]">
+        <DriveSection />
+      </main>
     </div>
   );
 }
