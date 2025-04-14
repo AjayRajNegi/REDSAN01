@@ -4,6 +4,7 @@ import WorkCards from "./WorkCards";
 import DriveSection from "./DriveSection";
 import FeaturedSection from "./FeaturedSection";
 import ServicesSection from "./ServicesSection";
+import { Footer } from "../components/Footer";
 export default function page() {
   return (
     <div className="min-h-[100vh] bg-[#ecf1f0]">
@@ -71,6 +72,8 @@ export default function page() {
       <main className="mx-[8vw] h-auto bg-[#ecf1f0] py-[50px] md:mx-[12vw] md:py-[100px]">
         <DriveSection />
       </main>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

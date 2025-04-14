@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Pricing from "./Pricing";
+import { Footer } from "../components/Footer";
 const moduleData = [
   {
     id: 1,
@@ -135,8 +136,8 @@ export default function Courses() {
       {/* Navbar Section Larger Screens */}
       <div className="h-[1vw] bg-[#ecf1f0] md:h-[80px]"></div>
       <nav className="asd fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">
-        <div className="left text-2xl text-[#fdc0bc]">REDSAN.STUDIOS</div>
-        <div className="right flex gap-4 text-[#fdc0bc]">
+        <div className="left text-2xl text-slate-50">REDSAN.STUDIOS</div>
+        <div className="right flex gap-4 text-slate-50">
           <span>WORK</span>
           <span>ABOUT</span>
           <span>SERVICES</span>
@@ -273,6 +274,8 @@ export default function Courses() {
       </div>
       {/* Pricing */}
       <Pricing />
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
