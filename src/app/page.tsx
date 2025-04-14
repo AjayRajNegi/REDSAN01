@@ -9,35 +9,35 @@ const paragraph =
 export default function Home() {
   return (
     <>
-      <main className="relative h-[100dvh] ">
+      <main className="relative h-[100dvh]">
         <motion.div
           initial={{ clipPath: "inset(0 0 0 0)" }}
           animate={{ clipPath: "inset(0 0 100% 0)" }}
           transition={{ duration: 8 }}
-          className="bg-black w-full h-[50%] First"
+          className="First h-[50%] w-full bg-black"
         ></motion.div>
-        <div className="fixed  bg-red-200 top-0 w-full h-[100dvh] -z-10 flex items-center justify-center">
+        <div className="fixed top-0 -z-10 flex h-[100dvh] w-full items-center justify-center bg-red-200">
           <MainText />
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 8 }}
-            className="absolute top-0 left-0 w-full"
+            className="absolute left-0 top-0 w-full"
           >
-            <section className="flex flex-col md:flex-row w-full gap-1 md:gap-0 justify-center mt-1">
-              <div className=" w-[98%] max-h-[90px] md:w-[40%] bg-black rounded-2xl overflow-hidden mx-auto">
+            <section className="mt-1 flex w-full flex-col justify-center gap-1 md:flex-row md:gap-0">
+              <div className="mx-auto max-h-[90px] w-[98%] overflow-hidden rounded-2xl bg-black md:w-[40%]">
                 <Navbar />
               </div>
-              <div className="w-[98%] mx-auto md:w-[59%]">
-                <div className="h-[40px] bg-black rounded-2xl flex items-center justify-around">
+              <div className="mx-auto w-[98%] md:w-[59%]">
+                <div className="flex h-[40px] items-center justify-around rounded-2xl bg-black">
                   <span>Work</span> <span>About</span>
                   <span>Services</span>
                 </div>
-                <div className="mt-1 h-[200px] md:h-[500px] bg-red-500 rounded-2xl"></div>
+                <div className="mt-1 h-[200px] rounded-2xl bg-red-500 md:h-[500px]"></div>
               </div>
             </section>
-            <div className="grid w-[98%] mx-auto justify-between mt-5 sm:grid-cols-3 ">
-              <p className="text-gray-950 col-span-full md:col-span-1 text-4xl md:text-base">
+            <div className="mx-auto mt-5 grid w-[98%] justify-between sm:grid-cols-3">
+              <p className="col-span-full text-4xl text-gray-950 md:col-span-1 md:text-base">
                 Land of digital aesthetics
               </p>
               <p className="text-gray-950">
@@ -53,13 +53,13 @@ export default function Home() {
           initial={{ clipPath: "inset(0 0 0 0)" }}
           animate={{ clipPath: "inset(100% 0 0 0)" }}
           transition={{ duration: 8 }}
-          className="bg-black w-full h-[50%]"
+          className="h-[50%] w-full bg-black"
         ></motion.div>
       </main>
-      <div className="bg-black h-[30vh]"></div>
-      <Paragraph paragraph={paragraph} />
-      <div className="bg-black h-[30vh]"></div>
-      <div className="bg-black h-[30vh]"></div>
+      <div className="h-[30vh] bg-black"></div>
+      {/* <Paragraph paragraph={paragraph} /> */}
+      <div className="h-[30vh] bg-black"></div>
+      <div className="h-[30vh] bg-black"></div>
     </>
   );
 }

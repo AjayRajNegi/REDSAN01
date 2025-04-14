@@ -288,7 +288,7 @@ export default function LinkedIn() {
           </h1>
         </div>
       </div>
-
+      {/* Module Structure Cards */}
       <article className="h-[80vh] bg-gray-950 md:h-[50vh]">
         <section
           className="scroll-snap-x mandatory module-section flex gap-4 overflow-x-scroll whitespace-nowrap bg-gray-950 pl-[9vw] pt-[50px]"
