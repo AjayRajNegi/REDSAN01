@@ -175,15 +175,21 @@ export default function Courses() {
       </div>
 
       {/* Features */}
-      <div className="mx-auto mb-[100px] flex w-[90%] flex-col items-center justify-evenly gap-[20px] sm:flex-row sm:gap-0">
+      <div className="mx-auto mb-[100px] flex w-[90%] flex-col items-center justify-evenly sm:flex-row sm:gap-0">
         <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl sm:h-[400px] sm:w-[30%] md:h-[500px]">
-          <Image src="/brand.jpg" fill objectFit="cover" alt="brand" />
+          <Image src="/Course/post4.png" fill objectFit="contain" alt="brand" />
         </div>
         <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl sm:h-[400px] sm:w-[30%] md:h-[500px]">
-          <Image src="/brand.jpg" fill objectFit="cover" alt="brand" />
+          <Image src="/Course/post1.png" fill objectFit="contain" alt="brand" />
         </div>
         <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl sm:h-[400px] sm:w-[30%] md:h-[500px]">
-          <Image src="/brand.jpg" fill objectFit="cover" alt="brand" />
+          <Image src="/Course/post5.png" fill objectFit="contain" alt="brand" />
+        </div>
+        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl sm:hidden sm:h-[400px] sm:w-[30%] md:h-[500px]">
+          <Image src="/Course/post2.png" fill objectFit="contain" alt="brand" />
+        </div>
+        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl sm:hidden sm:h-[400px] sm:w-[30%] md:h-[500px]">
+          <Image src="/Course/post3.png" fill objectFit="contain" alt="brand" />
         </div>
       </div>
 
