@@ -4,8 +4,8 @@ import MainText from "./components/MainText";
 // import Paragraph from "./components/Paragraph";
 import Navbar from "./components/Navbar";
 
-const paragraph =
-  "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.";
+// const paragraph =
+//   "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.";
 export default function Home() {
   return (
     <>
