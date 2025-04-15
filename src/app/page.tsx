@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import MainText from "./components/MainText";
-import Paragraph from "./components/Paragraph";
+// import Paragraph from "./components/Paragraph";
 import Navbar from "./components/Navbar";
 
 const paragraph =
