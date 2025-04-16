@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import SvgComponent from "./SvgComponent";
 
@@ -23,14 +23,7 @@ export default function ServicesSection() {
         >
           [our serices]
         </motion.p>
-        <motion.div
-          className="mt:pt-[100px] pt-[30px] text-[2.5rem] uppercase leading-[1] text-[#ecf1f0] md:text-[10vw]"
-          initial={{ x: 50 }}
-          whileInView={{ x: 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          what we&apos;re
-        </motion.div>
+        <AnimatedComponent />
         <motion.div
           className="flex w-full items-center justify-end text-[2.5rem] uppercase leading-[1] text-[#ecf1f0] md:text-[10vw]"
           initial={{ x: -50 }}
@@ -75,3 +68,25 @@ export default function ServicesSection() {
     </>
   );
 }
+
+const AnimatedComponent = () => {
+  const [initialX, setInitialX] = useState<number>(50);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setInitialX(window.innerWidth < 500 ? 25 : 50);
+    }
+  }, []);
+  return (
+    <>
+      {" "}
+      <motion.div
+        className="mt:pt-[100px] pt-[30px] text-[2.5rem] uppercase leading-[1] text-[#ecf1f0] md:text-[10vw]"
+        initial={{ x: initialX }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        what we&apos;re
+      </motion.div>
+    </>
+  );
+};

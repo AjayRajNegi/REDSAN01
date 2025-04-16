@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Pricing from "./Pricing";
 import { Footer } from "../components/Footer";
+import { FounderCard } from "./FounderCard";
 const moduleData = [
   {
     id: 1,
@@ -278,6 +279,8 @@ export default function Courses() {
           ))}
         </section>
       </div>
+      {/* Founder Cards */}
+      <FounderCard />
       {/* Pricing */}
       <Pricing />
       {/* Footer */}
