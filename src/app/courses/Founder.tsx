@@ -7,14 +7,9 @@ import React, {
   useContext,
   JSX,
 } from "react";
-// import {
-//   IconArrowNarrowLeft,
-//   IconArrowNarrowRight,
-//   IconX,
-// } from "@tabler/icons-react";
 import { cn } from "../lib/utils";
-import { AnimatePresence, motion } from "motion/react";
 import Image, { ImageProps } from "next/image";
+import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "../hooks/use-outside-click";
 
 interface CarouselProps {
@@ -58,21 +53,21 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     }
   };
 
-  // const scrollLeft = () => {
-  //   if (carouselRef.current) {
-  //     carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
-  //   }
-  // };
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    }
+  };
 
-  // const scrollRight = () => {
-  //   if (carouselRef.current) {
-  //     carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
-  //   }
-  // };
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  };
 
   const handleCardClose = (index: number) => {
     if (carouselRef.current) {
-      const cardWidth = isMobile() ? 230 : 384; // (md:w-96)
+      const cardWidth = isMobile() ? 230 : 384;
       const gap = isMobile() ? 4 : 8;
       const scrollPosition = (cardWidth + gap) * (index + 1);
       carouselRef.current.scrollTo({
@@ -106,7 +101,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           <div
             className={cn(
               "flex flex-row justify-start gap-4 pl-4",
-              "mx-auto max-w-7xl", // remove max-w-4xl if you want the carousel to span the full width of its container
+              "mx-auto max-w-7xl",
             )}
           >
             {items.map((item, index) => (
@@ -133,14 +128,14 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             ))}
           </div>
         </div>
-        {/* <div className="mr-10 flex justify-end gap-2">
+        <div className="mr-10 hidden justify-end gap-2">
           <button
             className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
             left
-            <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
+            {/* <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" /> */}
           </button>
           <button
             className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
@@ -148,9 +143,9 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             disabled={!canScrollRight}
           >
             right
-            <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
+            {/* <IconArrowNarrowRight className="h-6 w-6 text-gray-500" /> */}
           </button>
-        </div> */}
+        </div>
       </div>
     </CarouselContext.Provider>
   );
@@ -167,7 +162,7 @@ export const Card = ({
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const { onCardClose } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
