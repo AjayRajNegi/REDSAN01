@@ -10,7 +10,7 @@ export function FounderCard() {
 
   return (
     <div className="h-full w-full bg-gray-950 py-0 pb-20 md:py-20">
-      <h2 className="mx-auto max-w-7xl pl-4 text-5xl font-bold text-neutral-800 md:text-7xl dark:text-neutral-200">
+      <h2 className="mx-auto max-w-7xl pl-4 text-3xl font-bold text-neutral-800 md:text-7xl dark:text-neutral-200">
         Get to know Startup Founders.
       </h2>
       <Carousel items={cards} />
@@ -21,7 +21,7 @@ export function FounderCard() {
 const DummyContent = () => {
   return (
     <>
-      {[...new Array(3).fill(1)].map((_, index) => {
+      {[...new Array(1).fill(1)].map((_, index) => {
         return (
           <div
             key={"dummy-content" + index}
@@ -29,20 +29,19 @@ const DummyContent = () => {
           >
             <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
+                The first rule of RedSan Intership club is that you boast about
+                RedSan Intership club.
+              </span>
               Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
+              class notes.
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="mx-auto h-full w-full object-contain md:h-1/2 md:w-1/2"
-            />
+            /> */}
           </div>
         );
       })}
@@ -52,40 +51,46 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "/social.jpg",
+    category: "RedSan",
+    title: "You can do more with US.",
+    src: "/photos/RedSan.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Productivity",
+    category: "EDC India",
     title: "Enhance your productivity.",
-    src: "/social.jpg",
+    src: "/photos/EDC.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "/social.jpg",
+    category: "MARS",
+    title: "Launching yourself with LinkedIn.",
+    src: "/photos/MARS.jpg",
+    content: <DummyContent />,
+  },
+  {
+    category: "RedCubical Systems",
+    title: "Map for your life.",
+    src: "/photos/MARS.jpg",
     content: <DummyContent />,
   },
 
-  {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
-    src: "/social.jpg",
-    content: <DummyContent />,
-  },
-  {
-    category: "iOS",
-    title: "Photography just got better.",
-    src: "/social.jpg",
-    content: <DummyContent />,
-  },
-  {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "/social.jpg",
-    content: <DummyContent />,
-  },
+  // {
+  //   category: "Product",
+  //   title: "Maps for your iPhone 15 Pro Max.",
+  //   src: "/social.jpg",
+  //   content: <DummyContent />,
+  // },
+  // {
+  //   category: "iOS",
+  //   title: "Photography just got better.",
+  //   src: "/social.jpg",
+  //   content: <DummyContent />,
+  // },
+  // {
+  //   category: "Hiring",
+  //   title: "Hiring for a Staff Software Engineer",
+  //   src: "/social.jpg",
+  //   content: <DummyContent />,
+  // },
 ];

@@ -9,127 +9,37 @@ const moduleData = [
     id: 1,
     module_title: "Notion",
     module_desc:
-      "Optimize your profile, use job alerts, and network with recruiters to find job opportunities.",
-    module_time: "3 Weeks",
+      "Organize your tasks, manage projects efficiently, and build custom dashboards to boost productivity.",
+    module_time: "5-8 days",
     module_credits: "3 Credits",
-    module_image: "/brand.jpg",
+    module_image: "/photos/Notion.jpg",
   },
   {
     id: 2,
     module_title: "Digital Marketing",
     module_desc:
-      "Use LinkedIn Recruiter, assess candidate profiles, and leverage referrals to hire top talent.",
-    module_time: "3 Weeks",
+      "Master SEO, leverage social media, and create targeted campaigns to grow your online presence.",
+    module_time: "9-12 days",
     module_credits: "3 Credits",
-    module_image: "/content.jpg",
+    module_image: "/photos/a.jpg",
   },
   {
     id: 3,
     module_title: "LinkedIn",
     module_desc:
-      "Build an employer brand, engage employees, and use LinkedIn Learning to improve retention.",
-    module_time: "4 Weeks",
+      "Optimize your profile, use job alerts, and network with recruiters to find job opportunities.",
+    module_time: "6-9 days",
     module_credits: "4 Credits",
-    module_image: "/job.jpg",
+    module_image: "/photos/Linkedin.jpg",
   },
   {
     id: 4,
     module_title: "Branding",
     module_desc:
-      "Create a business page, develop content strategy, and use LinkedIn Ads for brand visibility.",
-    module_time: "3 Weeks",
+      "Develop a strong brand identity, craft compelling messaging, and build trust with your target audience to stand out.",
+    module_time: "6-9 days",
     module_credits: "3 Credits",
-    module_image: "/networking.jpg",
-  },
-  {
-    id: 5,
-    module_title: "Personal Branding Strategies",
-    module_desc:
-      "Optimize your profile, share industry insights, and engage with thought leaders to build authority.",
-    module_time: "3 Weeks",
-    module_credits: "3 Credits",
-    module_image: "/social.jpg",
-  },
-  {
-    id: 6,
-    module_title: "Lead Generation",
-    module_desc:
-      "Use search filters, send personalized outreach messages, and engage in LinkedIn groups for leads.",
-    module_time: "4 Weeks",
-    module_credits: "4 Credits",
-    module_image: "/web.jpg",
-  },
-  {
-    id: 7,
-    module_title: "Profile Optimization for Visibility",
-    module_desc:
-      "Use a professional photo, craft a compelling ‘About’ section, and add featured content.",
-    module_time: "2 Weeks",
-    module_credits: "2 Credits",
-    module_image: "/brand.jpg",
-  },
-  {
-    id: 8,
-    module_title: "Creating Textual & Visual Content",
-    module_desc:
-      "Write engaging posts, use images and videos, and follow trending topics for visibility.",
-    module_time: "3 Weeks",
-    module_credits: "3 Credits",
-    module_image: "/content.jpg",
-  },
-  {
-    id: 9,
-    module_title: "Scheduling Content Effectively",
-    module_desc:
-      "Use scheduling tools, plan a content calendar, and identify the best posting times.",
-    module_time: "2 Weeks",
-    module_credits: "2 Credits",
-    module_image: "/job.jpg",
-  },
-  {
-    id: 10,
-    module_title: "Engaging with Others",
-    module_desc:
-      "Comment meaningfully, connect with professionals, and use groups to expand your network.",
-    module_time: "3 Weeks",
-    module_credits: "3 Credits",
-    module_image: "/networking.jpg",
-  },
-  {
-    id: 11,
-    module_title: "Drafting Cold Messages",
-    module_desc:
-      "Craft personalized cold messages, follow LinkedIn outreach best practices, and implement follow-ups.",
-    module_time: "2 Weeks",
-    module_credits: "2 Credits",
-    module_image: "/web.jpg",
-  },
-  {
-    id: 12,
-    module_title: "Automating Chats & Outreach",
-    module_desc:
-      "Use LinkedIn automation tools, set up message sequences, and track analytics for optimization.",
-    module_time: "3 Weeks",
-    module_credits: "3 Credits",
-    module_image: "/brand.jpg",
-  },
-  {
-    id: 13,
-    module_title: "Creating a Company Page",
-    module_desc:
-      "Optimize a LinkedIn business page, gain followers, and post updates to increase engagement.",
-    module_time: "3 Weeks",
-    module_credits: "3 Credits",
-    module_image: "/content.jpg",
-  },
-  {
-    id: 14,
-    module_title: "Using LinkedIn Sales Navigator",
-    module_desc:
-      "Leverage Sales Navigator, apply advanced filters, and use InMail for direct client communication.",
-    module_time: "4 Weeks",
-    module_credits: "4 Credits",
-    module_image: "/web.jpg",
+    module_image: "/photos/DM.jpg",
   },
 ];
 
@@ -198,10 +108,11 @@ export default function Courses() {
 
       {/* Module Structure */}
       <div className="flex h-[20vh] w-full items-center bg-gray-950">
-        <h1 className="px-4 text-4xl font-semibold text-slate-200 md:text-5xl">
-          <span className="text-6xl md:text-7xl">M</span>ODULE <br />
-          <span className="text-6xl md:text-7xl">S</span>
-          TRUCTURE
+        <h1 className="px-4 text-4xl font-semibold uppercase text-slate-200 md:text-5xl">
+          <span className="text-6xl md:text-7xl">I</span>nternship &
+          <br />
+          <span className="text-6xl md:text-7xl">T</span>
+          raining Module
         </h1>
       </div>
       {/* Module Structure Cards */}
@@ -237,6 +148,7 @@ export default function Courses() {
                 <div className="mt-5 grid grid-cols-2 text-black">
                   <span className="mt-2 flex gap-1 text-xs leading-5 text-gray-700">
                     <Image src="/week.png" width={20} height={20} alt="week" />
+
                     {item.module_time}
                   </span>
                   <span className="-ml-10 mt-2 flex justify-center gap-1 whitespace-normal text-xs leading-5 text-gray-700 md:-ml-8">
@@ -251,14 +163,15 @@ export default function Courses() {
                     </div>
                     Live and Recorded
                   </span>
-                  <span className="mt-2 flex gap-1 text-xs leading-5 text-gray-700">
+                  <span className="mt-2 flex gap-1 rounded-lg border-2 border-[#e9986d] px-2 text-xs leading-5 text-gray-700">
                     <Image
                       src="/credits.png"
                       width={20}
                       height={20}
                       alt="week"
                     />
-                    {item.module_credits}
+                    <Link href="/detail">View Details</Link>
+                    {/* {item.module_credits} */}
                   </span>
                 </div>
                 {/* Instructor */}
