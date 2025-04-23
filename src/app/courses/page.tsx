@@ -1,11 +1,13 @@
+import Link from "next/link";
 import Image from "next/image";
 import Pricing from "./Pricing";
-import { Footer } from "../components/Footer";
 import { FounderCard } from "./FounderCard";
+import { Footer } from "../components/Footer";
+
 const moduleData = [
   {
     id: 1,
-    module_title: "Job Search",
+    module_title: "Notion",
     module_desc:
       "Optimize your profile, use job alerts, and network with recruiters to find job opportunities.",
     module_time: "3 Weeks",
@@ -14,7 +16,7 @@ const moduleData = [
   },
   {
     id: 2,
-    module_title: "Hiring Talent",
+    module_title: "Digital Marketing",
     module_desc:
       "Use LinkedIn Recruiter, assess candidate profiles, and leverage referrals to hire top talent.",
     module_time: "3 Weeks",
@@ -23,7 +25,7 @@ const moduleData = [
   },
   {
     id: 3,
-    module_title: "Retaining Existing Employees",
+    module_title: "LinkedIn",
     module_desc:
       "Build an employer brand, engage employees, and use LinkedIn Learning to improve retention.",
     module_time: "4 Weeks",
@@ -32,7 +34,7 @@ const moduleData = [
   },
   {
     id: 4,
-    module_title: "Brand Marketing",
+    module_title: "Branding",
     module_desc:
       "Create a business page, develop content strategy, and use LinkedIn Ads for brand visibility.",
     module_time: "3 Weeks",
@@ -139,9 +141,9 @@ export default function Courses() {
       <nav className="asd fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">
         <div className="left text-2xl text-slate-50">REDSAN.STUDIOS</div>
         <div className="right flex gap-4 text-slate-50">
-          <span>WORK</span>
-          <span>ABOUT</span>
-          <span>SERVICES</span>
+          <Link href="/portfolio">OUR WORK</Link>
+          <Link href="/courses">COURSES</Link>
+          <Link href="/linkedIn">LINKEDIN</Link>
         </div>
       </nav>
       {/* Navbar Section Smaller Screens */}
@@ -177,20 +179,20 @@ export default function Courses() {
 
       {/* Features */}
       <div className="mx-auto mb-[100px] flex w-[90%] flex-col items-center justify-evenly sm:flex-row sm:gap-0">
-        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl sm:h-[400px] sm:w-[30%] md:h-[500px]">
-          <Image src="/Course/post4.png" fill objectFit="contain" alt="brand" />
+        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl sm:h-[400px] sm:w-[30%]">
+          <Image src="/Course/post4.png" fill objectFit="cover" alt="brand" />
         </div>
-        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl sm:h-[400px] sm:w-[30%] md:h-[500px]">
-          <Image src="/Course/post1.png" fill objectFit="contain" alt="brand" />
+        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl sm:h-[400px] sm:w-[30%]">
+          <Image src="/Course/post1.png" fill objectFit="cover" alt="brand" />
         </div>
-        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl sm:h-[400px] sm:w-[30%] md:h-[500px]">
-          <Image src="/Course/post5.png" fill objectFit="contain" alt="brand" />
+        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl sm:h-[400px] sm:w-[30%]">
+          <Image src="/Course/post5.png" fill objectFit="cover" alt="brand" />
         </div>
-        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl sm:hidden sm:h-[400px] sm:w-[30%] md:h-[500px]">
-          <Image src="/Course/post2.png" fill objectFit="contain" alt="brand" />
+        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl sm:hidden sm:h-[400px] sm:w-[30%]">
+          <Image src="/Course/post2.png" fill objectFit="cover" alt="brand" />
         </div>
-        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl sm:hidden sm:h-[400px] sm:w-[30%] md:h-[500px]">
-          <Image src="/Course/post3.png" fill objectFit="contain" alt="brand" />
+        <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl sm:hidden sm:h-[400px] sm:w-[30%]">
+          <Image src="/Course/post3.png" fill objectFit="cover" alt="brand" />
         </div>
       </div>
 
