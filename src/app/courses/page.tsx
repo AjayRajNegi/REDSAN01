@@ -178,7 +178,7 @@ export default function Courses() {
       </div>
 
       {/* Features */}
-      <div className="mx-auto mb-[100px] flex w-[90%] flex-col items-center justify-evenly sm:flex-row sm:gap-0">
+      <div className="mx-auto mb-[100px] flex w-[90%] flex-col items-center justify-evenly gap-10 md:flex-row md:gap-0">
         <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl sm:h-[400px] sm:w-[30%]">
           <Image src="/Course/post4.png" fill objectFit="cover" alt="brand" />
         </div>
