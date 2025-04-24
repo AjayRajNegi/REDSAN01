@@ -136,7 +136,7 @@ export default function LinkedIn() {
   return (
     <>
       <div className="bg-gray-200 pt-1">
-        <section className="h-[100vh]">
+        <section className="h-[100vh]" id="top">
           <section className="flex w-full flex-col justify-center gap-1 md:flex-row md:gap-0">
             <div className="mx-auto w-[98%] md:w-[40%]">
               <div className="max-h-[90px] overflow-hidden rounded-2xl bg-black">

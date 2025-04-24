@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -9,8 +10,9 @@ export function Footer() {
           <span className="mr-2 hidden text-xs md:block">digitaL agencY</span>
         </div>
         <div className="flex h-[90%] w-[100%] items-center justify-around rounded-2xl bg-slate-50 text-gray-950 sm:w-[55%]">
-          <span>Work</span> <span>About</span>
-          <span>Services</span>
+          <Link href="/portfolio">Work</Link>{" "}
+          <Link href="/courses">Courses</Link>
+          <Link href="/linkedIn">LinkedIn</Link>
         </div>
       </div>
       <div className="flex h-[200px] flex-col justify-between border-t-2 border-gray-400 px-[4vw] py-[2vw] md:h-[300px]">
@@ -31,33 +33,39 @@ export function Footer() {
           </div>
           <div className="pt-4 md:pt-0">
             <p className="text-lg text-slate-300 md:pb-2">Contact</p>
-            <p className="text-slate-50">⚪ +1 204-477-4474</p>
-            <p className="text-slate-50">⚪ hello@random.com</p>
+            <p className="text-slate-50">⚪ +91 9664365954</p>
+            <p className="text-slate-50">⚪ redsandigitals@gmail.com</p>
           </div>
           <div className="pt-4 md:pt-0">
             <p className="text-lg text-slate-300 md:pb-2">Socials</p>
             <p className="text-slate-50">
               ⚪
-              <a href="www.google.com" className="ml-2">
+              <a href="https://www.instagram.com/redsan.io/" className="ml-2">
                 Instagram
               </a>
             </p>
             <p className="text-slate-50">
               ⚪
-              <a href="www.google.com" className="ml-2">
+              <a
+                href="https://www.linkedin.com/company/redsan-digitals/posts/?feedView=all"
+                className="ml-2"
+              >
                 LinkedIn
               </a>
             </p>
             <p className="text-slate-50">
               ⚪
-              <a href="www.google.com" className="ml-2">
-                Twitter
+              <a href="https://www.youtube.com/@Redsan-who" className="ml-2">
+                YouTube
               </a>
             </p>
 
             <p></p>
           </div>
-          <div className="flex items-center justify-center gap-2 text-lg text-slate-50">
+          <a
+            href="#top"
+            className="flex items-center justify-center gap-2 text-lg text-slate-50"
+          >
             Top
             <div>
               <Image
@@ -67,7 +75,7 @@ export function Footer() {
                 alt="TopArrowIcon"
               />
             </div>
-          </div>
+          </a>
         </div>
         <div
           className="mx-2 mb-4 mt-[5%] flex h-[10vh] items-center justify-center rounded-2xl text-slate-50"

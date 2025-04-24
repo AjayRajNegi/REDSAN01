@@ -9,7 +9,7 @@ export default function page() {
   return (
     <div className="min-h-[100vh] bg-[#ecf1f0]">
       {/* Navbar Section Larger Screens*/}
-      <div className="h-[1vw] bg-[#ecf1f0] md:h-[80px]"></div>
+      <div className="h-[1vw] bg-[#ecf1f0] md:h-[80px]" id="top"></div>
       <nav className="asd fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">
         <div className="left text-2xl text-[#fdc0bc]">REDSAN.STUDIOS</div>
         <div className="right flex gap-4 text-[#fdc0bc]">

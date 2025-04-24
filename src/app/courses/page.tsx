@@ -45,7 +45,7 @@ const moduleData = [
 
 export default function Courses() {
   return (
-    <div className="min-h-[100vh] bg-[#ecf1f0]">
+    <div className="min-h-[100vh] bg-[#ecf1f0]" id="top">
       {/* Navbar Section Larger Screens */}
       <div className="h-[1vw] bg-[#ecf1f0] md:h-[80px]"></div>
       <nav className="asd fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">

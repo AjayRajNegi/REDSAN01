@@ -15,32 +15,32 @@ export default function Pricing() {
           ></div>
         </div>
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base/7 font-semibold text-indigo-600">Pricing</h2>
+          {/* <h2 className="text-base/7 font-semibold text-indigo-600">Pricing</h2> */}
           <p className="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
             Choose the right plan for you
           </p>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600 sm:text-xl/8">
+        {/* <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600 sm:text-xl/8">
           Choose an affordable plan that’s packed with the best features for
           engaging your audience, creating customer loyalty, and driving sales.
-        </p>
+        </p> */}
         <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-5xl lg:grid-cols-3">
+          {/* Student */}
           <div className="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none">
             <h3
               id="tier-hobby"
               className="text-base/7 font-semibold text-indigo-600"
             >
-              Hobby
+              Student
             </h3>
             <p className="mt-4 flex items-baseline gap-x-2">
               <span className="text-5xl font-semibold tracking-tight text-gray-900">
-                $29
+                ₹3000
               </span>
-              <span className="text-base text-gray-500">/month</span>
+              {/* <span className="text-base text-gray-500">/month</span> */}
             </p>
             <p className="mt-6 text-base/7 text-gray-600">
-              The perfect plan if you&#039;re just getting started with our
-              product.
+              The perfect plan if you&#039;re a student.
             </p>
             <ul
               role="list"
@@ -60,7 +60,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                25 products
+                45 Days Course
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -76,7 +76,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Up to 10,000 subscribers
+                Certification
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -92,7 +92,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Advanced analytics
+                Pain Internship
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -108,7 +108,23 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                24-hour support response time
+                Possible Hiring
+              </li>
+              <li className="flex gap-x-3">
+                <svg
+                  className="h-6 w-5 flex-none text-indigo-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                1 year Membership
               </li>
             </ul>
             <a
@@ -119,18 +135,19 @@ export default function Pricing() {
               Get started today
             </a>
           </div>
+          {/* Startups */}
           <div className="relative rounded-3xl bg-gray-900 p-8 shadow-2xl ring-1 ring-gray-900/10 sm:p-10">
             <h3
               id="tier-enterprise"
               className="text-base/7 font-semibold text-indigo-400"
             >
-              Enterprise
+              Startups
             </h3>
             <p className="mt-4 flex items-baseline gap-x-2">
               <span className="text-5xl font-semibold tracking-tight text-white">
-                $99
+                ₹10000
               </span>
-              <span className="text-base text-gray-400">/month</span>
+              {/* <span className="text-base text-gray-400">/month</span> */}
             </p>
             <p className="mt-6 text-base/7 text-gray-300">
               Dedicated support and infrastructure for your company.
@@ -153,7 +170,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Unlimited products
+                Branding Support
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -169,7 +186,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Unlimited subscribers
+                45 Days Course
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -185,7 +202,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Advanced analytics
+                Certification
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -201,7 +218,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Dedicated support representative
+                Content Partnership
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -217,7 +234,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Marketing automations
+                Grant Support
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -233,7 +250,23 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Custom integrations
+                Special 90 Days Intensive Program
+              </li>
+              <li className="flex gap-x-3">
+                <svg
+                  className="h-6 w-5 flex-none text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                1 year Membership
               </li>
             </ul>
             <a
@@ -244,18 +277,19 @@ export default function Pricing() {
               Get started today
             </a>
           </div>
+          {/* Business */}
           <div className="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none">
             <h3
               id="tier-hobby"
               className="text-base/7 font-semibold text-indigo-600"
             >
-              Hobby
+              Business/Freelance
             </h3>
             <p className="mt-4 flex items-baseline gap-x-2">
               <span className="text-5xl font-semibold tracking-tight text-gray-900">
-                $29
+                ₹5000
               </span>
-              <span className="text-base text-gray-500">/month</span>
+              {/* <span className="text-base text-gray-500">/month</span> */}
             </p>
             <p className="mt-6 text-base/7 text-gray-600">
               The perfect plan if you&#039;re just getting started with our
@@ -279,7 +313,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                25 products
+                Business Collaboration
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -295,7 +329,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Up to 10,000 subscribers
+                Intern Work for Branding.
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -311,7 +345,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Advanced analytics
+                45 Days
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -327,7 +361,55 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                24-hour support response time
+                Certification
+              </li>
+              <li className="flex gap-x-3">
+                <svg
+                  className="h-6 w-5 flex-none text-indigo-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Conent Partnership
+              </li>
+              <li className="flex gap-x-3">
+                <svg
+                  className="h-6 w-5 flex-none text-indigo-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Possible Hiring
+              </li>
+              <li className="flex gap-x-3">
+                <svg
+                  className="h-6 w-5 flex-none text-indigo-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                1 year Membership
               </li>
             </ul>
             <a
