@@ -177,7 +177,7 @@ export default function Pricing() {
               {/* <span className="text-base text-gray-400">/month</span> */}
             </p>
             <p className="mt-6 text-base/7 text-gray-300">
-              The perfect plan if you're a student.
+              The perfect plan if you&apos;re a student.
             </p>
             <ul
               role="list"
