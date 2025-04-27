@@ -9,11 +9,12 @@ export function BackgroundBoxesDemo() {
       <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-slate-900 [mask-image:radial-gradient(transparent,white)]" />
 
       <Boxes />
-      <h1 className={cn("relative z-20 text-xl text-white md:text-6xl")}>
+      <h1 className={cn("relative z-20 text-xl text-white md:text-7xl")}>
         INTERNSHIP MAHAKUMBH
       </h1>
       <p className="relative z-20 mt-2 text-center text-neutral-300">
-        Framer motion is the best animation library ngl
+        Participate in the BIGGEST Internship & Training Program from June 02 -
+        July 18, 2025.
       </p>
     </div>
   );

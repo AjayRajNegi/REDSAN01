@@ -7,33 +7,56 @@ export default function Details() {
     <main className="h-auto bg-slate-50" id="top">
       <BackgroundBoxesDemo />
       <section>
-        <article className="relative mx-auto my-16 h-[250px] w-[90%] overflow-hidden rounded-xl bg-red-300 md:h-[400px] md:w-[60%]">
+        <article className="relative mx-auto my-16 h-[200px] w-[90%] overflow-hidden rounded-xl bg-red-300 md:h-[300px] md:w-[60%]">
           <Image
-            src="/brand.jpg"
+            src="/Course/Card1.png"
             fill
             style={{ objectFit: "cover" }}
             alt="video"
           />
         </article>
         <article className="mx-auto w-[90%] bg-[#fff] p-4 text-justify md:w-[60%]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus nulla libero ut illo facilis, iure rerum distinctio
-          neque quas doloremque laboriosam. Consequuntur nihil optio eius
-          temporibus aut nisi neque numquam! Officia odit, nam, facere dolore
-          labore consectetur deleniti quod assumenda dolor tempore at corporis
-          iusto eius. Dolores possimus atque voluptatibus eligendi sed tempora
-          voluptas quaerat, animi distinctio temporibus ullam? Vitae! Asperiores
-          totam autem facilis at, atque nemo, assumenda explicabo illo quasi,
-          cum ipsa! Omnis facilis tempora commodi a, rerum repudiandae vero
-          repellendus! Veritatis labore corrupti dignissimos eius dicta ab
-          laborum! Tempore commodi quis veniam, magni exercitationem accusantium
-          quasi voluptas asperiores dolore repellat porro reprehenderit atque
-          incidunt. Similique consectetur, dolorem officiis velit iure beatae,
-          perspiciatis distinctio nesciunt aspernatur harum delectus. Eum. Atque
-          fugiat ut voluptas omnis, consectetur quam nobis tenetur provident
-          adipisci itaque mollitia eveniet optio quibusdam, et expedita
-          asperiores incidunt debitis unde iure. Beatae blanditiis nam
-          necessitatibus ea doloribus amet.
+          Greetings form Redsan! We are thrilled to invite students and aspiring
+          entrepreneurs to the much-awaited Internship & Training Mahakumbh in
+          2025, an exclusive industry-focused program designed to equip
+          participants with the skills needed in today's competitive world.
+          <br />
+          <br />
+          <strong>What is Internship & Training Mahkumbh 2025?</strong>
+          <br />A dynamic online internship experience conducted between June 02
+          - July 18, 2025. Led by industry experts and startup founders. Focused
+          on practical skill building, live projects, and certifications.
+          <br />
+          <br />
+          <strong>Why Participate?</strong>
+          <li>
+            Industry Exposure - Learn from real-world startup founders featured
+            in SharkTank an Startup Mahakumbh.
+          </li>
+          <li>
+            Skill Development - Hands-on training on Notion, LinkedIn, Digital
+            Marketing, Branding & Packaging.
+          </li>
+          <li>
+            Live Projects & Certification - Get certified and gain practical
+            experience for your resume.
+          </li>
+          <li>
+            Startup Support - 90-day mentoring and guidance for building
+            entrepreneur.
+          </li>
+          <li>
+            Exclusive Rewards - Free giveaways from brands like Domino's
+            Starkbucks, and 300+ others.
+          </li>
+          <br />
+          <br />
+          <strong> Our Collaborators & Ecosystem:</strong>
+          <br /> Our initiative is powered by EDC India, offering exclusive
+          career development, mentorship, and startup building opportunities.
+          <br /> Institutions and students will gain access to a thriving
+          professional network, internship/job listings, startup resources, and
+          community events.
         </article>
         <article className="mx-auto w-[90%] md:w-[60%]">
           <div className="bg-[#fff] px-6 py-16 md:px-20">
