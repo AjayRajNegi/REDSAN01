@@ -3,6 +3,7 @@ import Image from "next/image";
 import Pricing from "./Pricing";
 import { FounderCard } from "./FounderCard";
 import { Footer } from "../components/Footer";
+import Carousal from "./Carousal";
 
 const moduleData = [
   {
@@ -21,7 +22,7 @@ const moduleData = [
       "Master SEO, leverage social media, and create targeted campaigns to grow your online presence.",
     module_time: "9-12 days",
     module_credits: "3 Credits",
-    module_image: "/photos/a.jpg",
+    module_image: "/photos/DM.jpg",
   },
   {
     id: 3,
@@ -39,7 +40,7 @@ const moduleData = [
       "Develop a strong brand identity, craft compelling messaging, and build trust with your target audience to stand out.",
     module_time: "6-9 days",
     module_credits: "3 Credits",
-    module_image: "/photos/DM.jpg",
+    module_image: "/photos/a.jpg",
   },
 ];
 
@@ -83,12 +84,13 @@ export default function Courses() {
         </div>
       </div>
       {/* Hero Image */}
-      <div className="relative mx-auto mb-[100px] h-[200px] w-[98%] overflow-hidden rounded-lg sm:h-[500px] md:h-[600px] md:w-[94%]">
+      {/* <div className="relative mx-auto mb-[100px] h-[200px] w-[98%] overflow-hidden rounded-lg sm:h-[500px] md:h-[600px] md:w-[94%]">
         <Image src="/brand.jpg" fill objectFit="cover" alt="brand" />
-      </div>
+      </div> */}
+      <Carousal />
 
       {/* Features */}
-      <div className="mx-auto mb-[100px] flex w-[90%] flex-col items-center justify-evenly gap-10 md:flex-row md:gap-0">
+      <div className="mx-auto mb-[100px] mt-[50px] flex w-[90%] flex-col items-center justify-evenly gap-10 md:flex-row md:gap-0">
         <div className="relative h-[300px] w-[70%] overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl sm:h-[400px] sm:w-[30%]">
           <Image src="/Course/post4.png" fill objectFit="cover" alt="brand" />
         </div>
