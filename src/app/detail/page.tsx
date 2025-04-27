@@ -6,22 +6,26 @@ import { useEffect } from "react";
 
 declare global {
   interface Window {
-    _rzp_: any; // Declare _rzp_ as any type
+    _rzp_: {
+      init: () => void;
+    };
   }
 }
 
 export default function Details() {
   useEffect(() => {
-    if (!document.getElementById("razorpay-embed-btn-js")) {
-      const script = document.createElement("script");
-      script.src = "https://cdn.razorpay.com/static/embed_btn/bundle.js";
-      script.id = "razorpay-embed-btn-js";
-      script.defer = true;
-      document.body.appendChild(script);
-    } else {
-      const rzp = window["_rzp_"];
-      if (rzp && rzp.init) {
-        rzp.init();
+    if (typeof window !== "undefined") {
+      if (!document.getElementById("razorpay-embed-btn-js")) {
+        const script = document.createElement("script");
+        script.src = "https://cdn.razorpay.com/static/embed_btn/bundle.js";
+        script.id = "razorpay-embed-btn-js";
+        script.defer = true;
+        document.body.appendChild(script);
+      } else {
+        const rzp = window._rzp_;
+        if (rzp && typeof rzp.init === "function") {
+          rzp.init();
+        }
       }
     }
   }, []);
