@@ -21,21 +21,21 @@ export default function Pricing() {
         </div>
 
         <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-5xl lg:grid-cols-3">
-          {/* Student */}
+          {/* Startups */}
           <div className="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none">
             <h3
               id="tier-hobby"
               className="text-base/7 font-semibold text-indigo-600"
             >
-              Student
+              Startups
             </h3>
             <p className="mt-4 flex items-baseline gap-x-2">
               <span className="text-5xl font-semibold tracking-tight text-gray-900">
-                ₹3000
+                ₹10000
               </span>
             </p>
             <p className="mt-6 text-base/7 text-gray-600">
-              The perfect plan if you&#039;re a student.
+              Dedicated support and infrastructure for your company.
             </p>
             <ul
               role="list"
@@ -55,6 +55,22 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
+                Branding Support
+              </li>
+              <li className="flex gap-x-3">
+                <svg
+                  className="h-6 w-5 flex-none text-indigo-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
                 45 Days Course
               </li>
               <li className="flex gap-x-3">
@@ -87,22 +103,6 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Paid Internship
-              </li>
-              <li className="flex gap-x-3">
-                <svg
-                  className="h-6 w-5 flex-none text-indigo-600"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
                 Content Partnership
               </li>
               <li className="flex gap-x-3">
@@ -119,7 +119,23 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Possible Hiring
+                Grant Support
+              </li>
+              <li className="flex gap-x-3">
+                <svg
+                  className="h-6 w-5 flex-none text-indigo-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Special 90 Days Intensive Program
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -139,30 +155,29 @@ export default function Pricing() {
               </li>
             </ul>
             <a
-              href="https://pages.razorpay.com/pl_PzUdGogZMcuYRn/view"
-              aria-describedby="tier-hobby"
-              target="_blank"
+              href="#"
+              aria-describedby="tier-enterprise"
               className="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10"
             >
               Get started today
             </a>
           </div>
-          {/* Startups */}
+          {/* Students */}
           <div className="relative rounded-3xl bg-gray-900 p-8 shadow-2xl ring-1 ring-gray-900/10 sm:p-10">
             <h3
               id="tier-enterprise"
               className="text-base/7 font-semibold text-indigo-400"
             >
-              Startups
+              Students
             </h3>
             <p className="mt-4 flex items-baseline gap-x-2">
               <span className="text-5xl font-semibold tracking-tight text-white">
-                ₹10000
+                ₹3000
               </span>
               {/* <span className="text-base text-gray-400">/month</span> */}
             </p>
             <p className="mt-6 text-base/7 text-gray-300">
-              Dedicated support and infrastructure for your company.
+              The perfect plan if you're a student.
             </p>
             <ul
               role="list"
@@ -182,22 +197,6 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Branding Support
-              </li>
-              <li className="flex gap-x-3">
-                <svg
-                  className="h-6 w-5 flex-none text-indigo-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
                 45 Days Course
               </li>
               <li className="flex gap-x-3">
@@ -246,7 +245,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Grant Support
+                Paid Internship
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -262,7 +261,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Special 90 Days Intensive Program
+                Possible Hiring
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -282,8 +281,9 @@ export default function Pricing() {
               </li>
             </ul>
             <a
-              href="#"
-              aria-describedby="tier-enterprise"
+              href="https://pages.razorpay.com/pl_PzUdGogZMcuYRn/view"
+              aria-describedby="tier-hobby"
+              target="_blank"
               className="shadow-xs mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10"
             >
               Get started today
