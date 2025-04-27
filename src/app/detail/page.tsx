@@ -1,8 +1,30 @@
+"use client";
 import Image from "next/image";
 import { BackgroundBoxesDemo } from "./BackgroundBoxes";
 import { Footer } from "../components/Footer";
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    _rzp_: any; // Declare _rzp_ as any type
+  }
+}
 
 export default function Details() {
+  useEffect(() => {
+    if (!document.getElementById("razorpay-embed-btn-js")) {
+      const script = document.createElement("script");
+      script.src = "https://cdn.razorpay.com/static/embed_btn/bundle.js";
+      script.id = "razorpay-embed-btn-js";
+      script.defer = true;
+      document.body.appendChild(script);
+    } else {
+      const rzp = window["_rzp_"];
+      if (rzp && rzp.init) {
+        rzp.init();
+      }
+    }
+  }, []);
   return (
     <main className="h-auto bg-slate-50" id="top">
       <BackgroundBoxesDemo />
@@ -19,7 +41,7 @@ export default function Details() {
           Greetings form Redsan! We are thrilled to invite students and aspiring
           entrepreneurs to the much-awaited Internship & Training Mahakumbh in
           2025, an exclusive industry-focused program designed to equip
-          participants with the skills needed in today's competitive world.
+          participants with the skills needed in today&apos;s competitive world.
           <br />
           <br />
           <strong>What is Internship & Training Mahkumbh 2025?</strong>
@@ -46,7 +68,7 @@ export default function Details() {
             entrepreneur.
           </li>
           <li>
-            Exclusive Rewards - Free giveaways from brands like Domino's
+            Exclusive Rewards - Free giveaways from brands like Domino&apos;s
             Starkbucks, and 300+ others.
           </li>
           <br />
@@ -432,6 +454,21 @@ export default function Details() {
                     Be the Pluto — stand out, stay unique, and keep evolving.
                   </span>
                 </p>
+              </div>
+              <div className="mt-10 w-full text-center">
+                <h3 className="text-2xl font-bold text-gray-800">
+                  Subscribe right now!
+                </h3>
+
+                <div className="flex w-full items-center justify-center">
+                  <div
+                    className="razorpay-embed-btn"
+                    data-url="https://pages.razorpay.com/pl_PzUdGogZMcuYRn/view"
+                    data-text="Register Now"
+                    data-color="#0055FF"
+                    data-size="large"
+                  ></div>
+                </div>
               </div>
             </div>
           </section>
