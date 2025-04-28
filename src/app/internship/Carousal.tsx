@@ -59,7 +59,7 @@ const Carousel = () => {
         {/* Prev Button */}
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 z-10 ml-2 h-5 w-5 -translate-y-1/2 transform cursor-pointer rounded-full bg-white bg-opacity-20 text-center text-sm font-bold leading-tight text-black hover:bg-gray-900 hover:text-white md:ml-10 md:h-10 md:w-10 md:text-3xl"
+          className="absolute left-0 top-1/2 z-10 ml-2 h-5 w-5 -translate-y-1/2 transform cursor-pointer rounded-full text-center text-sm font-bold leading-tight text-[#fff] md:h-10 md:w-10 md:text-3xl"
         >
           ‹
         </button>
@@ -67,7 +67,7 @@ const Carousel = () => {
         {/* Next Button */}
         <button
           onClick={nextSlide}
-          className="text-sn absolute right-0 top-1/2 z-10 mr-2 h-5 w-5 -translate-y-1/2 transform cursor-pointer rounded-full bg-white bg-opacity-20 text-center font-bold leading-tight text-black hover:bg-gray-900 hover:text-white md:mr-10 md:h-10 md:w-10 md:text-3xl"
+          className="absolute right-0 top-1/2 z-10 ml-2 h-5 w-5 -translate-y-1/2 transform cursor-pointer rounded-full text-center text-sm font-bold leading-tight text-[#fff] md:h-10 md:w-10 md:text-3xl"
         >
           ›
         </button>

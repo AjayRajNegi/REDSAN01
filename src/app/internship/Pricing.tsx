@@ -29,7 +29,8 @@ export default function Pricing() {
             >
               Startups
             </h3>
-            <p className="mt-4 flex items-baseline gap-x-2">
+            <p className="mt-4 flex flex-col items-baseline gap-x-2">
+              <s className="text-2xl">₹25000</s>
               <span className="text-5xl font-semibold tracking-tight text-gray-900">
                 ₹10000
               </span>
@@ -170,8 +171,9 @@ export default function Pricing() {
             >
               Students
             </h3>
-            <p className="mt-4 flex items-baseline gap-x-2">
-              <span className="text-5xl font-semibold tracking-tight text-white">
+            <p className="mt-4 flex flex-col items-baseline gap-x-2">
+              <s className="text-2xl text-[#fff]">₹10000</s>
+              <span className="text-5xl font-semibold tracking-tight text-[#fff]">
                 ₹3000
               </span>
               {/* <span className="text-base text-gray-400">/month</span> */}
@@ -229,7 +231,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Content Partnership
+                20+ Competitions
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -261,7 +263,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Possible Hiring
+                Potential Hiring
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -284,20 +286,21 @@ export default function Pricing() {
               href="https://pages.razorpay.com/pl_PzUdGogZMcuYRn/view"
               aria-describedby="tier-hobby"
               target="_blank"
-              className="shadow-xs mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10"
+              className="shadow-xs mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-[#fff] hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10"
             >
               Get started today
             </a>
           </div>
-          {/* Business */}
+          {/* Student Premium */}
           <div className="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none">
             <h3
               id="tier-hobby"
               className="text-base/7 font-semibold text-indigo-600"
             >
-              Business/Freelance
+              Student Premium
             </h3>
-            <p className="mt-4 flex items-baseline gap-x-2">
+            <p className="mt-4 flex flex-col items-baseline gap-x-2">
+              <s className="text-2xl">₹15000</s>
               <span className="text-5xl font-semibold tracking-tight text-gray-900">
                 ₹5000
               </span>
@@ -389,7 +392,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Conent Partnership
+                Content Partnership
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -405,7 +408,39 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Possible Hiring
+                Hiring From Top MNC's With Interview Preparations.
+              </li>
+              <li className="flex gap-x-3">
+                <svg
+                  className="h-6 w-5 flex-none text-indigo-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Free Merchandise
+              </li>
+              <li className="flex gap-x-3">
+                <svg
+                  className="h-6 w-5 flex-none text-indigo-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Special Batch Featured
               </li>
               <li className="flex gap-x-3">
                 <svg

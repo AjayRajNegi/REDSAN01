@@ -93,11 +93,11 @@ export default function Internship() {
       <Carousal />
 
       {/* Features */}
-      <div className="mx-auto mb-[100px] mt-[50px] flex w-[90%] flex-col items-center justify-evenly gap-10 md:flex-row md:gap-0">
+      <div className="mx-auto mb-[100px] mt-[50px] flex w-[98%] flex-col items-center justify-evenly gap-10 md:flex-row md:gap-0 xl:w-[90%]">
         <div className="relative h-[300px] w-[300px] overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl md:h-[400px] md:w-[400px]">
           <Image src="/Course/post4.png" fill objectFit="cover" alt="brand" />
         </div>
-        <div className="relative h-[300px] w-[300px] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
+        <div className="relative h-[300px] w-[300px] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:hidden md:h-[400px] md:w-[400px] xl:block">
           <Image src="/Course/post1.png" fill objectFit="cover" alt="brand" />
         </div>
         <div className="relative h-[300px] w-[300px] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
