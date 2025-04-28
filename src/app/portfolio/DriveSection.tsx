@@ -12,9 +12,9 @@ export default function DriveSection() {
         commercial or a YouTube Video at RedSan, we aim to inspire people to
         connect and experience fresh perspectives through videos that last.
       </p>
-      <div className="relative mt-[50px] h-[200px] w-full overflow-hidden rounded-md sm:h-[400px] md:mt-[100px] md:h-[500px] xl:h-[600px]">
+      <div className="relative mx-auto mt-[50px] h-[300px] w-[300px] overflow-hidden rounded-md md:mt-[100px] md:h-[400px] md:w-[400px] xl:h-[500px] xl:w-[500px]">
         <Image
-          src="/brand.jpg"
+          src="/Course/post1.png"
           alt="asfsd"
           fill
           style={{ objectFit: "cover" }}

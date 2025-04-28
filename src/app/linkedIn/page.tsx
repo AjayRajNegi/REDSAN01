@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import { BouncyCardsFeatures } from "../components/BouncyCardsFeatures";
 import { Footer } from "../components/Footer";
+import Link from "next/link";
 
 const moduleData = [
   {
@@ -154,8 +155,9 @@ export default function LinkedIn() {
 
             <div className="mx-auto w-[98%] md:w-[59%]">
               <div className="flex h-[40px] items-center justify-around rounded-2xl bg-gray-950 text-slate-50">
-                <span>Work</span> <span>About</span>
-                <span>Services</span>
+                <Link href="/portfolio">OUR WORK</Link>
+                <Link href="/internship">INTERNSHIP</Link>
+                <Link href="/linkedIn">LINKEDIN</Link>
               </div>
               <div className="relative mt-1 h-[200px] overflow-hidden rounded-2xl md:h-[500px]">
                 <Image
@@ -175,7 +177,7 @@ export default function LinkedIn() {
               Witness how small changes can make your profile shine and bright !
               <br />
               Learning linkedin with AI integration can be your next smart
-              choice after BITCOIN
+              choice after BITCOIN
             </h4>
 
             <hr style={{ border: "1px solid gray" }} className="mr-1 mt-5" />

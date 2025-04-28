@@ -10,8 +10,8 @@ export function Footer() {
           <span className="mr-2 hidden text-xs md:block">digitaL agencY</span>
         </div>
         <div className="flex h-[90%] w-[100%] items-center justify-around rounded-2xl bg-slate-50 text-gray-950 sm:w-[55%]">
-          <Link href="/portfolio">Work</Link>{" "}
-          <Link href="/courses">Courses</Link>
+          <Link href="/portfolio">Work</Link>
+          <Link href="/internship">Internship</Link>
           <Link href="/linkedIn">LinkedIn</Link>
         </div>
       </div>

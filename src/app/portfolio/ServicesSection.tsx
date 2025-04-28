@@ -78,9 +78,8 @@ const AnimatedComponent = () => {
   }, []);
   return (
     <>
-      {" "}
       <motion.div
-        className="mt:pt-[100px] pt-[30px] text-[2.5rem] uppercase leading-[1] text-[#ecf1f0] md:text-[10vw]"
+        className="mt:pt-[100px] block w-fit pt-[30px] text-[2.5rem] uppercase leading-[1] text-[#ecf1f0] md:hidden md:text-[10vw]"
         initial={{ x: initialX }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.3 }}

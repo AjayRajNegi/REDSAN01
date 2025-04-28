@@ -5,17 +5,20 @@ import DriveSection from "./DriveSection";
 import FeaturedSection from "./FeaturedSection";
 import ServicesSection from "./ServicesSection";
 import { Footer } from "../components/Footer";
+import Link from "next/link";
 export default function page() {
   return (
     <div className="min-h-[100vh] bg-[#ecf1f0]">
       {/* Navbar Section Larger Screens*/}
       <div className="h-[1vw] bg-[#ecf1f0] md:h-[80px]" id="top"></div>
       <nav className="asd fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">
-        <div className="left text-2xl text-[#fdc0bc]">REDSAN.STUDIOS</div>
+        <Link href="/" className="left text-2xl text-[#fdc0bc]">
+          REDSAN.STUDIOS
+        </Link>
         <div className="right flex gap-4 text-[#fdc0bc]">
-          <span>WORK</span>
-          <span>ABOUT</span>
-          <span>SERVICES</span>
+          <Link href="/portfolio">OUR WORK</Link>
+          <Link href="/internship">INTERNSHIP</Link>
+          <Link href="/linkedIn">LINKEDIN</Link>
         </div>
       </nav>
       {/* Navbar Section Smaller Screens */}
@@ -40,8 +43,9 @@ export default function page() {
       </div>
       <div className="mx-auto mb-[1vw] mt-[1vw] w-[98%] md:hidden">
         <div className="flex h-[40px] items-center justify-around rounded-2xl bg-gray-950 text-[#ecf1f0]">
-          <span>Work</span> <span>About</span>
-          <span>Services</span>
+          <Link href="/portfolio">OUR WORK</Link>
+          <Link href="/internship">INTERNSHIP</Link>
+          <Link href="/linkedIn">LINKEDIN</Link>
         </div>
       </div>
       {/* Carousel */}

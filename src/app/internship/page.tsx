@@ -44,16 +44,18 @@ const moduleData = [
   },
 ];
 
-export default function Courses() {
+export default function Internship() {
   return (
     <div className="min-h-[100vh] bg-[#ecf1f0]" id="top">
       {/* Navbar Section Larger Screens */}
       <div className="h-[1vw] bg-[#ecf1f0] md:h-[80px]"></div>
       <nav className="asd fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">
-        <div className="left text-2xl text-slate-50">REDSAN.STUDIOS</div>
+        <Link href="/" className="left text-2xl text-slate-50">
+          REDSAN.STUDIOS
+        </Link>
         <div className="right flex gap-4 text-slate-50">
           <Link href="/portfolio">OUR WORK</Link>
-          <Link href="/courses">COURSES</Link>
+          <Link href="/internship">INTERNSHIP</Link>
           <Link href="/linkedIn">LINKEDIN</Link>
         </div>
       </nav>
@@ -79,8 +81,9 @@ export default function Courses() {
       </div>
       <div className="mx-auto mb-[1vw] mt-[1vw] w-[98%] md:hidden">
         <div className="flex h-[40px] items-center justify-around rounded-2xl bg-gray-950 text-[#ecf1f0]">
-          <span>Work</span> <span>About</span>
-          <span>Services</span>
+          <Link href="/portfolio">OUR WORK</Link>
+          <Link href="/internship">INTERNSHIP</Link>
+          <Link href="/linkedIn">LINKEDIN</Link>
         </div>
       </div>
       {/* Hero Image */}
