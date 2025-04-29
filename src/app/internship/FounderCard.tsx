@@ -69,11 +69,17 @@ const data = [
     content: <DummyContent />,
   },
   {
-    category: "RedCubical Systems",
-    title: "Map for your life.",
-    src: "/photos/MARS.jpg",
+    category: "Kalankit",
+    title: "Where ART meets PASSION.",
+    src: "/photos/Kalankit.jpg",
     content: <DummyContent />,
   },
+  // {
+  //   category: "RedCubical Systems",
+  //   title: "Map for your life.",
+  //   src: "/photos/MARS.jpg",
+  //   content: <DummyContent />,
+  // },
 
   // {
   //   category: "Product",

@@ -32,7 +32,7 @@ export default function Pricing() {
             <p className="mt-4 flex flex-col items-baseline gap-x-2">
               <s className="text-2xl">₹25000</s>
               <span className="text-5xl font-semibold tracking-tight text-gray-900">
-                ₹10000
+                ₹9999
               </span>
             </p>
             <p className="mt-6 text-base/7 text-gray-600">
@@ -156,7 +156,8 @@ export default function Pricing() {
               </li>
             </ul>
             <a
-              href="#"
+              href="https://wa.me/+919792830382"
+              target="_blank"
               aria-describedby="tier-enterprise"
               className="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10"
             >
@@ -174,7 +175,7 @@ export default function Pricing() {
             <p className="mt-4 flex flex-col items-baseline gap-x-2">
               <s className="text-2xl text-[#fff]">₹10000</s>
               <span className="text-5xl font-semibold tracking-tight text-[#fff]">
-                ₹3000
+                ₹2999
               </span>
               {/* <span className="text-base text-gray-400">/month</span> */}
             </p>
@@ -302,7 +303,7 @@ export default function Pricing() {
             <p className="mt-4 flex flex-col items-baseline gap-x-2">
               <s className="text-2xl">₹15000</s>
               <span className="text-5xl font-semibold tracking-tight text-gray-900">
-                ₹5000
+                ₹4999
               </span>
               {/* <span className="text-base text-gray-500">/month</span> */}
             </p>
@@ -460,7 +461,8 @@ export default function Pricing() {
               </li>
             </ul>
             <a
-              href="#"
+              href="https://wa.me/+919664365954"
+              target="_blank"
               aria-describedby="tier-hobby"
               className="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10"
             >
