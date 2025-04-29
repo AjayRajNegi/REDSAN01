@@ -72,7 +72,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                45 Days Course
+                45 Days Internship
               </li>
               <li className="flex gap-x-3">
                 <svg
@@ -206,7 +206,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                45 Days Course
+                45 Days Internship
               </li>
               <li className="flex gap-x-3">
                 <svg
