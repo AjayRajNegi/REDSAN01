@@ -154,6 +154,12 @@ export default function Pricing() {
                 </svg>
                 1 year Membership
               </li>
+              <a
+                href="/detail"
+                className="flex w-fit gap-x-3 rounded-md bg-indigo-500 px-4 text-[#fff]"
+              >
+                View Details
+              </a>
             </ul>
             <a
               href="https://wa.me/+919792830382"
@@ -282,6 +288,12 @@ export default function Pricing() {
                 </svg>
                 1 year Membership
               </li>
+              <a
+                href="/detail"
+                className="flex w-fit gap-x-3 rounded-md bg-indigo-500 px-4 text-[#fff]"
+              >
+                View Details
+              </a>
             </ul>
             <a
               href="https://pages.razorpay.com/pl_PzUdGogZMcuYRn/view"
@@ -459,6 +471,12 @@ export default function Pricing() {
                 </svg>
                 1 year Membership
               </li>
+              <a
+                href="/detail"
+                className="flex w-fit gap-x-3 rounded-md bg-indigo-500 px-4 text-[#fff]"
+              >
+                View Details
+              </a>
             </ul>
             <a
               href="https://wa.me/+919664365954"
