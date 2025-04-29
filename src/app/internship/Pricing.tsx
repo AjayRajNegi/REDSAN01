@@ -409,7 +409,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Hiring From Top MNC's With Interview Preparations.
+                Hiring From Top MNC&apos;s With Interview Preparations.
               </li>
               <li className="flex gap-x-3">
                 <svg
