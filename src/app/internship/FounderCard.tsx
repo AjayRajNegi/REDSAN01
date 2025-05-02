@@ -74,6 +74,12 @@ const data = [
     src: "/photos/Kalankit.jpg",
     content: <DummyContent />,
   },
+  {
+    category: "Momo Mami",
+    title: "Taste of LOVE.",
+    src: "/photos/MomoMami.jpg",
+    content: <DummyContent />,
+  },
   // {
   //   category: "RedCubical Systems",
   //   title: "Map for your life.",

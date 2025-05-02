@@ -40,7 +40,11 @@ export function Footer() {
             <p className="text-lg text-slate-300 md:pb-2">Socials</p>
             <p className="text-slate-50">
               ⚪
-              <a href="https://www.instagram.com/redsan.io/" className="ml-2">
+              <a
+                href="https://www.instagram.com/redsan.io/"
+                target="_blank"
+                className="ml-2"
+              >
                 Instagram
               </a>
             </p>
@@ -48,6 +52,7 @@ export function Footer() {
               ⚪
               <a
                 href="https://www.linkedin.com/company/redsan-digitals/posts/?feedView=all"
+                target="_blank"
                 className="ml-2"
               >
                 LinkedIn
@@ -55,7 +60,11 @@ export function Footer() {
             </p>
             <p className="text-slate-50">
               ⚪
-              <a href="https://www.youtube.com/@Redsan-who" className="ml-2">
+              <a
+                href="https://www.youtube.com/@Redsan-who"
+                target="_blank"
+                className="ml-2"
+              >
                 YouTube
               </a>
             </p>
