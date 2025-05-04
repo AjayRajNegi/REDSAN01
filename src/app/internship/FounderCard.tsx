@@ -69,15 +69,39 @@ const data = [
     content: <DummyContent />,
   },
   {
+    category: "Khalid Wani",
+    title: "",
+    src: "/photos/KhalidWani.jpg",
+    content: <DummyContent />,
+  },
+  {
+    category: "Redcubical Systems",
+    title: "Tech Expertise.",
+    src: "/photos/RedCubicals1.jpg",
+    content: <DummyContent />,
+  },
+  {
     category: "Kalankit",
     title: "Where ART meets PASSION.",
     src: "/photos/Kalankit.jpg",
     content: <DummyContent />,
   },
   {
+    category: "Venturebolt",
+    title: "Tech Expertise.",
+    src: "/photos/Venturebolt.jpg",
+    content: <DummyContent />,
+  },
+  {
     category: "Momo Mami",
     title: "Taste of LOVE.",
     src: "/photos/MomoMami.jpg",
+    content: <DummyContent />,
+  },
+  {
+    category: "Redcubical Systems",
+    title: "Network like EXPERTS.",
+    src: "/photos/RedCubicals2.jpg",
     content: <DummyContent />,
   },
   // {
