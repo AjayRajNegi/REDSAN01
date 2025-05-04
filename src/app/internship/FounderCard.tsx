@@ -69,8 +69,8 @@ const data = [
     content: <DummyContent />,
   },
   {
-    category: "Khalid Wani",
-    title: "",
+    category: "Mr. Khalid Wani",
+    title: "Serial Entrepreneur",
     src: "/photos/KhalidWani.jpg",
     content: <DummyContent />,
   },
@@ -87,8 +87,8 @@ const data = [
     content: <DummyContent />,
   },
   {
-    category: "Venturebolt",
-    title: "Tech Expertise.",
+    category: "Dr. Saurabh Trivedi",
+    title: "Director at Venturebolt",
     src: "/photos/Venturebolt.jpg",
     content: <DummyContent />,
   },
@@ -104,29 +104,10 @@ const data = [
     src: "/photos/RedCubicals2.jpg",
     content: <DummyContent />,
   },
-  // {
-  //   category: "RedCubical Systems",
-  //   title: "Map for your life.",
-  //   src: "/photos/MARS.jpg",
-  //   content: <DummyContent />,
-  // },
-
-  // {
-  //   category: "Product",
-  //   title: "Maps for your iPhone 15 Pro Max.",
-  //   src: "/social.jpg",
-  //   content: <DummyContent />,
-  // },
-  // {
-  //   category: "iOS",
-  //   title: "Photography just got better.",
-  //   src: "/social.jpg",
-  //   content: <DummyContent />,
-  // },
-  // {
-  //   category: "Hiring",
-  //   title: "Hiring for a Staff Software Engineer",
-  //   src: "/social.jpg",
-  //   content: <DummyContent />,
-  // },
+  {
+    category: "Dr. Kanishka Jha",
+    title: "CEO Hatch, DBIIF",
+    src: "/photos/Hatch.jpg",
+    content: <DummyContent />,
+  },
 ];
