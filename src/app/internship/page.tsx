@@ -90,7 +90,7 @@ export default function Internship() {
       <Carousal />
 
       {/* Features */}
-      <div className="mx-auto mb-[100px] mt-[50px] w-[98%] overflow-x-auto xl:w-[90%]">
+      <div className="scrollbar-hidden mx-auto mb-[50px] mt-[40px] w-[98%] overflow-x-auto md:mb-[100px] xl:w-[90%]">
         <div className="ml-5 flex flex-nowrap items-center justify-between gap-5 md:gap-0">
           <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl md:h-[400px] md:w-[400px]">
             <Image src="/Course/post4.png" fill objectFit="cover" alt="brand" />
