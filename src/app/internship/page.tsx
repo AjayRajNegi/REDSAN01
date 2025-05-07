@@ -4,6 +4,56 @@ import Pricing from "./Pricing";
 import { FounderCard } from "./FounderCard";
 import { Footer } from "../components/Footer";
 import Carousal from "./Carousal";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Digital Marketing, LinkedIn, Branding, Notion  | redsan",
+  description:
+    "redan.in - Digital Marketing Internship 2025 to gain hands-on industry experience, boost your skills, and build a strong foundation for your career growth.",
+  keywords: [
+    "internship",
+    "digital marketing",
+    "linkedIn",
+    "branding",
+    "notion",
+    "shark tank India",
+    "startups",
+  ],
+  openGraph: {
+    url: "https://redsan.in/internship",
+    type: "website",
+    title: "Digital Marketing, LinkedIn, Branding, Notion  | redsan",
+    description:
+      "redan.in - Digital Marketing Internship 2025 to gain hands-on industry experience, boost your skills, and build a strong foundation for your career growth.",
+    images: [
+      {
+        url: "/Course/Card1.png",
+        width: 1200,
+        height: 630,
+        alt: "redsan",
+      },
+    ],
+  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Elastic Stack, Next.js, Python, JavaScript Tutorials | dminhvu",
+  //   description:
+  //     "dminhvu.com - Programming blog for everyone to learn Elastic Stack, Next.js, Python, JavaScript, React, Machine Learning, Data Science, and more.",
+  //   creator: "@dminhvu02",
+  //   site: "@dminhvu02",
+  //   images: [
+  //     {
+  //       url: "/Course/Card1.png",
+  //       width: 1200,
+  //       height: 630,
+  //       alt: "redsan",
+  //     },
+  //   ],
+  // },
+  alternates: {
+    canonical: "https://redsan.in",
+  },
+};
 
 const moduleData = [
   {
@@ -91,7 +141,7 @@ export default function Internship() {
 
       {/* Features */}
       <div className="scrollbar-hidden mx-auto mb-[50px] mt-[40px] w-[98%] overflow-x-auto md:mb-[100px] xl:w-[90%]">
-        <div className="ml-5 flex flex-nowrap items-center justify-between gap-5 md:gap-0">
+        <div className="mx-5 flex flex-nowrap items-center justify-between gap-5 md:gap-0">
           <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl md:h-[400px] md:w-[400px]">
             <Image src="/Course/post4.png" fill objectFit="cover" alt="brand" />
           </div>
