@@ -87,30 +87,31 @@ export default function Internship() {
         </div>
       </div>
       {/* Hero Image */}
-      {/* <div className="relative mx-auto mb-[100px] h-[200px] w-[98%] overflow-hidden rounded-lg sm:h-[500px] md:h-[600px] md:w-[94%]">
-        <Image src="/brand.jpg" fill objectFit="cover" alt="brand" />
-      </div> */}
       <Carousal />
 
       {/* Features */}
-      <div className="mx-auto mb-[100px] mt-[50px] flex w-[98%] flex-col items-center justify-evenly gap-10 md:flex-row md:gap-0 xl:w-[90%]">
-        <div className="relative h-[300px] w-[300px] overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl md:h-[400px] md:w-[400px]">
-          <Image src="/Course/post4.png" fill objectFit="cover" alt="brand" />
-        </div>
-        <div className="relative h-[300px] w-[300px] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:hidden md:h-[400px] md:w-[400px] xl:block">
-          <Image src="/Course/post1.png" fill objectFit="cover" alt="brand" />
-        </div>
-        <div className="relative h-[300px] w-[300px] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
-          <Image src="/Course/post5.png" fill objectFit="cover" alt="brand" />
-        </div>
-        <div className="relative h-[300px] w-[300px] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:hidden md:h-[400px] md:w-[400px]">
-          <Image src="/Course/post2.png" fill objectFit="cover" alt="brand" />
-        </div>
-        <div className="relative h-[300px] w-[300px] overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:hidden md:h-[400px] md:w-[400px]">
-          <Image src="/Course/post3.png" fill objectFit="cover" alt="brand" />
+      <div className="mx-auto mb-[100px] mt-[50px] w-[98%] overflow-x-auto xl:w-[90%]">
+        <div className="ml-5 flex flex-nowrap items-center justify-between gap-5 md:gap-0">
+          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl md:h-[400px] md:w-[400px]">
+            <Image src="/Course/post4.png" fill objectFit="cover" alt="brand" />
+          </div>
+          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:hidden md:h-[400px] md:w-[400px] xl:block">
+            <Image src="/Course/post1.png" fill objectFit="cover" alt="brand" />
+          </div>
+          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
+            <Image src="/Course/post5.png" fill objectFit="cover" alt="brand" />
+          </div>
+          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:hidden md:h-[400px] md:w-[400px]">
+            <Image src="/Course/post2.png" fill objectFit="cover" alt="brand" />
+          </div>
+          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:hidden md:h-[400px] md:w-[400px]">
+            <Image src="/Course/post3.png" fill objectFit="cover" alt="brand" />
+          </div>
         </div>
       </div>
 
+      {/* Pricing */}
+      <Pricing />
       {/* Module Structure */}
       <div className="flex h-[20vh] w-full items-center bg-gray-950">
         <h1 className="px-4 text-4xl font-semibold uppercase text-slate-200 md:text-5xl">
@@ -120,6 +121,7 @@ export default function Internship() {
           raining Module
         </h1>
       </div>
+
       {/* Module Structure Cards */}
       <div className="h-[80vh] bg-gray-950 md:h-[50vh]">
         <section
@@ -201,8 +203,7 @@ export default function Internship() {
       </div>
       {/* Founder Cards */}
       <FounderCard />
-      {/* Pricing */}
-      <Pricing />
+
       {/* Footer */}
       <Footer />
     </div>

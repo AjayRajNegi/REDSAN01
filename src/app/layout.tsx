@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Audiowide } from "next/font/google";
 import "./globals.css";
 
@@ -15,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${audiowide.className} antialiased`}>{children}</body>
+      <body className={`${audiowide.className} antialiased`}>
+        {children} <Analytics />
+      </body>
     </html>
   );
 }
