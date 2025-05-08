@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://redsan.in"),
   openGraph: {
-    siteName: "internship | redsan",
+    siteName: "internship | Redsan",
     type: "website",
     locale: "en_US",
     title: "Redsan Digital Marketing Internship",
@@ -83,7 +83,7 @@ const jsonLd = {
     "@id": "https://redsan.in",
   },
   headline:
-    "Redsan empowering Startups & Student Entrepreneurs with Smart Marketing and Scalable Community Tools",
+    "Redsan:- Empowering Startups & Student Entrepreneurs with Smart Marketing and Scalable Community Tools",
   description:
     "RedSan delivers tailored marketing solutions, educational content, and community-driven platforms to help startups and student entrepreneurs grow, connect, and lead in the digital age.",
   image: "/Course/Card1.png",

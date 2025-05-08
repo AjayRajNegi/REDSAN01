@@ -7,7 +7,7 @@ import Carousal from "./Carousal";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing, LinkedIn, Branding, Notion  | redsan",
+  title: "Redsan | Digital Marketing, LinkedIn, Branding, Notion",
   description:
     "redan.in - Digital Marketing Internship 2025 to gain hands-on industry experience, boost your skills, and build a strong foundation for your career growth.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://redsan.in/internship",
     type: "website",
-    title: "Digital Marketing, LinkedIn, Branding, Notion  | redsan",
+    title: "Redsan | Digital Marketing, LinkedIn, Branding, Notion",
     description:
       "redan.in - Digital Marketing Internship 2025 to gain hands-on industry experience, boost your skills, and build a strong foundation for your career growth.",
     images: [

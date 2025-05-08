@@ -1,7 +1,55 @@
-"use client";
+import { Metadata } from "next";
 
 import Link from "next/link";
 import { Footer } from "./components/Footer";
+export const metadata: Metadata = {
+  title: "Redsan | Digital Marketing, LinkedIn, Branding, Notion",
+  description:
+    "redan.in - Digital Marketing Internship 2025 to gain hands-on industry experience, boost your skills, and build a strong foundation for your career growth.",
+  keywords: [
+    "internship",
+    "digital marketing",
+    "linkedIn",
+    "branding",
+    "notion",
+    "shark tank India",
+    "startups",
+  ],
+  openGraph: {
+    url: "https://redsan.in/internship",
+    type: "website",
+    title: "Redsan | Digital Marketing, LinkedIn, Branding, Notion",
+    description:
+      "redan.in - Digital Marketing Internship 2025 to gain hands-on industry experience, boost your skills, and build a strong foundation for your career growth.",
+    images: [
+      {
+        url: "/Course/Card1.png",
+        width: 1200,
+        height: 630,
+        alt: "redsan",
+      },
+    ],
+  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Elastic Stack, Next.js, Python, JavaScript Tutorials | dminhvu",
+  //   description:
+  //     "dminhvu.com - Programming blog for everyone to learn Elastic Stack, Next.js, Python, JavaScript, React, Machine Learning, Data Science, and more.",
+  //   creator: "@dminhvu02",
+  //   site: "@dminhvu02",
+  //   images: [
+  //     {
+  //       url: "/Course/Card1.png",
+  //       width: 1200,
+  //       height: 630,
+  //       alt: "redsan",
+  //     },
+  //   ],
+  // },
+  alternates: {
+    canonical: "https://redsan.in",
+  },
+};
 
 //import { motion } from "motion/react";
 //import MainText from "./components/MainText";
