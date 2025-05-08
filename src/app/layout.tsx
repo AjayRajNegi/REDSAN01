@@ -109,6 +109,7 @@ export default function RootLayout({
       <body className={`${audiowide.className} antialiased`}>
         {children} <Analytics />
         <Script
+          id="faq-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
