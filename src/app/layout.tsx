@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     capable: true,
   },
   verification: {
-    google: "YOUR_DATA",
+    google: "Z5sWwJmotgTQAW5suEALAI3alAJbdJzBr5SpgzMbeUI",
     yandex: ["YOUR_DATA"],
     other: {
       "msvalidate.01": ["YOUR_DATA"],
