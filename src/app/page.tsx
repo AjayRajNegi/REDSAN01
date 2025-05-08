@@ -93,8 +93,9 @@ export default function Home() {
           </div>
           <div className="mx-auto mb-[1vw] mt-[1vw] w-[98%] md:hidden">
             <div className="flex h-[40px] items-center justify-around rounded-2xl bg-gray-950 text-[#ecf1f0]">
-              <span>Work</span> <span>About</span>
-              <span>Services</span>
+              <Link href="/portfolio">OUR WORK</Link>
+              <Link href="/internship">INTERNSHIP</Link>
+              <Link href="/linkedIn">LINKEDIN</Link>
             </div>
           </div>
         </div>

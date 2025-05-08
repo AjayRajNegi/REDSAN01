@@ -2,6 +2,7 @@ import type { Viewport, Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { Audiowide } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const audiowide = Audiowide({ subsets: ["latin"], weight: "400" });
 
@@ -36,10 +37,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "Z5sWwJmotgTQAW5suEALAI3alAJbdJzBr5SpgzMbeUI",
-    yandex: ["YOUR_DATA"],
+    yandex: ["be3adb9fa54b448c"],
     other: {
-      "msvalidate.01": ["YOUR_DATA"],
-      "facebook-domain-verification": ["YOUR_DATA"],
+      "msvalidate.01": ["3397025D3E78D3F2BB51D336576F0D1E"],
     },
   },
   icons: {
@@ -74,6 +74,31 @@ export const metadata: Metadata = {
     ],
   },
 };
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://redsan.in",
+  },
+  headline:
+    "Redsan empowering Startups & Student Entrepreneurs with Smart Marketing and Scalable Community Tools",
+  description:
+    "RedSan delivers tailored marketing solutions, educational content, and community-driven platforms to help startups and student entrepreneurs grow, connect, and lead in the digital age.",
+  image: "/Course/Card1.png",
+  author: {
+    "@type": "Person",
+    name: "Redsan",
+    url: "https://www.linkedin.com/company/redsan-digitals/posts/?feedView=all",
+  },
+  publisher: {
+    "@type": "Person",
+    name: "Redsan",
+  },
+  inLanguage: "en-US",
+  isFamilyFriendly: "true",
+};
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -83,6 +108,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${audiowide.className} antialiased`}>
         {children} <Analytics />
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );

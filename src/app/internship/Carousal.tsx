@@ -44,7 +44,6 @@ const Carousel = () => {
             className={`absolute inset-0 h-[20vh] transition-opacity duration-500 ease-in-out sm:h-[40vh] xl:h-[80vh] ${
               index === activeIndex ? "relative opacity-100" : "opacity-0"
             }`}
-            // style={{ height: "80vh" }}
           >
             <div
               className={`mx-auto block flex h-full w-full bg-contain bg-center bg-no-repeat pt-6 sm:bg-right md:items-center md:bg-cover md:pt-0`}
