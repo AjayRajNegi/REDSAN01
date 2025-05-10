@@ -140,22 +140,52 @@ export default function Internship() {
       <Carousal />
 
       {/* Features */}
-      <div className="scrollbar-hidden mx-auto mb-[50px] mt-[40px] w-[98%] overflow-x-auto md:mb-[100px] xl:w-[90%]">
-        <div className="mx-5 flex flex-nowrap items-center justify-between gap-5 md:gap-0">
+      <div className="scrollbar-hidden mx-auto mb-[50px] mt-[40px] w-[100%] overflow-x-auto md:mb-[100px]">
+        <div className="mx-5 flex flex-nowrap items-center justify-between gap-5">
           <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl md:h-[400px] md:w-[400px]">
-            <Image src="/Course/post4.png" fill objectFit="cover" alt="brand" />
+            <Image
+              src="/Course/post4.png"
+              fill
+              objectFit="cover"
+              alt="brand"
+              quality={60}
+            />
           </div>
-          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:hidden md:h-[400px] md:w-[400px] xl:block">
-            <Image src="/Course/post1.png" fill objectFit="cover" alt="brand" />
+          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px] xl:block">
+            <Image
+              src="/Course/post1.png"
+              fill
+              objectFit="cover"
+              alt="brand"
+              quality={60}
+            />
           </div>
           <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
-            <Image src="/Course/post5.png" fill objectFit="cover" alt="brand" />
+            <Image
+              src="/Course/post5.png"
+              fill
+              objectFit="cover"
+              alt="brand"
+              quality={60}
+            />
           </div>
-          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:hidden md:h-[400px] md:w-[400px]">
-            <Image src="/Course/post2.png" fill objectFit="cover" alt="brand" />
+          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
+            <Image
+              src="/Course/post2.png"
+              fill
+              objectFit="cover"
+              alt="brand"
+              quality={60}
+            />
           </div>
-          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:hidden md:h-[400px] md:w-[400px]">
-            <Image src="/Course/post3.png" fill objectFit="cover" alt="brand" />
+          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
+            <Image
+              src="/Course/post3.png"
+              fill
+              objectFit="cover"
+              alt="brand"
+              quality={60}
+            />
           </div>
         </div>
       </div>

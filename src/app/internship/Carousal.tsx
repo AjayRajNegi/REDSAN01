@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 const Carousel = () => {
@@ -41,16 +42,22 @@ const Carousel = () => {
         {slides.map((slide, index) => (
           <div
             key={slide.id}
-            className={`absolute inset-0 h-[20vh] transition-opacity duration-500 ease-in-out sm:h-[40vh] xl:h-[80vh] ${
+            className={`absolute inset-0 mx-auto aspect-video transition-opacity duration-500 ease-in-out xl:h-[80vh] ${
               index === activeIndex ? "relative opacity-100" : "opacity-0"
             }`}
           >
             <div
-              className={`mx-auto block flex h-full w-full bg-contain bg-center bg-no-repeat pt-6 sm:bg-right md:items-center md:bg-cover md:pt-0`}
-              style={{ backgroundImage: `url('${slide.image}')` }}
+              className={`relative mx-auto block flex aspect-video h-full w-full overflow-hidden rounded-xl bg-contain bg-center bg-no-repeat pt-6 sm:bg-right md:items-center md:bg-cover md:pt-0`}
             >
+              <Image
+                src={`${slide.image}`}
+                fill
+                objectFit="cover"
+                alt={slide.image}
+                quality={70}
+              />
               {/* Optional: Content inside slide */}
-              <div className="container mx-auto"></div>
+              {/* <div className="container mx-auto"></div> */}
             </div>
           </div>
         ))}
