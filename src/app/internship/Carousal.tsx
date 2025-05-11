@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   const slides = [
     {
@@ -32,10 +33,22 @@ const Carousel = () => {
     setActiveIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
+  useEffect(() => {
+    if (!isPaused) {
+      const interval = setInterval(() => {
+        nextSlide();
+      }, 3000); // Change slide every 5 seconds
+
+      return () => clearInterval(interval);
+    }
+  }, [isPaused]);
+
   return (
     <div
       className="container relative mx-auto bg-[#ecf1f0]"
       style={{ maxWidth: "1600px" }}
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
     >
       <div className="relative w-full overflow-hidden">
         {/* Slides */}
@@ -56,8 +69,6 @@ const Carousel = () => {
                 alt={slide.image}
                 quality={70}
               />
-              {/* Optional: Content inside slide */}
-              {/* <div className="container mx-auto"></div> */}
             </div>
           </div>
         ))}
@@ -65,7 +76,7 @@ const Carousel = () => {
         {/* Prev Button */}
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 z-10 ml-2 h-5 w-5 -translate-y-1/2 transform cursor-pointer rounded-full text-center text-sm font-bold leading-tight text-[#fff] md:h-10 md:w-10 md:text-3xl"
+          className="absolute left-0 top-1/2 z-10 ml-2 -translate-y-1/2 transform cursor-pointer rounded-full text-center text-3xl font-bold leading-tight text-[#fff] md:h-10 md:w-10 md:text-5xl md:text-[#000]"
         >
           ‹
         </button>
@@ -73,7 +84,7 @@ const Carousel = () => {
         {/* Next Button */}
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 z-10 ml-2 h-5 w-5 -translate-y-1/2 transform cursor-pointer rounded-full text-center text-sm font-bold leading-tight text-[#fff] md:h-10 md:w-10 md:text-3xl"
+          className="absolute right-0 top-1/2 z-10 mr-2 -translate-y-1/2 transform cursor-pointer rounded-full text-center text-3xl font-bold leading-tight text-[#fff] md:h-10 md:w-10 md:text-5xl md:text-[#000]"
         >
           ›
         </button>
