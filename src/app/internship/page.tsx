@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import Pricing from "./Pricing";
-import { FounderCard } from "./FounderCard";
-import { Footer } from "../components/Footer";
-import Carousal from "./Carousal";
 import { Metadata } from "next";
 import Script from "next/script";
+import Carousal from "./Carousal";
+import { Footer } from "../components/Footer";
+import { FounderCard } from "./FounderCard";
+
 export const metadata: Metadata = {
   title:
     "Digital Marketing Internship 2025 | Redsan – Learn LinkedIn, Branding, Notion",
@@ -142,6 +143,7 @@ export default function Internship() {
                 {
                   "@type": "Offer",
                   name: "Student",
+                  category: "Student",
                   price: "3000",
                   priceCurrency: "INR",
                   url: "https://redsan.in/internship",
@@ -150,6 +152,7 @@ export default function Internship() {
                 {
                   "@type": "Offer",
                   name: "Student Premium",
+                  category: "Student",
                   price: "5000",
                   priceCurrency: "INR",
                   url: "https://redsan.in/internship",
@@ -158,6 +161,7 @@ export default function Internship() {
                 {
                   "@type": "Offer",
                   name: "Startups",
+                  category: "Organization",
                   price: "10000",
                   priceCurrency: "INR",
                   url: "https://redsan.in/internship",
@@ -169,6 +173,7 @@ export default function Internship() {
                 courseMode: "online",
                 startDate: "2025-06-02",
                 endDate: "2025-07-18",
+                courseWorkload: "P30H",
                 location: {
                   "@type": "VirtualLocation",
                   url: "https://redsan.in/internship",
@@ -182,6 +187,7 @@ export default function Internship() {
           }),
         }}
       />
+
       <div className="min-h-[100vh] bg-[#ecf1f0]" id="top">
         {/* Navbar Section Larger Screens */}
         <div className="h-[1vw] bg-[#ecf1f0] md:h-[80px]"></div>

@@ -1,8 +1,8 @@
-import type { Viewport, Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next";
-import { Audiowide } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { Audiowide } from "next/font/google";
+import type { Viewport, Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://redsan.in"),
