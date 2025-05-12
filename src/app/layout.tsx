@@ -4,22 +4,36 @@ import { Audiowide } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const audiowide = Audiowide({ subsets: ["latin"], weight: "400" });
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  themeColor: "#ffffff",
-};
 export const metadata: Metadata = {
   metadataBase: new URL("https://redsan.in"),
+  title: "Digital Marketing Internship 2025 | Redsan",
+  description:
+    "Join Redsan’s Digital Marketing Internship 2025 and gain hands-on experience in LinkedIn, branding, Notion, and startup marketing. Build real-world skills and a career-ready portfolio.",
+  keywords: [
+    "digital marketing internship 2025",
+    "LinkedIn internship India",
+    "branding internship",
+    "Notion internship",
+    "startup internship India",
+    "Redsan internship",
+    "marketing internship for students",
+  ],
   openGraph: {
-    siteName: "internship | Redsan",
+    siteName: "Redsan",
+    url: "https://redsan.in/internship",
     type: "website",
     locale: "en_US",
-    title: "Redsan Digital Marketing Internship",
+    title: "Digital Marketing Internship 2025 | Redsan",
     description:
-      "Digital Marketing Internship 2025 to gain hands-on industry experience, boost your skills, and build a strong foundation for your career growth.",
+      "Learn LinkedIn, branding, and Notion in Redsan’s 2025 Internship Program. Real-world experience. Portfolio-ready projects. Startup exposure.",
+    images: [
+      {
+        url: "/Course/Card1.png",
+        width: 1200,
+        height: 630,
+        alt: "Redsan Internship 2025",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -27,11 +41,17 @@ export const metadata: Metadata = {
     "max-image-preview": "large",
     "max-snippet": -1,
     "max-video-preview": -1,
-    googleBot: "index, follow",
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
-  applicationName: "internship | redsan",
+  applicationName: "Redsan Internship",
   appleWebApp: {
-    title: "internship | redsan",
+    title: "Digital Marketing Internship | Redsan",
     statusBarStyle: "default",
     capable: true,
   },
@@ -73,32 +93,19 @@ export const metadata: Metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://redsan.in/internship",
+  },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": "https://redsan.in",
-  },
-  headline:
-    "Redsan:- Empowering Startups & Student Entrepreneurs with Smart Marketing and Scalable Community Tools",
-  description:
-    "RedSan delivers tailored marketing solutions, educational content, and community-driven platforms to help startups and student entrepreneurs grow, connect, and lead in the digital age.",
-  image: "/Course/Card1.png",
-  author: {
-    "@type": "Person",
-    name: "Redsan",
-    url: "https://www.linkedin.com/company/redsan-digitals/posts/?feedView=all",
-  },
-  publisher: {
-    "@type": "Person",
-    name: "Redsan",
-  },
-  inLanguage: "en-US",
-  isFamilyFriendly: "true",
+const audiowide = Audiowide({ subsets: ["latin"], weight: "400" });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#ffffff",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -106,13 +113,38 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="homepage-jsonld"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Redsan",
+              url: "https://redsan.in",
+              logo: "https://redsan.in/favicon-16x16.png",
+              sameAs: [
+                "https://www.linkedin.com/company/redsan-digitals/posts/?feedView=all",
+              ],
+              description:
+                "Redsan empowers startups and student entrepreneurs through smart marketing strategies, educational content, and community-driven tools.",
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "IN",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "Customer Support",
+                email: "hello@redsan.in",
+              },
+            }),
+          }}
+        />
+      </head>
       <body className={`${audiowide.className} antialiased`}>
         {children} <Analytics />
-        <Script
-          id="faq-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </body>
     </html>
   );

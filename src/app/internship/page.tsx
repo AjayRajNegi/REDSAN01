@@ -5,35 +5,37 @@ import { FounderCard } from "./FounderCard";
 import { Footer } from "../components/Footer";
 import Carousal from "./Carousal";
 import { Metadata } from "next";
-
+import Script from "next/script";
 export const metadata: Metadata = {
-  title: "Redsan | Digital Marketing, LinkedIn, Branding, Notion",
+  title:
+    "Digital Marketing Internship 2025 | Redsan – Learn LinkedIn, Branding, Notion",
   description:
-    "redan.in - Digital Marketing Internship 2025 to gain hands-on industry experience, boost your skills, and build a strong foundation for your career growth.",
+    "Join Redsan’s Digital Marketing Internship 2025 to master LinkedIn growth, branding, Notion, and startup strategy. Get hands-on experience and build a career-ready portfolio.",
   keywords: [
-    "internship",
-    "digital marketing",
-    "linkedIn",
-    "branding",
-    "notion",
-    "shark tank India",
-    "startups",
+    "digital marketing internship 2025",
+    "LinkedIn internship India",
+    "branding internship",
+    "Notion internship",
+    "startup internship India",
+    "Redsan internship",
+    "marketing internship for students",
   ],
   openGraph: {
-    url: "https://redsan.in/internship",
+    url: "https://www.redsan.in/internship",
     type: "website",
-    title: "Redsan | Digital Marketing, LinkedIn, Branding, Notion",
+    title: "Digital Marketing Internship 2025 | Redsan",
     description:
-      "redan.in - Digital Marketing Internship 2025 to gain hands-on industry experience, boost your skills, and build a strong foundation for your career growth.",
+      "Master LinkedIn, branding, Notion & more through Redsan’s 2025 Internship. Build real-world skills in a startup-driven, hands-on program.",
     images: [
       {
         url: "/Course/Card1.png",
         width: 1200,
         height: 630,
-        alt: "redsan",
+        alt: "Redsan Internship 2025",
       },
     ],
   },
+
   // twitter: {
   //   card: "summary_large_image",
   //   title: "Elastic Stack, Next.js, Python, JavaScript Tutorials | dminhvu",
@@ -51,7 +53,7 @@ export const metadata: Metadata = {
   //   ],
   // },
   alternates: {
-    canonical: "https://redsan.in",
+    canonical: "https://www.redsan.in/internship",
   },
 };
 
@@ -96,196 +98,240 @@ const moduleData = [
 
 export default function Internship() {
   return (
-    <div className="min-h-[100vh] bg-[#ecf1f0]" id="top">
-      {/* Navbar Section Larger Screens */}
-      <div className="h-[1vw] bg-[#ecf1f0] md:h-[80px]"></div>
-      <nav className="asd fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">
-        <Link href="/" className="left text-2xl text-slate-50">
-          REDSAN.STUDIOS
-        </Link>
-        <div className="right flex gap-4 text-slate-50">
-          <Link href="/portfolio">OUR WORK</Link>
-          <Link href="/internship">INTERNSHIP</Link>
-          <Link href="/linkedIn">LINKEDIN</Link>
-        </div>
-      </nav>
-      {/* Navbar Section Smaller Screens */}
-      <div className="mx-auto w-[98%] bg-[#ecf1f0] md:hidden">
-        <div className="max-h-[90px] overflow-hidden rounded-2xl bg-black">
-          <div className="flex h-[100px] items-center justify-between pl-2 text-slate-50">
-            <div>
-              <span className="text-2xl">RedSan.Studios</span>
-              <p className="text-xl font-medium">赤さん</p>
-            </div>
+    <>
+      <Script
+        id="internship-jsonld"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOccupationalProgram",
+            name: "Digital Marketing Internship 2025 by Redsan",
+            description:
+              "Join Redsan’s 2025 Digital Marketing Internship to learn LinkedIn growth, branding, Notion workflows, and startup marketing. Get hands-on experience, career mentorship, and a portfolio boost.",
+            educationalProgramMode: "online",
+            occupationalCategory: "Marketing",
+            programType: "InternshipProgram",
+            provider: {
+              "@type": "Organization",
+              name: "Redsan",
+              url: "https://redsan.in",
+              sameAs: [
+                "https://www.linkedin.com/company/redsan-digitals/posts/?feedView=all",
+              ],
+              logo: "https://redsan.in/favicon-16x16.png",
+            },
+            timeToComplete: "P2M",
+            startDate: "2025-06-01",
+            inLanguage: "en-US",
+            isAccessibleForFree: true,
+            hasCourse: {
+              "@type": "Course",
+              name: "Hands-on Digital Marketing Essentials",
+              description:
+                "Practical sessions on LinkedIn growth, brand building, Notion workflows, and startup marketing.",
+              educationalCredentialAwarded: "Internship Certificate",
+            },
+          }),
+        }}
+      />
+      <div className="min-h-[100vh] bg-[#ecf1f0]" id="top">
+        {/* Navbar Section Larger Screens */}
+        <div className="h-[1vw] bg-[#ecf1f0] md:h-[80px]"></div>
+        <nav className="asd fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">
+          <Link href="/" className="left text-2xl text-slate-50">
+            REDSAN.STUDIOS
+          </Link>
+          <div className="right flex gap-4 text-slate-50">
+            <Link href="/portfolio">OUR WORK</Link>
+            <Link href="/internship">INTERNSHIP</Link>
+            <Link href="/linkedIn">LINKEDIN</Link>
+          </div>
+        </nav>
+        {/* Navbar Section Smaller Screens */}
+        <div className="mx-auto w-[98%] bg-[#ecf1f0] md:hidden">
+          <div className="max-h-[90px] overflow-hidden rounded-2xl bg-black">
+            <div className="flex h-[100px] items-center justify-between pl-2 text-slate-50">
+              <div>
+                <span className="text-2xl">RedSan.Studios</span>
+                <p className="text-xl font-medium">赤さん</p>
+              </div>
 
-            <span className="hidden text-xs md:block">digitaL agencY</span>
-            <div className="relative h-[90px] w-[140px] overflow-hidden object-fill">
-              <img
-                src="/nav.gif"
-                alt=""
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              <span className="hidden text-xs md:block">digitaL agencY</span>
+              <div className="relative h-[90px] w-[140px] overflow-hidden object-fill">
+                <img
+                  src="/nav.gif"
+                  alt=""
+                  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mx-auto mb-[1vw] mt-[1vw] w-[98%] md:hidden">
+          <div className="flex h-[40px] items-center justify-around rounded-2xl bg-gray-950 text-[#ecf1f0]">
+            <Link href="/portfolio">OUR WORK</Link>
+            <Link href="/internship">INTERNSHIP</Link>
+            <Link href="/linkedIn">LINKEDIN</Link>
+          </div>
+        </div>
+        {/* Hero Image */}
+        <Carousal />
+
+        {/* Features */}
+        <div className="scrollbar-hidden mx-auto mb-[50px] mt-[40px] w-[100%] overflow-x-auto md:mb-[100px]">
+          <div className="mx-5 flex flex-nowrap items-center justify-between gap-5">
+            <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl md:h-[400px] md:w-[400px]">
+              <Image
+                src="/Course/post4.png"
+                fill
+                objectFit="cover"
+                alt="brand"
+                quality={60}
+              />
+            </div>
+            <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px] xl:block">
+              <Image
+                src="/Course/post1.png"
+                fill
+                objectFit="cover"
+                alt="brand"
+                quality={60}
+              />
+            </div>
+            <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
+              <Image
+                src="/Course/post5.png"
+                fill
+                objectFit="cover"
+                alt="brand"
+                quality={60}
+              />
+            </div>
+            <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
+              <Image
+                src="/Course/post2.png"
+                fill
+                objectFit="cover"
+                alt="brand"
+                quality={60}
+              />
+            </div>
+            <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
+              <Image
+                src="/Course/post3.png"
+                fill
+                objectFit="cover"
+                alt="brand"
+                quality={60}
               />
             </div>
           </div>
         </div>
-      </div>
-      <div className="mx-auto mb-[1vw] mt-[1vw] w-[98%] md:hidden">
-        <div className="flex h-[40px] items-center justify-around rounded-2xl bg-gray-950 text-[#ecf1f0]">
-          <Link href="/portfolio">OUR WORK</Link>
-          <Link href="/internship">INTERNSHIP</Link>
-          <Link href="/linkedIn">LINKEDIN</Link>
+
+        {/* Pricing */}
+        <Pricing />
+        {/* Module Structure */}
+        <div className="flex h-[20vh] w-full items-center bg-gray-950">
+          <h1 className="px-4 text-4xl font-semibold uppercase text-slate-200 md:text-5xl">
+            <span className="text-6xl md:text-7xl">I</span>nternship &
+            <br />
+            <span className="text-6xl md:text-7xl">T</span>
+            raining Module
+          </h1>
         </div>
-      </div>
-      {/* Hero Image */}
-      <Carousal />
 
-      {/* Features */}
-      <div className="scrollbar-hidden mx-auto mb-[50px] mt-[40px] w-[100%] overflow-x-auto md:mb-[100px]">
-        <div className="mx-5 flex flex-nowrap items-center justify-between gap-5">
-          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 transition-shadow duration-300 hover:shadow-2xl md:h-[400px] md:w-[400px]">
-            <Image
-              src="/Course/post4.png"
-              fill
-              objectFit="cover"
-              alt="brand"
-              quality={60}
-            />
-          </div>
-          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px] xl:block">
-            <Image
-              src="/Course/post1.png"
-              fill
-              objectFit="cover"
-              alt="brand"
-              quality={60}
-            />
-          </div>
-          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
-            <Image
-              src="/Course/post5.png"
-              fill
-              objectFit="cover"
-              alt="brand"
-              quality={60}
-            />
-          </div>
-          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
-            <Image
-              src="/Course/post2.png"
-              fill
-              objectFit="cover"
-              alt="brand"
-              quality={60}
-            />
-          </div>
-          <div className="relative h-[300px] w-[300px] shrink-0 overflow-hidden rounded-xl border-2 border-gray-900 hover:shadow-2xl md:h-[400px] md:w-[400px]">
-            <Image
-              src="/Course/post3.png"
-              fill
-              objectFit="cover"
-              alt="brand"
-              quality={60}
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Pricing */}
-      <Pricing />
-      {/* Module Structure */}
-      <div className="flex h-[20vh] w-full items-center bg-gray-950">
-        <h1 className="px-4 text-4xl font-semibold uppercase text-slate-200 md:text-5xl">
-          <span className="text-6xl md:text-7xl">I</span>nternship &
-          <br />
-          <span className="text-6xl md:text-7xl">T</span>
-          raining Module
-        </h1>
-      </div>
-
-      {/* Module Structure Cards */}
-      <div className="h-[80vh] bg-gray-950 md:h-[50vh]">
-        <section
-          className="scroll-snap-x mandatory module-section flex gap-4 overflow-x-scroll whitespace-nowrap bg-gray-950 pl-[9vw] pt-[50px]"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {/* Individual Module Cards */}
-          {moduleData.map((item, index) => (
-            <div
-              className="scroll-snap-align flex h-[500px] min-w-[80vw] flex-col items-center justify-evenly rounded-2xl bg-gray-100 md:h-[300px] md:min-w-[700px] md:flex-row"
-              key={index}
-            >
-              {/* Left */}
-              <div className="relative h-[40%] w-[90%] overflow-hidden rounded-2xl md:h-[80%] md:w-[55%]">
-                <Image
-                  src={item.module_image}
-                  fill={true}
-                  layout="fill"
-                  className="object-cover"
-                  alt="brand"
-                />
-              </div>
-              {/* Right */}
-              <div className="flex min-h-[50%] w-[90%] flex-col md:min-h-[80%] md:w-[35%]">
-                <h3 className="whitespace-normal text-lg font-[500] text-black">
-                  {item.module_title}
-                </h3>
-                <p className="mt-2 overflow-hidden whitespace-normal text-xs leading-5 text-gray-700">
-                  {item.module_desc}
-                </p>
-                <div className="mt-5 grid grid-cols-2 text-black">
-                  <span className="mt-2 flex gap-1 text-xs leading-5 text-gray-700">
-                    <Image src="/week.png" width={20} height={20} alt="week" />
-
-                    {item.module_time}
-                  </span>
-                  <span className="-ml-10 mt-2 flex justify-center gap-1 whitespace-normal text-xs leading-5 text-gray-700 md:-ml-8">
-                    <div className="relative h-[20px] w-[20px]">
+        {/* Module Structure Cards */}
+        <div className="h-[80vh] bg-gray-950 md:h-[50vh]">
+          <section
+            className="scroll-snap-x mandatory module-section flex gap-4 overflow-x-scroll whitespace-nowrap bg-gray-950 pl-[9vw] pt-[50px]"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {/* Individual Module Cards */}
+            {moduleData.map((item, index) => (
+              <div
+                className="scroll-snap-align flex h-[500px] min-w-[80vw] flex-col items-center justify-evenly rounded-2xl bg-gray-100 md:h-[300px] md:min-w-[700px] md:flex-row"
+                key={index}
+              >
+                {/* Left */}
+                <div className="relative h-[40%] w-[90%] overflow-hidden rounded-2xl md:h-[80%] md:w-[55%]">
+                  <Image
+                    src={item.module_image}
+                    fill={true}
+                    layout="fill"
+                    className="object-cover"
+                    alt="brand"
+                  />
+                </div>
+                {/* Right */}
+                <div className="flex min-h-[50%] w-[90%] flex-col md:min-h-[80%] md:w-[35%]">
+                  <h3 className="whitespace-normal text-lg font-[500] text-black">
+                    {item.module_title}
+                  </h3>
+                  <p className="mt-2 overflow-hidden whitespace-normal text-xs leading-5 text-gray-700">
+                    {item.module_desc}
+                  </p>
+                  <div className="mt-5 grid grid-cols-2 text-black">
+                    <span className="mt-2 flex gap-1 text-xs leading-5 text-gray-700">
                       <Image
-                        src="/live.png"
-                        fill={true}
-                        layout="fill"
-                        className="object-cover"
+                        src="/week.png"
+                        width={20}
+                        height={20}
                         alt="week"
                       />
-                    </div>
-                    Live and Recorded
-                  </span>
-                  <span className="mt-2 flex gap-1 rounded-lg border-2 border-[#e9986d] px-2 text-xs leading-5 text-gray-700">
-                    <Image
-                      src="/credits.png"
-                      width={20}
-                      height={20}
-                      alt="week"
-                    />
-                    <Link href="/detail">View Details</Link>
-                    {/* {item.module_credits} */}
-                  </span>
-                </div>
-                {/* Instructor */}
-                <div className="mt-5 flex items-center gap-1">
-                  <Image
-                    src="/instructor.jpg"
-                    width={50}
-                    height={50}
-                    alt="instructor"
-                    className="rounded-[50%] border-2 border-gray-100"
-                  />
 
-                  <div className="text-gray-800">
-                    <p className="text-xs">Sankalp</p>
-                    <p className="text-xs font-medium">Founder, RedSan</p>
+                      {item.module_time}
+                    </span>
+                    <span className="-ml-10 mt-2 flex justify-center gap-1 whitespace-normal text-xs leading-5 text-gray-700 md:-ml-8">
+                      <div className="relative h-[20px] w-[20px]">
+                        <Image
+                          src="/live.png"
+                          fill={true}
+                          layout="fill"
+                          className="object-cover"
+                          alt="week"
+                        />
+                      </div>
+                      Live and Recorded
+                    </span>
+                    <span className="mt-2 flex gap-1 rounded-lg border-2 border-[#e9986d] px-2 text-xs leading-5 text-gray-700">
+                      <Image
+                        src="/credits.png"
+                        width={20}
+                        height={20}
+                        alt="week"
+                      />
+                      <Link href="/detail">View Details</Link>
+                      {/* {item.module_credits} */}
+                    </span>
+                  </div>
+                  {/* Instructor */}
+                  <div className="mt-5 flex items-center gap-1">
+                    <Image
+                      src="/instructor.jpg"
+                      width={50}
+                      height={50}
+                      alt="instructor"
+                      className="rounded-[50%] border-2 border-gray-100"
+                    />
+
+                    <div className="text-gray-800">
+                      <p className="text-xs">Sankalp</p>
+                      <p className="text-xs font-medium">Founder, RedSan</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </section>
-      </div>
-      {/* Founder Cards */}
-      <FounderCard />
+            ))}
+          </section>
+        </div>
+        {/* Founder Cards */}
+        <FounderCard />
 
-      {/* Footer */}
-      <Footer />
-    </div>
+        {/* Footer */}
+        <Footer />
+      </div>
+    </>
   );
 }
