@@ -122,4 +122,10 @@ const data = [
     src: "/photos/AnitaMaam.jpg",
     content: <DummyContent />,
   },
+  {
+    category: "Mr. Krishna Saproo",
+    title: "Founder/CEO NeuroXOHRD",
+    src: "/photos/KrishnaSaproo.jpg",
+    content: <DummyContent />,
+  },
 ];
