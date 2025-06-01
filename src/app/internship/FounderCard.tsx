@@ -99,6 +99,12 @@ const data = [
     content: <DummyContent />,
   },
   {
+    category: "Dr. Rajesh Singh",
+    title: "Dean Of Division and Research UU",
+    src: "/photos/RajeshSir.jpg",
+    content: <DummyContent />,
+  },
+  {
     category: "Redcubical Systems",
     title: "Network like EXPERTS.",
     src: "/photos/RedCubicals2.jpg",
@@ -108,6 +114,12 @@ const data = [
     category: "Dr. Kanishka Jha",
     title: "CEO Hatch, DBIIF",
     src: "/photos/Hatch.jpg",
+    content: <DummyContent />,
+  },
+  {
+    category: "Dr. Anita Gehlot",
+    title: "Head at Division and Research UU",
+    src: "/photos/AnitaMaam.jpg",
     content: <DummyContent />,
   },
 ];
