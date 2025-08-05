@@ -36,8 +36,9 @@ export default function CampaignCards() {
               </h3>
               <blockquote className="mb-4">
                 <p className="text-sm leading-relaxed text-white/85">
-                  "Every pixel tells a story. We craft motion narratives that
-                  don't just catch eyes—they capture hearts and drive action."
+                  &quot;Every pixel tells a story. We craft motion narratives
+                  that don&apos;t just catch eyes—they capture hearts and drive
+                  action.&quot;
                 </p>
                 <footer className="mt-3 flex items-center gap-3">
                   <Image
@@ -94,10 +95,10 @@ export default function CampaignCards() {
             </h3>
             <div className="space-y-4">
               <p className="text-3xl font-normal tracking-tighter text-white">
-                Motion isn't just movement.
+                Motion isn&apos;t just movement.
               </p>
               <p className="text-sm leading-relaxed text-zinc-300">
-                It's the pulse between frames, the breath between cuts. We
+                It&apos;s the pulse between frames, the breath between cuts. We
                 choreograph digital symphonies where every transition serves
                 purpose, every effect tells truth.
               </p>

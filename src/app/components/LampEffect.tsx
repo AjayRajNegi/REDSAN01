@@ -1,21 +1,21 @@
-const expandWidth = {
-  initial: { width: "15rem", opacity: 0.5 },
-  animate: {
-    width: "30rem",
-    opacity: 1,
-    transition: { duration: 0.8, delay: 0.3 },
-  },
-};
+// const expandWidth = {
+//   initial: { width: "15rem", opacity: 0.5 },
+//   animate: {
+//     width: "30rem",
+//     opacity: 1,
+//     transition: { duration: 0.8, delay: 0.3 },
+//   },
+// };
 
-const moveUp = {
-  initial: { opacity: 0.5, y: 100 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.3 } },
-};
+// const moveUp = {
+//   initial: { opacity: 0.5, y: 100 },
+//   animate: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.3 } },
+// };
 
-const expandSmallWidth = {
-  initial: { width: "8rem" },
-  animate: { width: "16rem", transition: { duration: 0.8, delay: 0.3 } },
-};
+// const expandSmallWidth = {
+//   initial: { width: "8rem" },
+//   animate: { width: "16rem", transition: { duration: 0.8, delay: 0.3 } },
+// };
 export default function LampEffect() {
   return (
     <div className="relative z-0 flex min-h-screen w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black">
