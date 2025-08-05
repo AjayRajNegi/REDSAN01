@@ -1,7 +1,7 @@
 "use client";
 
 import { Quote } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 type Testimonial = {
   name: string;
@@ -54,11 +54,8 @@ export default function Testimonials() {
   const [active, setActive] = useState(0);
   const stackRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    applyState();
-  }, [active]);
-
-  const applyState = () => {
+  // ✅ Memoize to avoid redefining on every render
+  const applyState = useCallback(() => {
     if (!stackRef.current) return;
     const cards = Array.from(stackRef.current.children) as HTMLElement[];
 
@@ -74,58 +71,67 @@ export default function Testimonials() {
       card.style.zIndex = z.toString();
       card.style.pointerEvents = offset === 0 ? "auto" : "none";
     });
-  };
+  }, [active]); // ✅ include `active` in the dependency
 
-  const handleSwipe = (i: number) =>
-    setActive((i + testimonials.length) % testimonials.length);
+  const handleSwipe = useCallback(
+    (i: number) => setActive((i + testimonials.length) % testimonials.length),
+    [],
+  );
 
-  const addSwipeEvents = (card: HTMLElement, index: number) => {
-    let startX: number | null = null;
+  const addSwipeEvents = useCallback(
+    (card: HTMLElement, index: number) => {
+      let startX: number | null = null;
 
-    const onStart = (e: MouseEvent | TouchEvent) => {
-      if (index !== active) return;
-      startX = "touches" in e ? e.touches[0].clientX : e.clientX;
+      const onStart = (e: MouseEvent | TouchEvent) => {
+        if (index !== active) return;
+        startX = "touches" in e ? e.touches[0].clientX : e.clientX;
 
-      const move = (e: MouseEvent | TouchEvent) => {
-        if (startX === null) return;
-        const x = "touches" in e ? e.touches[0].clientX : e.clientX;
-        const diff = x - startX!;
-        card.style.transform += ` translateX(${diff}px)`;
+        const move = (e: MouseEvent | TouchEvent) => {
+          if (startX === null) return;
+          const x = "touches" in e ? e.touches[0].clientX : e.clientX;
+          const diff = x - startX;
+          card.style.transform += ` translateX(${diff}px)`;
+        };
+
+        const end = (e: MouseEvent | TouchEvent) => {
+          const x =
+            "changedTouches" in e ? e.changedTouches[0].clientX : e.clientX;
+          const diff = x - (startX ?? 0);
+          startX = null;
+
+          if (Math.abs(diff) > 80) {
+            diff > 0 ? handleSwipe(active - 1) : handleSwipe(active + 1);
+          } else {
+            applyState();
+          }
+
+          document.removeEventListener("mousemove", move);
+          document.removeEventListener("mouseup", end);
+          document.removeEventListener("touchmove", move);
+          document.removeEventListener("touchend", end);
+        };
+
+        document.addEventListener("mousemove", move);
+        document.addEventListener("mouseup", end);
+        document.addEventListener("touchmove", move);
+        document.addEventListener("touchend", end);
       };
 
-      const end = (e: MouseEvent | TouchEvent) => {
-        const x =
-          "changedTouches" in e ? e.changedTouches[0].clientX : e.clientX;
-        const diff = x - startX!;
-        startX = null;
+      card.addEventListener("mousedown", onStart);
+      card.addEventListener("touchstart", onStart, { passive: true });
+    },
+    [active, applyState, handleSwipe], // ✅ full dependency list
+  );
 
-        if (Math.abs(diff) > 80) {
-          diff > 0 ? handleSwipe(active - 1) : handleSwipe(active + 1);
-        } else {
-          applyState();
-        }
-
-        document.removeEventListener("mousemove", move);
-        document.removeEventListener("mouseup", end);
-        document.removeEventListener("touchmove", move);
-        document.removeEventListener("touchend", end);
-      };
-
-      document.addEventListener("mousemove", move);
-      document.addEventListener("mouseup", end);
-      document.addEventListener("touchmove", move);
-      document.addEventListener("touchend", end);
-    };
-
-    card.addEventListener("mousedown", onStart);
-    card.addEventListener("touchstart", onStart, { passive: true });
-  };
+  useEffect(() => {
+    applyState(); // this gets called when `active` changes
+  }, [applyState]);
 
   useEffect(() => {
     if (!stackRef.current) return;
     const cards = Array.from(stackRef.current.children) as HTMLElement[];
     cards.forEach((card, i) => addSwipeEvents(card, i));
-  }, []);
+  }, [addSwipeEvents]);
 
   return (
     <section className="mx-auto mt-40 max-w-6xl px-6">
