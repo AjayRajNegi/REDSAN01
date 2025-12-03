@@ -368,7 +368,7 @@ export default function LinkedIn() {
         </section>
       </article>
 
-      <BouncyCardsFeatures />
+      {/* <BouncyCardsFeatures /> */}
       <Footer />
     </>
   );
