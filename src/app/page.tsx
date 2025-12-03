@@ -58,7 +58,7 @@ export default function Home() {
         <nav className="asd fixed left-[3%] top-[20px] z-20 hidden h-[40px] w-[94%] items-center justify-between rounded-full bg-gray-950 px-8 md:flex">
           <div className="left text-2xl text-slate-50">REDSAN.STUDIOS</div>
           <div className="right flex gap-4 text-slate-50">
-            <Link href="/portfolio">OUR WORK</Link>
+            {/* <Link href="/portfolio">OUR WORK</Link> */}
             <Link href="/internship">INTERNSHIP</Link>
             <Link href="/linkedIn">LINKEDIN</Link>
           </div>
